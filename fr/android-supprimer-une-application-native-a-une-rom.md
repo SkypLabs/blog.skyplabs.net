@@ -6,20 +6,20 @@ Pour remédier à ce désagrément, il est nécessaire d'avoir accès au compte 
 
 Les étapes de réalisation sont les suivantes :
 
-1.  Activer le mode **USB debugging** de votre androphone.
-2.  Une fois connecté à votre ordinateur et après avoir installé le SDK, utiliser la commande **adb shell** pour récupérer le shell de votre androphone.
-3.  Changer d'utilisateur pour root grace à la commande **su**.
-4.  Monter la partition système en rw en faisant :
+1. Activer le mode **USB debugging** de votre androphone.
+2. Une fois connecté à votre ordinateur et après avoir installé le SDK, utiliser la commande **adb shell** pour récupérer le shell de votre androphone.
+3. Changer d'utilisateur pour root grace à la commande **su**.
+4. Monter la partition système en rw en faisant :
 
         mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
 
     Bien entendu, il vous faut adapter ces paramètres selon ce que la commande **mount** vous renvoie comme informations sur la configuration de votre appareil.
 
-5.  Vous pouvez maintenant supprimer les applications indésirables situées dans le répertoire **/system/app** en utilisant simplement la commande **rm**. Par exemple :
+5. Vous pouvez maintenant supprimer les applications indésirables situées dans le répertoire **/system/app** en utilisant simplement la commande **rm**. Par exemple :
 
         rm /system/app/twitter.apk
 
-6.  Une fois terminé, remonter la partition system en ro en faisant :
+6. Une fois terminé, remonter la partition system en ro en faisant :
 
         mount -o remount,ro -t yaffs2 /dev/block/mtdblock3 /system
 
