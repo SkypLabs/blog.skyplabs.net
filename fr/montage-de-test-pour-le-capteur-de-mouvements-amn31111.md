@@ -2,10 +2,10 @@ La détection de présence possède une place très importante dans une installa
 
 Le principe du montage est simple : allumer une LED lorsque le capteur détecte la présence d'un individu. La liste des composants qui ont été utilisés est la suivante :
 
-*   Le capteur de mouvements [AMN31111][1]
-*   Un transistor MOSFET canal N ([IRF720PBF][2] dans mon cas)
-*   Une LED émettant un rayonnement dans le spectre visible
-*   Des résistances (valeurs calculées ci-dessous)
+* Le capteur de mouvements [AMN31111][1]
+* Un transistor MOSFET canal N ([IRF720PBF][2] dans mon cas)
+* Une LED émettant un rayonnement dans le spectre visible
+* Des résistances (valeurs calculées ci-dessous)
 
 Tous les composants listés ci-dessus peuvent se commander chez [Farnell][3]. Les détails de la réalisation vont être présentés par étapes successives.
 

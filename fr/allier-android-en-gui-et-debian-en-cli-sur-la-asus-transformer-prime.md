@@ -33,15 +33,15 @@ Et maintenant, il ne reste plus qu'à tout extraire et à finaliser l'installati
 
 Votre distribution Debian est maintenant complètement installée sur votre Transformer Prime ! Il faut maintenant procéder à quelques réglages de routine dont voici une liste non exhaustive :
 
-*   Changer le hostname :
+* Changer le hostname :
 
         sysctl kernel.hostname=<nouveau_nom>
 
-*   Ajouter un DNS publique pour pouvoir y accéder de n'importe où (personnellement, j'utilise celui de Google, à savoir 8.8.8.8) :
+* Ajouter un DNS publique pour pouvoir y accéder de n'importe où (personnellement, j'utilise celui de Google, à savoir 8.8.8.8) :
 
         echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
-*   Remplir le fichier /etc/apt/sources.list pour pouvoir utiliser **aptitude** ou **apt-get** :
+* Remplir le fichier /etc/apt/sources.list pour pouvoir utiliser **aptitude** ou **apt-get** :
 
         echo "deb http://ftp.fr.debian.org/debian/ sid main" > /etc/apt/sources.list
         echo "deb-src http://ftp.fr.debian.org/debian/ sid main" >> /etc/apt/sources.list

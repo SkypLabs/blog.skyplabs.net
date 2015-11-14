@@ -6,11 +6,11 @@ Pour commencer, un petit aperçu de la réalisation s'impose. Les principaux app
 
 Voici donc la liste des éléments utilisés pour la réalisation complète :
 
-*   Un smartphone (Nexus S sous Android)
-*   Une carte Arduino (Uno)
-*   Un module bluetooth (Sparkfun Bluetooth Mate Gold)
-*   Une diode à infrarouge émettrice (CQY 89)
-*   Une carte électronique conçue spécifiquement pour relier les différents éléments entre eux
+* Un smartphone (Nexus S sous Android)
+* Une carte Arduino (Uno)
+* Un module bluetooth (Sparkfun Bluetooth Mate Gold)
+* Une diode à infrarouge émettrice (CQY 89)
+* Une carte électronique conçue spécifiquement pour relier les différents éléments entre eux
 
 <!--more-->
 

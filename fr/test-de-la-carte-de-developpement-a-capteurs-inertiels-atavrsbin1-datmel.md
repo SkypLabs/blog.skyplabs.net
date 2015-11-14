@@ -1,9 +1,9 @@
 Avant toute chose, nous allons commencer par un petit rappel de vocabulaire autour des différents capteurs inertiels existants :
 
-*   [**Gyroscope**][1] : Capteur indiquant la position angulaire.
-*   [**Gyromètre**][2] : Capteur indiquant la vitesse angulaire.
-*   [**Accéléromètre**][3] : Capteur indiquant l'accélération linéaire.
-*   [**Centrale inertielle**][4] : Capteur embarquant un gyromètre à trois axes et un accéléromètre à trois axes et permettant de déterminer la position du mobile sur lequel il a été fixé à condition de connaître la position d'origine de ce dernier (technologie utilisée à bord des avions par exemple).
+* [**Gyroscope**][1] : Capteur indiquant la position angulaire.
+* [**Gyromètre**][2] : Capteur indiquant la vitesse angulaire.
+* [**Accéléromètre**][3] : Capteur indiquant l'accélération linéaire.
+* [**Centrale inertielle**][4] : Capteur embarquant un gyromètre à trois axes et un accéléromètre à trois axes et permettant de déterminer la position du mobile sur lequel il a été fixé à condition de connaître la position d'origine de ce dernier (technologie utilisée à bord des avions par exemple).
 
 La carte de développement [**ATAVRSBIN1**][5] que nous allons tester au cours de cet article est équipée de deux de ces capteurs : elle embarque un **gyromètre** (ITG-3200) et un **accéléromètre** (BMA-150). Le ITG-3200 est pourtant vendu comme étant un gyroscope, mais en regardant sa datasheet, on s'aperçoit qu'il retourne une mesure en °/s. C'est une erreur très commune donc prenez garde la prochaine fois que vous sélectionnerez un produit de la sorte.
 
@@ -27,9 +27,9 @@ Pour ce test, j'ai utilisé une carte microcontrôleur Arduino Uno (rev3) afin d
 
 La [datasheet][9] de la carte ATAVRSBIN1 nous donne les adresses I²C suivantes :
 
-*   AK8975 : 0x0C
-*   BMA-150 : 0x38
-*   ITG-3200 : 0x68
+* AK8975 : 0x0C
+* BMA-150 : 0x38
+* ITG-3200 : 0x68
 
 Côté logiciel, j'ai utilisé la bibliothèque [Wire][10] du projet Arduino.
 

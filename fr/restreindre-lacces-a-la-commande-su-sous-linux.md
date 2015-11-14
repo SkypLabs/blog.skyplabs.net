@@ -11,19 +11,19 @@ Il peut être très intéressant de restreindre l'accès à cette commande dans 
 
 Pour ce faire, je vais utiliser la même méthode que celle utilisée sur FreeBSD, à savoir restreindre l'accès à la commande "su" seulement aux membres du groupe **wheel**. Voici les différentes étapes :
 
-*   Création du groupe "wheel" :
+* Création du groupe "wheel" :
 
         groupadd --system wheel
 
-*   Modification du groupe de la commande "su" :
+* Modification du groupe de la commande "su" :
 
         chown root:wheel /bin/su
 
-*   Modification des droits de la commande "su" :
+* Modification des droits de la commande "su" :
 
         chmod 4750 /bin/su
 
-*   Rajout des utilisateurs autorisés au groupe "wheel" :
+* Rajout des utilisateurs autorisés au groupe "wheel" :
 
         usermod -G wheel -a <user>
 

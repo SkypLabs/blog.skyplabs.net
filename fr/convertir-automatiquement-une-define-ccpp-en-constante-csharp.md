@@ -4,10 +4,10 @@ Je développe actuellement en C# pour les besoins de mon entreprise. Devant ré�
 
 Le fichier *defines_c.txt* contient les defines à convertir. Et voici le résultat :
 
-*   Avant :
+* Avant :
 
         #define TEST 2
 
-*   Après :
+* Après :
 
         public const UInt16 TEST = 2;

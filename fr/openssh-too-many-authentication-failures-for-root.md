@@ -2,15 +2,15 @@ Si vous recevez le message "*Too many authentication failures for root*" lors de
 
 Pour palier à ce problème, trois solutions s'offrent à nous :
 
-*   Soit forcer l'utilisation du mot de passe de la façon suivante :
+* Soit forcer l'utilisation du mot de passe de la façon suivante :
 
         ssh -o "PubkeyAuthentication no" user@host
 
-*   Soit forcer l'utilisation d'une clé à l'aide de l'option "-i" :
+* Soit forcer l'utilisation d'une clé à l'aide de l'option "-i" :
 
         ssh -i <chemin/vers/la/clé> user@host
 
-*   Soit spécifier la clé à utiliser dans le fichier de configuration du client SSH (/etc/ssh/ssh_config) :
+* Soit spécifier la clé à utiliser dans le fichier de configuration du client SSH (/etc/ssh/ssh_config) :
 
         Host <host>
         IdentityFile <chemin/vers/la/clé>
