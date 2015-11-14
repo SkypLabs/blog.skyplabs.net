@@ -11,7 +11,7 @@ Tous les composants listés ci-dessus peuvent se commander chez [Farnell][3]. Le
 
 <!--more-->
 
-# LED
+## LED
 
 Il est nécessaire de limiter le passage du courant qui circulera dans la LED à l'aide d'une résistance. J'ai utilisé une LED blanche possédant une tension de seuil [latex]V_{seuil}[/latex] de 3,5 V et j'ai arbitrairement choisi de la faire fonctionner avec un courant [latex]I_{LED}[/latex] de 20 mA. Le calcul de la résistance [latex]R_{LED}[/latex] est donc le suivant :
 
@@ -19,7 +19,7 @@ $$R_{LED} = \frac{V_{dd} - V_{seuil}}{I_{LED}}$$
 
 Avec un tension d'alimentation [latex]V_{dd}[/latex] de 5V, le calcul donne [latex]R_{LED} = 75 \Omega[/latex].
 
-# Transistor MOSFET
+## Transistor MOSFET
 
 Le transistor va nous permettre de déclencher l'allumage de la LED lorsque la tension [latex]V_{GS}[/latex] sera supérieure à 4V (d'après [la datasheet du IRF720][4]). La tension [latex]V_{GS}[/latex] correspond à la différence de potentiel entre la grille (notée G pour gate) et la source (notée S) :
 
@@ -29,7 +29,7 @@ Nous allons connecter la LED avec sa résistance en amont du transistor (sur le 
 
 ![Schéma de connexion d'un transistor utilisant un boîtier TO-220AB][6]
 
-# Capteur de mouvements
+## Capteur de mouvements
 
 Le capteur de mouvements AMN31111 est un composant à trois broches. Deux servent à l'alimenter et la dernière renvoie une tension minimale de [latex]V_{dd} - 0,5 V[/latex] lorsqu'il détecte un mouvement. Les connexions se font de la manière suivante :
 
@@ -37,7 +37,7 @@ Le capteur de mouvements AMN31111 est un composant à trois broches. Deux serven
 
 J'ai alimenté ce circuit en +5V et il me retournait une tension de +5V également lors de la détection d'un mouvement.
 
-# Montage final
+## Montage final
 
 Il ne reste plus qu'à assembler tous les éléments entre eux. Voici le schéma du circuit de test que j'ai utilisé :
 

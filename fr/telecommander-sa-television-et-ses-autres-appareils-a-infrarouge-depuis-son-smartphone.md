@@ -14,7 +14,7 @@ Voici donc la liste des éléments utilisés pour la réalisation complète :
 
 <!--more-->
 
-# À la découverte du protocole NEC
+## À la découverte du protocole NEC
 
 Le protocole de communication infrarouge utilisé par ma télévision et par mon home cinema (tous deux de la marque Samsung) est celui développé par NEC. Il utilise des trames simples, composées d'une adresse codée sur 8 ou 16 bits selon la version du protocole ainsi que la commande à transmettre codée sur 8 bits. Le nombre maximum de commandes distinctes est donc de 256 par appareil. Pour coder les 1 et les 0 logiques, il utilise une impulsion haute de 560 µs suivie par une impulsion basse d'une durée qui dépend du bit à transmettre. 560 µs pour un 0 logique ou 1.70 ms environ pour un 1 logique. Pour plus de détails, vous pouvez vous rendre sur [cette page][1].
 
@@ -99,7 +99,7 @@ Pour mener à bien mon projet, j'avais besoin de récupérer l'adresse de mes di
 
 Avec ce script, j'ai balayé l'ensemble des commandes utilisées par ma télévision et mon home cinema. Par exemple, pour allumer ma télévision, la commande en décimale est 153. À vous de faire pareil avec vos appareils !
 
-# Faire le lien entre le bluetooth et l'infrarouge grâce à l'Arduino
+## Faire le lien entre le bluetooth et l'infrarouge grâce à l'Arduino
 
 Maintenant que l'on connait comment le protocole NEC fonctionne, on peut l'implémenter dans la carte Arduino pour transmettre les commandes infrarouges. La réception bluetooth se fait via une liaison série entre le module bluetooth et la carte Arduino. Pour envoyer une commande via ce montage vers un appareil distant utilisant l'infrarouge, il faut en premier lieu envoyer l'adresse du destinataire puis la commande à proprement parler. Toutes ces informations doivent être transmises en décimale octet par octet sous forme d'une chaîne de caractères. Un octet est représenté par 3 caractères.
 
@@ -262,7 +262,7 @@ Voici le code développé pour la carte Arduino (à compiler avec le SDK officie
         PORTB = portb;
     }
 
-# Le montage final
+## Le montage final
 
 Pour relier les différentes parties du montage final entre elles, j'ai réalisé un shield Arduino grâce au logiciel de CAO **EAGLE PCB Software**. Le gros avantage de cette solution est qu'il devient très facile de monter/démonter les différents composants de la réalisation étant donné que j'utilise des supports pour toutes les connexions. Cela procure une certaine propreté du montage. En voici une photo :
 
@@ -270,13 +270,13 @@ Pour relier les différentes parties du montage final entre elles, j'ai réalis�
 
 Vous trouverez l'archive ZIP contenant le PCB du sheild Arduino au format EPS à [cette adresse][4].
 
-# L'application Android
+## L'application Android
 
 Pour terminer ma réalisation, j'ai développé une application Android pour pouvoir piloter le tout depuis mon smartphone et/ou ma tablette. Ce programme nécessite un certain nombre d'améliorations (il s'agit principalement d'un PoC et non pas d'un logiciel achevé) mais est parfaitement fonctionnel. Il a été testé sur mon Nexus S et sur le Nexus One de ma copine.
 
 Vous trouverez l'apk et le code source de l'application à [cette adresse][5]. Bien que développée pour n'être utilisée que pour ma propre installation, vous pourrez vous en inspirer pour l'adapter à votre matériel.
 
-# Conclusion
+## Conclusion
 
 La réalisation de ce projet m'a permis de m'investir un peu plus dans le domaine de la domotique. En effet, l'intérêt premier n'est pas seulement de pouvoir piloter mes appareils à infrarouge depuis mon smartphone, mais depuis n'importe quel système informatique. En pratique, il est donc possible de perfectionner la réalisation en y rajoutant de la reconnaissance vocale, des tags RFID bien placés dans l'appartement (mon Nexus S possède un lecteur NFC), etc.
 
