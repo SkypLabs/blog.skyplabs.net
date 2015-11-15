@@ -1,3 +1,5 @@
+# Modifier la configuration de PHP depuis Apache
+
 Traditionnellement, la configuration de PHP se définit dans le fichier **php.ini**. Par exemple, sur une Debian, le fichier de configuration de PHP pour une utilisation depuis Apache se trouve à cet emplacement : "/etc/php5/apache2/php.ini" (pour une installation depuis les dépôts).
 
 Seulement voilà, on a parfois besoin d'appliquer une configuration PHP seulement à un **virtual host** en particulier et non aux autres. Par exemple, on peut souhaiter activer l'affichage des erreurs de PHP pour une application web encore en développement sans modifier la configuration des applications en production. Pour réaliser cette tâche, Apache met à notre disposition les instructions suivantes (valables uniquement pour le module PHP d'Apache) :

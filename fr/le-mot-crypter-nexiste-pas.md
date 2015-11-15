@@ -1,3 +1,5 @@
+# Le mot crypter n'existe pas !
+
 J'entends énormément de gens dire "crypter des données ...". Cependant, c'est une mauvaise habitude car **le mot crypter n'a pas de sens en français** !
 
 En effet, le terme crypter est un **anglicisme**. En français, on devrait dire "**chiffrer** des données ...". En voici la raison :

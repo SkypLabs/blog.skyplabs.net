@@ -1,3 +1,5 @@
+# Retirer la version de Wordpress des en-têtes html
+
 La version de WordPress apparaît par défaut dans les en-têtes HTML, ce qui n'est bien entendu pas une bonne chose d'un point de vue sécurité. Pour la supprimer, il faut rajouter ce bout de code à la fin du fichier **functions.php** de votre thème :
 
     // Pour retirer l'affichage de la version de WordPress dans les en-têtes HTML.

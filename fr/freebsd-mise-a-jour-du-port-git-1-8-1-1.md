@@ -1,3 +1,5 @@
+# [FreeBSD] Mise à jour du port git-1.8.1.1
+
 Si vous aussi vous avez eu quelques difficultés à mettre à jour git vers la version 1.8.1.1 au moyen de son port sous FreeBSD, voici la démarche à suivre pour solutionner votre problème :
 
 1. On commence par supprimer le groupe **git_daemon** :

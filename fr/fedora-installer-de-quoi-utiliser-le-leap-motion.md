@@ -1,3 +1,5 @@
+# [Fedora] Installer de quoi utiliser le Leap Motion
+
 L'utilisation du [Leap Motion][1] sur les systèmes GNU/Linux est officiellement supportée mais seul un paquet DEB est fourni. Nous allons donc voir comment le convertir en paquet RPM fonctionnel pour Fedora.
 
 Tout d'abord, vous devez télécharger la dernière version du [Leap Motion Setup][2] pour Linux :

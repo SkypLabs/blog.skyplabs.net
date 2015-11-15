@@ -1,3 +1,5 @@
+# Télécommander sa télévision et ses autres appareils à infrarouge depuis son smartphone
+
 Je ne sais pas pour vous, mais moi j'ai toujours eu horreur de devoir jongler avec plusieurs télécommandes alors que je ne cherchais qu'à réaliser des tâches plutôt triviales. Une télécommande pour allumer la télévision, une autre pour allumer le home cinema ... et plus on multiplie les appareils électroniques dans son salon, plus on collectionne de télécommandes !
 
 Dans le but de me simplifier la vie, j'ai donc décidé de réaliser un montage électronique pour pouvoir piloter mes appareils à infrarouge depuis un système informatique classique, en particulier depuis mon téléphone portable. Je vais donc détailler dans cet article les différentes étapes de la réalisation ainsi que les différents éléments permettant de reproduire à l'identique le système que j'ai développé.

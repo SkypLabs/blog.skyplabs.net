@@ -1,3 +1,5 @@
+# Modifier la présentation du prompt sous MySQL
+
 Pour modifier la présentation du prompt sous MySQL, il faut éditer la variable d'environnement **MYSQL_PS1** comme dans l'exemple ci-dessous :
 
     export MYSQL_PS1="(\u@\h) [\d]> "

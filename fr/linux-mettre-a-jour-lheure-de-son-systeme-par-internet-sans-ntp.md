@@ -1,3 +1,5 @@
+[Linux] Mettre à jour l'heure de son système par internet sans NTP
+
 Voici une astuce trouvée sur un [forum][1] permettant de mettre à jour l'heure d'un système sous Linux par internet mais sans utiliser NTP :
 
     date -s "$(wget -S  "http://www.google.com/" 2>&1 | grep -E '^[[:space:]]*[dD]ate:' | sed 's/^[[:space:]]*[dD]ate:[[:space:]]*//' | head -1l | awk '{print $1, $3, $2,  $5 ,"GMT", $4 }' | sed 's/,//')"

@@ -1,3 +1,5 @@
+# [FreeBSD] adjkerntz dans une jail
+
 Le programme adjkerntz (installé par défaut sous FreeBSD) permet de maintenir une relation cohérente entre l'horloge du noyau, qui est toujours configurée à l'heure UTC, et l'horloge locale CMOS, qui peut être configurée au fuseau local.
 
 Cependant, au sein d'une jail, seul le fuseau horaire peut être modifié. La jail utilise donc la même heure que celle configurée sur le système hôte. L'utilisation de la commande adjkerntz va donc provoquer une erreur :

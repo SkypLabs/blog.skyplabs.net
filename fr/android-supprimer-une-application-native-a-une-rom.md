@@ -1,3 +1,5 @@
+# [Android] Supprimer une application native à une ROM
+
 Les différents composants du système d'exploitation Android sont installés sur différentes partitions de manière à séparer les données du système de celles des applications utilisateurs. On retrouve donc la partition **system** qui est montée en lecture seule (ro), et la partition **data** qui elle est montée en lecture/écriture (rw).
 
 Cependant, il arrive de trouver dans certaines ROMs des applications utilisateurs installées par défaut dans la partition système. C'était justement le cas de la ROM SFR installée sur le Nexus One de ma copine. L'application Twitter y était installée nativement sans possibilité de la désinstaller.

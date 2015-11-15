@@ -1,3 +1,5 @@
+# [OpenSSH] Too many authentication failures for root
+
 Si vous recevez le message "*Too many authentication failures for root*" lors de l'établissement d'une connexion SSH, c'est généralement dû à un trop grand nombre de tentatives de connexion par clé publique. En effet, si le serveur autorise les connexions par clé et que celle destinée à ce serveur n'est pas spécifiée au client SSH, ce dernier va tester toutes les clés disponibles au moment de la connexion.
 
 Pour palier à ce problème, trois solutions s'offrent à nous :

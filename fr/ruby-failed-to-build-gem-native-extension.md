@@ -1,3 +1,5 @@
+# [Ruby] "Failed to build gem native extension"
+
 Si vous obtenez ce message d'erreur lors de la première utilisation de l'outil **gem**, c'est qu'il vous manque certaines dépendances nécessaires à la création de la "gem native extension".
 
 Pour les installer sous Fedora :

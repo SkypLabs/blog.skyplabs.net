@@ -1,3 +1,5 @@
+# [Bash] De la couleur dans vos scripts
+
 Voici quelques fonctions bien utiles permettant d'écrire des messages dans un terminal avec un code couleur correspondant au type de l'information à afficher :
 
     # Vert

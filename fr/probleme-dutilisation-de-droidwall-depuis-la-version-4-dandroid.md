@@ -1,3 +1,5 @@
+# Problème d'utilisation de Droidwall depuis la version 4 d'Android
+
 Edit : Depuis Jelly Bean (version 4.1.2 dans mon cas), la variable $IPTABLES fournit par Droidwall n'est plus valide. Une petite mise à jour du script s'impose :
 
     ## Netfilter Script by Skyper - http://blog.skyplabs.net ##

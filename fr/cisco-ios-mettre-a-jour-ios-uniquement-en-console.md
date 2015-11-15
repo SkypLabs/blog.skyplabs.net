@@ -1,3 +1,5 @@
+# [Cisco IOS] Mettre à jour IOS uniquement en console
+
 Le première chose à faire avant de chercher à envoyer le nouveau firmware sur l'équipement est de vérifier l'espace disponible dans la mémoire flash interne :
 
     dir flash:

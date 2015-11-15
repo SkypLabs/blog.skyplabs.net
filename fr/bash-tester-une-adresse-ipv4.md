@@ -1,3 +1,5 @@
+# [Bash] Tester une adresse IPv4
+
 La fonction ci-dessous permet de tester une adresse IPv4 pour vérifier qu'elle est bien formée :
 
     function is_ipv4

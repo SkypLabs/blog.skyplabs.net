@@ -1,3 +1,5 @@
+# Allier Android en GUI et Debian en CLI sur la Asus Transformer Prime
+
 Ça y est, j'ai enfin reçu ma tablette tactile, la Asus Transformer Prime !
 
 Pour ceux qui ne la connaissent pas, c'est une tablette qui a la particularité d'être vendue avec un dock clavier (une station d'accueil) lui permettant de se transformer (d'où son nom) en petit ordinateur. Une fois montée sur le dock, on a réellement l'impression que c'est un netbook.

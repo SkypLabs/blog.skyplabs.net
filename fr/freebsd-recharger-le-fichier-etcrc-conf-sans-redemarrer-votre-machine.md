@@ -1,3 +1,5 @@
+# [FreeBSD] Recharger le fichier /etc/rc.conf sans redémarrer votre machine
+
 Voici une petite astuce permettant de gagner du temps :
 
     shutdown now

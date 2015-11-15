@@ -1,3 +1,5 @@
+# [GNOME 3] Désactiver le bluetooth au démarrage
+
 Pour modifier l'état de l'interface bluetooth de votre ordinateur, nous allons utiliser le programme **rfkill**. Assurez-vous qu'il soit bien installé sur votre machine :
 
     yum install rfkill

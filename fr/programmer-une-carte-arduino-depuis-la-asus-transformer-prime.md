@@ -1,3 +1,5 @@
+# Programmer une carte Arduino depuis la Asus Transformer Prime
+
 Maintenant que nous disposons d'une Debian sur notre Transformer Prime (cf : [Allier Android en GUI et Debian en CLI sur la Asus Transformer Prime][1]), il est grand temps de commencer à jouer avec. C'est dans cette optique que j'ai décidé de détailler dans cet article la marche à suivre pour programmer une carte Arduino (**Uno** dans mon cas).
 
 Dans un premier temps, il nous faut préparer notre environnement de développement au sein de la Debian. Un petit coup d'aptitude (ou apt-get, selon vos préférences) et le tour est joué :

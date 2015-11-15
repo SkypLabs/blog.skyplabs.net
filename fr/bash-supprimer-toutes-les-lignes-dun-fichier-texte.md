@@ -1,3 +1,5 @@
+# [Bash] Supprimer toutes les lignes d'un fichier texte
+
 En toute simplicité :
 
     > <fichier>

@@ -1,3 +1,5 @@
+# Quitter sa console sans stopper les processus en cours d'exécution
+
 Ne vous est-il jamais arrivé de devoir quitter votre session actuelle alors qu'un programme en cours d'exécution n'a pas terminé son traitement ? Le contraire serait étonnant. Par exemple, vous avez lancé l'extraction d'une base de données par ssh pour en faire un backup et vous n'avez pas le temps d'attendre gentiment devant votre terminal que son exécution se termine.
 
 Le fait est que lorsqu'on demande de fermer sa session (commande exit, ctl+D, ...), le processus faisant tourner le shell envoie un signal **SIGHUP** à tous ses enfants pour demander leur arrêt. Des tâches comme l'extraction d'une base de données citée dans mon exemple prendront fin à l'instant où la session sera fermée.

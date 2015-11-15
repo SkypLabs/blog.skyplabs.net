@@ -1,3 +1,5 @@
+# [GNOME 3] Associer l'ouverture d'un programme à une extension de fichier
+
 Sous GNOME, l'association d'une extension de fichier à un programme référencé par un fichier de configuration dans **/usr/share/applications** se fait à travers le fichier **/usr/share/applications/defaults.list** de la manière suivante :
 
     application/x-<extension>=<app>;

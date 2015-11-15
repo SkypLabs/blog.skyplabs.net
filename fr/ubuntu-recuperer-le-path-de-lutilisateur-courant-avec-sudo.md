@@ -1,3 +1,5 @@
+# [Ubuntu] Récupérer le PATH de l'utilisateur courant avec sudo
+
 Pour ceux qui se servent de la commande **sudo** sous **Ubuntu**, vous avez surement remarqué que le **PATH** de l'utilisateur courant n'est pas conservé lors de son utilisation. Ça peut être très énervant à la longue.
 
 La raison est simple : sous Ubuntu, la commande sudo a été compilée avec l'option **--with-secure-path** qui permet de définir un PATH différent de celui de l'utilisateur courant pour des raisons de sécurité.

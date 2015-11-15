@@ -1,3 +1,5 @@
+# Test de la carte de développement à capteurs inertiels ATAVRSBIN1 d'Atmel
+
 Avant toute chose, nous allons commencer par un petit rappel de vocabulaire autour des différents capteurs inertiels existants :
 
 * [**Gyroscope**][1] : Capteur indiquant la position angulaire.

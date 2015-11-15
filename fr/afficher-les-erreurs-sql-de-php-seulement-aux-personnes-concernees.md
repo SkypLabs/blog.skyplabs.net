@@ -1,3 +1,5 @@
+# Afficher les erreurs SQL de PHP seulement aux personnes concernées
+
 Il est très fortement conseillé de désactiver l'affichage des erreurs PHP (directive **display_errors** du **php.ini**) de vos applications web pour ne pas révéler des informations pouvant compromettre la sécurité de votre serveur (dans le cas d'un serveur en production).
 
 Seulement voilà, cacher ces erreurs peut gêner l'administrateur à traquer les bugs ainsi que les problèmes liés à la base de données. En effet, c'est beaucoup plus facile de repérer une erreur si elle est affichée lors de l'exécution de la page plutôt que de passer son temps à analyser les logs du service.

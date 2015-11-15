@@ -1,3 +1,5 @@
+# [MediaWiki] Impossible de créer la miniature d'un fichier image
+
 Lorsque j'envoyais une image sur MediaWiki (installé sur ma FreeBSD), j'avais droit à une erreur de ce type :
 
     Erreur lors de la création de la miniature : Impossible d'enregistrer la vignette sur la destination

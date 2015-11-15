@@ -1,3 +1,5 @@
+# Apérobot - Première édition
+
 Apérobot, quel pertinent jeu de mots, pas vrai ? Ce dernier décrit en effet un rassemblement de passionnés de robotique - et plus généralement d'électronique - autour d'un apéritif et dans un cadre bon enfant et convivial.
 
 L'idée d'un tel événement a été lancée lors du dernier salon du modélisme en juin 2011 alors que **l'association de robotique de Caliban** et la société **Teknobot** (plus connue sous le nom de **World of Robot**) partageaient un stand. Et voici le résultat d'une telle rencontre :

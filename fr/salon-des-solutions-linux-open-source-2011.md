@@ -1,3 +1,5 @@
+# Salon des solutions Linux / Open Source 2011
+
 Le salon des solutions Linux et Open Source 2011 s'est déroulé du 10 au 12 Mai dans le Hall Marie Curie du CNIT à la défense - Paris. C'est un salon consacré à tout l'univers du libre dans le monde professionnel.
 
 Pour ne pas changer mes habitudes, je m'y suis rendu une fois de plus le jeudi, accompagné du même et fidèle compagnon que la dernière fois pour le salon RTS Embedded Systems. On ne change pas une équipe qui gagne !

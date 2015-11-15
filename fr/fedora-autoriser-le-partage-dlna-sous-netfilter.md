@@ -1,3 +1,5 @@
+# [Fedora] Autoriser le partage DLNA sous Netfilter
+
 Gnome 3 intègre dans le panel des options une rubrique de partage permettant entre autres de diffuser du contenu multimédia en DLNA. Le serveur sous-jacent utilisé se nomme **rygel** et ce dernier utilise un port d'écoute TCP dynamique.
 
 Seulement voila, **Netfilter** n'est pas configuré par défaut pour laisser passer le trafic DLNA, et encore moins pour détecter quel port d'écoute est utilisé par rygel. Il est donc nécessaire d'entreprendre quelques actions pour rectifier la situation :

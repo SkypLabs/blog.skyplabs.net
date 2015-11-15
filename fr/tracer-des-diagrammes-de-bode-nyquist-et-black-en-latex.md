@@ -1,3 +1,5 @@
+# Tracer des diagrammes de Bode, Nyquist et Black en LaTeX
+
 La meilleure façon de tracer des diagrammes de Bode, Nyquist et Black en LaTeX est d'utiliser le package **bodegraph**. Ce dernier utilise à son tour le package **Tikz**.
 
 Voici la démarche à suivre pour les installer tous les deux (en utilisant la distribution **TexLive**) :

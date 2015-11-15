@@ -1,3 +1,5 @@
+# Montage de test pour le capteur de mouvements AMN31111
+
 La détection de présence possède une place très importante dans une installation domotique. En effet, c'est grâce à elle qu'il est possible de piloter automatiquement ses lumières, son chauffage, ou encore de détecter une présence non autorisée. C'est dans cet esprit que je vais vous présenter un montage de test pour le capteur de mouvements **AMN31111** de **Panasonic**.
 
 Le principe du montage est simple : allumer une LED lorsque le capteur détecte la présence d'un individu. La liste des composants qui ont été utilisés est la suivante :

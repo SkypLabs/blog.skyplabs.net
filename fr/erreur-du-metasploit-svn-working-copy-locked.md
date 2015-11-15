@@ -1,3 +1,5 @@
+# Erreur du Metasploit : "svn: Working copy '.' locked"
+
 Le projet Metasploit utilise des dépôts **Subversion** pour la mise à jour de l'ensemble de ses composants. Traditionnellement, il faut utiliser le script **msfupdate** pour effectuer cette tâche.
 
 Seulement voilà, la dernière fois que j'ai voulu le mettre à jour, j'ai eu droit à l'erreur suivante :

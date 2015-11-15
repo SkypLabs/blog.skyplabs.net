@@ -1,3 +1,5 @@
+# Restreindre l'accès à la commande "su" sous Linux
+
 **edit**: Sur certaines distributions, comme par exemple Fedora, RHEL et CentOS, la restriction de la commande "su" est déjà intégrée. Il est seulement nécessaire de l'activer en décommentant la ligne suivante dans le fichier */etc/pam.d/su* :
 
     # Uncomment the following line to implicitly trust users in the "wheel" group.

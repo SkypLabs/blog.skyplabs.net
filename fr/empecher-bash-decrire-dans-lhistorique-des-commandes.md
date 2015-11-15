@@ -1,3 +1,5 @@
+# Empêcher Bash d'écrire dans l'historique des commandes
+
 **edit** : Une autre solution beaucoup plus propre m'a été proposée (voir les commentaires) pour réaliser exactement la même chose :
 
     export HISTFILE=/dev/null
