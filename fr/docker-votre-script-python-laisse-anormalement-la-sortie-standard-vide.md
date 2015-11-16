@@ -1,4 +1,6 @@
-Lors de l'utilisation de l'[image Docker officielle][1] pour les programmes écrits en Python, il arrive régulièrement que la sortie standard reste anormalement vide :
+# [Docker] Votre script Python laisse anormalement la sortie standard vide
+
+Lors de l'exécution d'un programme écrit en Python dans un conteneur Docker, il arrive régulièrement que la sortie standard reste anormalement vide :
 
     $ docker logs my-app
     $
@@ -14,5 +16,3 @@ Et ainsi :
     $ docker logs my-app
     It works !
     $
-
- [1]: https://hub.docker.com/_/python/
