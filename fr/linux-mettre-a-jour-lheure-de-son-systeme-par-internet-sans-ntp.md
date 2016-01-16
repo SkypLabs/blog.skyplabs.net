@@ -1,4 +1,4 @@
-[Linux] Mettre à jour l'heure de son système par internet sans NTP
+# [Linux] Mettre à jour l'heure de son système par internet sans NTP
 
 Voici une astuce trouvée sur un [forum][1] permettant de mettre à jour l'heure d'un système sous Linux par internet mais sans utiliser NTP :
 
