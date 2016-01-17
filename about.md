@@ -1,15 +1,8 @@
 ---
 layout: page
-title: About
+title: "À propos"
 permalink: /about/
 ---
+Ce blog est destiné à vous faire partager ma passion pour l’informatique, l’électronique et l’univers du libre. Il se compose d’articles traitant de divers sujets, aussi bien techniques que tout public.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+J’espère qu’il pourra vous être profitable !
