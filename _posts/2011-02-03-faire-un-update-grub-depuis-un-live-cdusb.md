@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Faire un update-grub depuis un live CD/USB"
-categories: SysAdmin
-tags: grub
+categories:
+    - SysAdmin
+tags:
+    - GRUB
 ---
 Sur toutes les machines dont je dispose à mon domicile, je n'ai installé Windows que sur une seule d'entre elles en multiboot avec Ubuntu (et oui, il faut avouer qu'avoir un Windows sous la main est toujours utile malgré tout). Cependant, ce vilain petit canard m'a causé quelques soucis lorsque j'ai réinstallé mes systèmes sur cet ordinateur (à cause d'un changement de disque dur).
 

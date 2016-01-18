@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Quitter sa console sans stopper les processus en cours d'exécution"
-categories: SysAdmin
-tags: nohup
+categories:
+    - SysAdmin
+tags:
+    - nohup
 ---
 Ne vous est-il jamais arrivé de devoir quitter votre session actuelle alors qu'un programme en cours d'exécution n'a pas terminé son traitement ? Le contraire serait étonnant. Par exemple, vous avez lancé l'extraction d'une base de données par SSH pour en faire un backup et vous n'avez pas le temps d'attendre gentiment devant votre terminal que son exécution se termine.
 

@@ -1,8 +1,12 @@
 ---
 layout: post
 title: "Sniffer le réseau avec Wireshark sans le compte root"
-categories: SysAdmin, Hacking / Sécurité, Réseau
-tags: wireshark
+categories:
+    - SysAdmin
+    - Hacking et Sécurité
+    - Réseau
+tags:
+    - Wireshark
 ---
 Wireshark est un outil d'analyse qui permet de "sniffer" les informations qui passent à travers les interfaces réseau du système sur lequel il est installé. Il est très utilisé car c'est un logiciel complet, multiplateforme et libre. Je me demande d'ailleurs pourquoi je perds mon temps à vous le présenter étant donné que je suis sûr qu'il est déjà installé sur votre ordinateur ou même sur votre téléphone pour les plus bidouilleurs d'entre vous ...
 

@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Calcul des angles d'Euler avec un accéléromètre"
-categories: Physique
-tags: Accéléromètre, Euler
+categories:
+    - Physique
+tags:
+    - Accéléromètre
+    - Euler
 ---
 Les angles d'Euler permettent de décrire l'orientation d'un objet dans un espace à \\(n\\) dimensions. Ici, nous considérons un espace à 3 dimensions.
 
