@@ -16,9 +16,7 @@ Ceci étant, pour pouvoir sniffer le réseau avec cet outil, vous devez le lance
 
 Pour pouvoir quand même récupérer le trafic réseau sans lancer Wireshark avec le compte root, nous allons nous servir de l'outil `dumpcap` (qui est inclus dans le paquet `wireshark-common`) pour la capture et Wireshark servira seulement à traiter les informations recueillies. Voici donc comment faire :
 
-{% highlight bash linenos %}
-sudo dumpcap -i eth0 -w - | wireshark -k -i -
-{% endhighlight %}
+	sudo dumpcap -i eth0 -w - | wireshark -k -i -
 
 Grâce à cette méthode, vous pouvez utiliser pleinement les fonctionnalités de Wireshark en live en prenant un minimum de risques.
 

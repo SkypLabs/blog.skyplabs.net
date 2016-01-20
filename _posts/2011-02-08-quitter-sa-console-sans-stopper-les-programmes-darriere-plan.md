@@ -14,10 +14,8 @@ Pour modifier ce comportement, il existe une commande appelée `nohup` qui perme
 
 Je précise qu'il est préférable de lancer la commande en tâche de fond pour pouvoir fermer sa session proprement comme dans l'exemple suivant :
 
-{% highlight bash linenos %}
-nohup mysqldump -u root -pmonsuperpassword --all-databases > mon_backup.db &
-exit
-{% endhighlight %}
+	nohup mysqldump -u root -pmonsuperpassword --all-databases > mon_backup.db &
+	exit
 
 Lors de l'ouverture de la prochaine session, vous trouverez donc le résultat de la commande `mysqldump` dans le fichier `mon_backup.db`.
 

@@ -14,14 +14,12 @@ Ce n'est qu'après coup que j'ai compris le soucis : après l'installation de Wi
 
 Donc pour la manipulation (sur le Live CD/USB), en supposant que la partition du système GNU/Linux à récupérer soit `sdb1` :
 
-{% highlight bash linenos %}
-mount /dev/sdb1 /mnt
-mount --bind /dev /mnt/dev
-mount --bind /proc /mnt/proc
-mount --bind /sys /mnt/sys
-chroot /mnt
-update-grub
-{% endhighlight %}
+	mount /dev/sdb1 /mnt
+	mount --bind /dev /mnt/dev
+	mount --bind /proc /mnt/proc
+	mount --bind /sys /mnt/sys
+	chroot /mnt
+	update-grub
 
 Logiquement, tout devrait bien se passer. Une fois la configuration de Grub mise à jour, vous pouvez redémarrer l'ordinateur et profiter de votre distribution fraîchement installée !
 
