@@ -21,4 +21,4 @@ Pour pouvoir quand même récupérer le trafic réseau sans lancer Wireshark ave
 Grâce à cette méthode, vous pouvez utiliser pleinement les fonctionnalités de Wireshark en live en prenant un minimum de risques.
 
 [NVD]: https://nvd.nist.gov/
-[NVD Wireshark]: {{ site.url }}/images/NVD-Wireshark.png "Capture d'écran du résultat de la recherche à propos de Wireshark sur le site de la NVD"
+[NVD Wireshark]: /images/NVD-Wireshark.png "Capture d'écran du résultat de la recherche à propos de Wireshark sur le site de la NVD"
