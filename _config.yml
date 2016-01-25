@@ -15,6 +15,9 @@ url: "http://blog.skyplabs.net" # the base hostname & protocol for your site
 twitter_username: SkypLabs
 github_username: SkypLabs
 
+# Plugins
+gems: [jekyll-paginate]
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -28,6 +31,10 @@ baseurl: "" # does not include hostname
 # Outputting
 permalink: :year/:month/:day/:title/
 timezone: Europe/Paris
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num"
 
 kramdown:
   input: GFM
