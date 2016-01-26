@@ -7,20 +7,23 @@
 
 # Site settings
 title: Skyper's Blog
-email: skyper@skyplabs.net
 description: > # this means to ignore newlines until "baseurl:"
   Blog d'un passionné d'informatique, d'électronique, de sciences …
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.skyplabs.net" # the base hostname & protocol for your site
-twitter_username: SkypLabs
-github_username: SkypLabs
 
 # Plugins
 gems: [jekyll-paginate]
 
+# Handling Reading
+exclude: ["README.md"]
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
 
 # Serving
 detach: true
@@ -36,5 +39,8 @@ timezone: Europe/Paris
 paginate: 5
 paginate_path: "/page:num"
 
-kramdown:
-  input: GFM
+# Author
+social:
+  twitter: SkypLabs
+  github: SkypLabs
+  email: skyper@skyplabs.net
