@@ -3,7 +3,7 @@ layout: page
 title: "Me contacter"
 permalink: /contact/
 ---
-Voici mon adresse e-mail : [{{ site.social.email }}](mailto:{{ site.social.email }})
+Voici mon adresse e-mail : [{{ site.data.author.email }}](mailto:{{ site.data.author.email }})
 
 Et ci-dessous, ma clé [PGP][PGP] :
 

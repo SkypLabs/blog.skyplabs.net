@@ -38,9 +38,3 @@ timezone: Europe/Paris
 # Pagination
 paginate: 5
 paginate_path: "/page:num"
-
-# Author
-social:
-  twitter: SkypLabs
-  github: SkypLabs
-  email: skyper@skyplabs.net
