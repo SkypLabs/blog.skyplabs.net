@@ -9,6 +9,15 @@
       <p class="lead">{{ site.description }}</p>
     </div>
 
+    <div class="sidebar-links">
+        <a class="icon-github" href="https://github.com/{{ site.data.author.github | prepend: site.baseurl }}"></a>
+        <a class="icon-docker-hub" href="https://hub.docker.com/u/{{ site.data.author.docker-hub | prepend: site.baseurl }}"></a>
+        <a class="icon-twitter" href="https://twitter.com/{{ site.data.author.twitter | prepend: site.baseurl }}"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/in/{{ site.data.author.linkedin | prepend: site.baseurl }}"></a>
+        <a class="icon-email" href="mailto:{{ site.data.author.email }}"></a>
+        <a class="icon-rss" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
+    </div>
+
     <nav class="sidebar-nav">
       {% for item in site.data.nav %}
         <a class="sidebar-nav-item{% if page.url == item.link %} active{% endif %}" href="{{ item.link }}">{{ item.name}}</a>
