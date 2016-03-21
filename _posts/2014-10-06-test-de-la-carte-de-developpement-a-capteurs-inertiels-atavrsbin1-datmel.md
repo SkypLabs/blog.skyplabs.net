@@ -58,56 +58,56 @@ Une fois les valeurs récupérées, il sera nécessaire d'effectuer quelques op�
 
 Enfin, voici le code utilisé pour cet exemple :
 
-{% highlight c++ linenos %}
-    #include <Wire.h>
-    
-    void setup()
-    {
-        Wire.begin();
-        Serial.begin(9600);
-    }
-    
-    const float gyro_factor = 14.375;
-    
-    byte reading[8];
-    short temp_out = 0, x = 0, y = 0, z = 0;
-    float gyro_x = 0, gyro_y = 0, gyro_z = 0, temp = 0;
-    
-    void loop()
-    {
-        int i = 0;
-    
-        Wire.beginTransmission(0x68);       // ITG_3200 address
-        Wire.write(byte(0x1b));             // TEMP_OUT_H address
-        Wire.endTransmission(false);
-    
-        Wire.requestFrom(0x68, 8);
-    
-        while (Wire.available())
-        {
-            reading[i] = Wire.read();
-            i++;
-        }
-    
-        temp_out = (reading[0] << 8) | reading[1];
-        temp = 35 + (temp_out + 13200) / 280.0;
-    
-        x = (reading[2] << 8) | reading[3];
-        gyro_x = x / gyro_factor;
-        y = (reading[4] << 8) | reading[5];
-        gyro_y = y / gyro_factor;
-        z = (reading[6] << 8) | reading[7];
-        gyro_z = z / gyro_factor;
-    
-        Serial.println(temp);
-        Serial.println(gyro_x);
-        Serial.println(gyro_y);
-        Serial.println(gyro_z);
-        Serial.println("------------");
-    
-        Wire.endTransmission();
-        delay(1000);
-    }
+{% highlight c++ %}
+#include <Wire.h>
+
+void setup()
+{
+	Wire.begin();
+	Serial.begin(9600);
+}
+
+const float gyro_factor = 14.375;
+
+byte reading[8];
+short temp_out = 0, x = 0, y = 0, z = 0;
+float gyro_x = 0, gyro_y = 0, gyro_z = 0, temp = 0;
+
+void loop()
+{
+	int i = 0;
+
+	Wire.beginTransmission(0x68);       // ITG_3200 address
+	Wire.write(byte(0x1b));             // TEMP_OUT_H address
+	Wire.endTransmission(false);
+
+	Wire.requestFrom(0x68, 8);
+
+	while (Wire.available())
+	{
+		reading[i] = Wire.read();
+		i++;
+	}
+
+	temp_out = (reading[0] << 8) | reading[1];
+	temp = 35 + (temp_out + 13200) / 280.0;
+
+	x = (reading[2] << 8) | reading[3];
+	gyro_x = x / gyro_factor;
+	y = (reading[4] << 8) | reading[5];
+	gyro_y = y / gyro_factor;
+	z = (reading[6] << 8) | reading[7];
+	gyro_z = z / gyro_factor;
+
+	Serial.println(temp);
+	Serial.println(gyro_x);
+	Serial.println(gyro_y);
+	Serial.println(gyro_z);
+	Serial.println("------------");
+
+	Wire.endTransmission();
+	delay(1000);
+}
 {% endhighlight %}
 
 [gyroscope]: http://fr.wikipedia.org/wiki/Gyroscope

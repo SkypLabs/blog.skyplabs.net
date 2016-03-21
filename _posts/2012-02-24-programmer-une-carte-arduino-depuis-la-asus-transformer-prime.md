@@ -18,7 +18,7 @@ Il va également nous falloir de quoi écrire notre code. Pour ma part, mon choi
 
 Nous sommes enfin prêts à écrire notre code. Je vous propose donc un exemple de programme très simple à réaliser qui va tout simplement faire clignoter la LED située sur la carte :
 
-{% highlight c++ linenos %}
+{% highlight c++ %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -45,7 +45,7 @@ int main(void)
 
 La dernière étape est de réaliser un Makefile qui va nous servir à automatiser la phase de compilation ainsi que l'envoi du programme dans la mémoire de la carte :
 
-{% highlight makefile linenos %}
+{% highlight makefile %}
 MCU         = atmega328p
 TARGET_ARCH = -mmcu=$(MCU)
 TARGET      = main

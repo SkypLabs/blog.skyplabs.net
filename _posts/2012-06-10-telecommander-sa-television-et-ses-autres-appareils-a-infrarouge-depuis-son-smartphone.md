@@ -28,7 +28,7 @@ Le protocole de communication infrarouge utilisé par ma télévision et par mon
 
 Pour mener à bien mon projet, j'avais besoin de récupérer l'adresse de mes différents appareils ainsi que le code des commandes à transmettre pour pouvoir les reproduire depuis mon montage électronique. Heureusement, j'ai la chance de posséder un récepteur infrarouge sur mon ordinateur portable. J'ai donc utilisé l'utilitaire **mode2** du projet [LIRC][lirc] pour récupérer la durée des impulsions générées par mes télécommandes et ainsi interpréter leur signification. Pour accélérer ce travail rébarbatif, j'ai écrit très rapidement un petit script bash qui me retourne la valeur décimale de la commande contenue dans la trame :
 
-{% highlight bash linenos %}
+{% highlight bash %}
 #!/bin/bash
 
 # Retourne la valeur décimale de la commande contenue dans les trames
@@ -117,7 +117,7 @@ Par exemple, pour allumer ma télévision, je dois envoyer la chaîne `007007153
 
 Voici le code développé pour la carte Arduino (à compiler avec le SDK officiel) :
 
-{% highlight c++ linenos %}
+{% highlight c++ %}
 // Original code by Lucas Eckels
 // http://lucaseckels.com
 

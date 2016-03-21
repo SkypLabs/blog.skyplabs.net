@@ -8,7 +8,7 @@ tags:
 ---
 La fonction ci-dessous permet de tester une adresse IPv4 pour vérifier qu'elle est bien formée :
 
-{% highlight php linenos %}
+{% highlight bash %}
 function is_ipv4
 {
 	echo $1 | grep -Eq '\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}\b'
@@ -19,7 +19,7 @@ function is_ipv4
 
 Et voici un exemple d'utilisation :
 
-{% highlight php linenos %}
+{% highlight bash %}
 is_ipv4 $ip
 
 if [ "$?" -ne 0 ]

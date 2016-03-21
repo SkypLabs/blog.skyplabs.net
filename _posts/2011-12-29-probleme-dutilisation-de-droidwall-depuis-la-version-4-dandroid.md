@@ -10,16 +10,14 @@ tags:
 ---
 Edit : Depuis Jelly Bean (version 4.1.2 dans mon cas), la variable `$IPTABLES` fournit par Droidwall n'est plus valide. Une petite mise à jour du script s'impose :
 
-{% highlight bash linenos %}
-## Netfilter Script by Skyper - http://blog.skyplabs.net ##
+	## Netfilter Script by Skyper - http://blog.skyplabs.net ##
 
-# Permet de corriger un problème d'exploitation de Droidwall depuis ICS.
+	# Permet de corriger un problème d'exploitation de Droidwall depuis ICS.
 
-IPTABLES=/system/bin/iptables
+	IPTABLES=/system/bin/iptables
 
-$IPTABLES -D OUTPUT -j droidwall
-$IPTABLES -I OUTPUT 2 -j droidwall
-{% endhighlight %}
+	$IPTABLES -D OUTPUT -j droidwall
+	$IPTABLES -I OUTPUT 2 -j droidwall
 
 * * *
 
@@ -31,14 +29,12 @@ Mais depuis la version 4 d'Android (nommée **Ice Cream Sandwich**), Google a in
 
 La règle correspondante à Droiwall se situe après celle qui autorise l'ensemble du trafic à sortir. Pour corriger ce problème, j'ai écris un petit script de règles Netfilter que je fais exécuter par Droidwall (via une de ses options) pour modifier la position de la règle citée plus haut. Voici le script en question :
 
-{% highlight bash linenos %}
-## Netfilter Script by Skyper - http://blog.skyplabs.net ##
+	## Netfilter Script by Skyper - http://blog.skyplabs.net ##
 
-# Permet de corriger un problème d'exploitation de Droidwall depuis ICS.
+	# Permet de corriger un problème d'exploitation de Droidwall depuis ICS.
 
-$IPTABLES -D OUTPUT -j droidwall
-$IPTABLES -I OUTPUT 2 -j droidwall
-{% endhighlight %}
+	$IPTABLES -D OUTPUT -j droidwall
+	$IPTABLES -I OUTPUT 2 -j droidwall
 
 Après avoir copié ce petit script sur votre carte SD, il vous faut utiliser l'option [Set Custom Script][droidwall_custom_script] de Droidwall pour lui demander de l'exécuter à chacune de ses activations. Dans la zone de texte prévue à cet effet, il vous faut écrire :
 

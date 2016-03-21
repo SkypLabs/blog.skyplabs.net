@@ -14,7 +14,8 @@ Seulement voilà, cacher ces erreurs peut gêner l'administrateur à traquer les
 
 Concernant les erreurs liées à la base de données, j'utilise une astuce maison dans le cadre d'une application avec authentification. En effet, j'affiche les erreurs SQL seulement si l'utilisateur connecté est administrateur. À supposer que la variable `$_SESSION['status']` contient le niveau de permissions de l'utilisateur connecté, voici un exemple pour la connexion et l'exploitation d'une base de données en PHP (avec [PDO][PDO]) :
 
-{% highlight php linenos %}
+{% highlight php %}
+<?php
 // Déclaration des variables de connexion.
 $db_type = "";
 $db_host = "";
@@ -60,14 +61,17 @@ function mySqlError($db)
 		echo "Erreur : Veuillez nous excuser, une erreur SQL s'est produite.";
 	}
 }
+?>
 {% endhighlight %}
 
 Et lors d'une requête SQL :
 
-{% highlight php linenos %}
+{% highlight php %}
+<?php
 $exemple_of_query = $db->prepare("INSERT INTO table VALUES (:var1, :var2, :var3)");
 $exemple_of_query->execute(array('var1' => $var1, 'var2' => $var2, 'var3' => $var3))
 or die(mySqlError($db));
+?>
 {% endhighlight %}
 
 Il est bien sûr possible d'adapter cette astuce pour d'autres utilisations que le SQL.

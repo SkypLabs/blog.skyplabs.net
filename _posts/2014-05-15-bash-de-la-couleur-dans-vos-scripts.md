@@ -8,7 +8,7 @@ tags:
 ---
 Voici quelques fonctions bien utiles permettant d'écrire des messages dans un terminal avec un code couleur correspondant au type de l'information à afficher :
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # Vert
 function echo_OK {
 	echo -e "\033[32m[OK]\033[0m $@"
