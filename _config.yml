@@ -13,10 +13,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.skyplabs.net" # the base hostname & protocol for your site
 
 # Plugins
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Handling Reading
-exclude: ["README.md"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
 
 # Build settings
 markdown: kramdown
@@ -24,12 +32,7 @@ highlighter: rouge
 
 kramdown:
   input: GFM
-
-# Serving
-detach: true
-port: 4000
-host: 127.0.0.1
-baseurl: "" # does not include hostname
+  syntax_highlighter: rouge
 
 # Outputting
 permalink: :year/:month/:day/:title/
