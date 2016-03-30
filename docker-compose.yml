@@ -1,5 +1,5 @@
 skyplabs-blog:
-    image: skyplabs-blog
+    build: .
     volumes:
         - .:/usr/src/app:z
     ports:
