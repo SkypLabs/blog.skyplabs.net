@@ -1,0 +1,6 @@
+skyplabs-blog:
+    image: skyplabs-blog
+    volumes:
+        - .:/usr/src/app:z
+    ports:
+        - "4000:4000"
