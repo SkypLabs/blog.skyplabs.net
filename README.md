@@ -1,10 +1,12 @@
-# SkypLabs Blog
+# Skyper's Blog
 
-This repository contains all the articles published on the [SkypLabs blog][1].
+My personal [blog][blog] using [Jekyll][jekyll].
 
 ## License
 
-[CC BY-NC 4.0][2]
+All the articles and images are [CC BY-NC 4.0][CC] licensed. The rest is [MIT][MIT] licensed.
 
- [1]: http://blog.skyplabs.net
- [2]: http://creativecommons.org/licenses/by-nc/4.0/
+ [blog]: http://blog.skyplabs.net
+ [jekyll]: http://jekyllrb.com/
+ [CC]: http://creativecommons.org/licenses/by-nc/4.0/
+ [MIT]: http://opensource.org/licenses/MIT
