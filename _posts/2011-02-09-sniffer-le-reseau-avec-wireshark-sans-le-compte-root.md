@@ -12,6 +12,8 @@ Wireshark est un outil d'analyse qui permet de "sniffer" les informations qui pa
 
 Ceci étant, pour pouvoir sniffer le réseau avec cet outil, vous devez le lancer depuis le compte root pour qu'il puisse passer la carte réseau sélectionnée pour la capture en mode **promiscuous**, ce qui n'est pas très bon pour la sécurité de votre machine. En effet, Wireshark n'est pas réputé pour sa sécurité sans faille. D'ailleurs, une simple recherche dans la **[National Vulnerability Database][NVD]** (NVD) retourne 110 résultats, ce qui est déjà pas mal.
 
+<!--more-->
+
 ![Capture d'écran du résultat de la recherche à propos de Wireshark sur le site de la NVD][NVD Wireshark]
 
 Pour pouvoir quand même récupérer le trafic réseau sans lancer Wireshark avec le compte root, nous allons nous servir de l'outil `dumpcap` (qui est inclus dans le paquet `wireshark-common`) pour la capture et Wireshark servira seulement à traiter les informations recueillies. Voici donc comment faire :

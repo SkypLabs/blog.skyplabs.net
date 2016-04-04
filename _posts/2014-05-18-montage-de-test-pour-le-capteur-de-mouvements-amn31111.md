@@ -17,6 +17,8 @@ Le principe du montage est simple : allumer une LED lorsque le capteur détecte 
 
 Tous les composants listés ci-dessus peuvent se commander chez [Farnell][farnell]. Les détails de la réalisation vont être présentés par étapes successives.
 
+<!--more-->
+
 ## LED
 
 Il est nécessaire de limiter le passage du courant qui circulera dans la LED à l'aide d'une résistance. J'ai utilisé une LED blanche possédant une tension de seuil \\(V_{seuil}\\) de 3,5 V et j'ai arbitrairement choisi de la faire fonctionner avec un courant \\(I_{LED}\\) de 20 mA. Le calcul de la résistance \\(R_{LED}\\) est donc le suivant :

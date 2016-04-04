@@ -12,6 +12,8 @@ L'idée d'un tel événement a été lancée lors du dernier salon du modélisme
 
 ![Apérobot - Salon du modélisme](/images/aperobot-premiere-edition-1.jpg)
 
+<!--more-->
+
 C'est après avoir placé des robots sur les chaises autour de la table que les mots "apéro", "robot", puis "Apérobot" sont sorti de la bouche d'**Harold Knoll**, l'un des deux fondateurs de World of Robot. Un nouveau concept était né et déjà une première session fut programmée pour la rentrée de septembre.
 
 C'est donc le **mercredi 7 septembre 2011** que je me suis rendu dans les locaux de World of Robot au **154 rue Oberkampf dans le 11ème arrondissement de Paris** pour participer à cette première édition. Leur objectif est d'en organiser une chaque premier mercredi du mois entre 18h et 20h. Cependant, il se peut que l'organisation change au fil du temps donc, pour ceux que ça intéresse, tenez vous au courant des éventuelles modifications sur [le site de l'association Caliban][site_caliban] ou sur [la page Facebook de World Of Robot][facebook_world_of_robot].

@@ -12,6 +12,8 @@ Il est très fortement conseillé de désactiver l'affichage des erreurs PHP (di
 
 Seulement voilà, cacher ces erreurs peut gêner l'administrateur à traquer les bugs ainsi que les problèmes liés à la base de données. En effet, c'est beaucoup plus facile de repérer une erreur si elle est affichée lors de l'exécution de la page plutôt que de passer son temps à analyser les logs du service.
 
+<!--more-->
+
 Concernant les erreurs liées à la base de données, j'utilise une astuce maison dans le cadre d'une application avec authentification. En effet, j'affiche les erreurs SQL seulement si l'utilisateur connecté est administrateur. À supposer que la variable `$_SESSION['status']` contient le niveau de permissions de l'utilisateur connecté, voici un exemple pour la connexion et l'exploitation d'une base de données en PHP (avec [PDO][PDO]) :
 
 {% highlight php %}

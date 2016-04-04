@@ -21,6 +21,8 @@ $$G_{P} =
 \left( \begin{array}{c} G_{Px} \\ G_{Py} \\ G_{Pz} \end{array} \right) =
 R \; (\vec{g}-\vec{a_{r}})$$
 
+<!--more-->
+
 \\(G_{P}\\) correspond à la sortie de l'accéléromètre. Elle se décompose en trois composantes réunies au sein d'un vecteur. Chacune de ces composantes correspond à une dimension de notre espace tridimensionnel. \\(R\\) est la matrice de rotation qui vient décrire l'orientation de notre objet dans cet espace. \\(\vec{g}\\) est un vecteur représentant le champ gravitationnel terrestre et \\(\vec{a}_{r}\\) l'accélération linéaire mesurée dans le référentiel terrestre \\(r\\).
 
 Lorsque \\(\vec{a_{r}} = \vec{0}\\) :

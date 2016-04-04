@@ -16,6 +16,8 @@ Dans un premier temps, il nous faut préparer notre environnement de développem
 
 Il va également nous falloir de quoi écrire notre code. Pour ma part, mon choix s'est tourné vers **vim**. De plus, l'utilisation d'un Makefile va grandement nous faciliter la vie. Prenez donc le temps d'installer **make** en plus du reste.
 
+<!--more-->
+
 Nous sommes enfin prêts à écrire notre code. Je vous propose donc un exemple de programme très simple à réaliser qui va tout simplement faire clignoter la LED située sur la carte :
 
 {% highlight c++ %}

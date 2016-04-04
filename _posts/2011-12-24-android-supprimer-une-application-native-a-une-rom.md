@@ -12,6 +12,8 @@ Cependant, il arrive de trouver dans certaines ROMs des applications utilisateur
 
 Pour remédier à ce désagrément, il est nécessaire d'avoir accès au compte **root** pour pouvoir monter temporairement la partition système en rw. De plus, l'installation du [SDK][android_sdk] va nous permettre de récupérer le shell de notre androphone directement depuis un ordinateur (pour pouvoir utiliser un vrai clavier physique).
 
+<!--more-->
+
 Les étapes de réalisation sont les suivantes :
 
 1. Activer le mode **USB debugging** de votre androphone.

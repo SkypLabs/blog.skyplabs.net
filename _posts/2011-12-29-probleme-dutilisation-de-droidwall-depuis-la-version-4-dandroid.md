@@ -23,6 +23,8 @@ Edit : Depuis Jelly Bean (version 4.1.2 dans mon cas), la variable `$IPTABLES` f
 
 Droidwall est une application Android permettant d'autoriser ou non l'accès au réseau à une application installée sur le système en question. Pour ce faire, elle rajoute une série de règles **Netfilter** (via l'utilitaire userland **iptables**) selon la configuration donnée par l'utilisateur.
 
+<!--more-->
+
 Mais depuis la version 4 d'Android (nommée **Ice Cream Sandwich**), Google a intégré à son système la possibilité de visualiser la consommation data réalisée par l'ensemble des applications qui y sont installées. Cela se traduit par l'ajout de nouvelles règles Netfilter dans les chaînes `INPUT` et `OUTPUT`. Le soucis est que ces nouvelles règles viennent perturber le bon fonctionnement de Droidwall. Voyez par vous même :
 
 ![Screenshot netfilter Android - before](/images/probleme-droidwall-1.png)

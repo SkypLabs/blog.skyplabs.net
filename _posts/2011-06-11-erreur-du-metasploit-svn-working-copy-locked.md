@@ -15,6 +15,8 @@ Seulement voilà, la dernière fois que j'ai voulu le mettre à jour, j'ai eu dr
     svn: Working copy '.' locked
     svn: run 'svn cleanup' to remove locks (type 'svn help cleanup' for details)
 
+<!--more-->
+
 Cette erreur peut survenir lorsque le programme `svn` a été interrompu pendant une opération sur votre copie locale (pour plus de détails, [cliquez ici][svn_cleanup]).
 
 Pour résoudre ce problème, il faut utiliser l'option `cleanup` de svn, comme mentionné dans le message d'erreur. La seule difficulté est qu'il faut appliquer cette commande à l'ensemble des dépôts locaux des différents composants du projet (car dans mon cas, ce problème ne provenait pas que d'un seul dépôt). Voici comment faire :

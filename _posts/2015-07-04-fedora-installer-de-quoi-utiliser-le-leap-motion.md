@@ -22,6 +22,8 @@ Ensuite, nous allons utiliser l'outil `alien` pour faire la conversion. Si ce de
     # Pour Fedora > 21
     sudo dnf install alien
 
+<!--more-->
+
 Nous pouvons maintenant procéder à la conversion :
 
     sudo alien -r Leap-*-x64.deb

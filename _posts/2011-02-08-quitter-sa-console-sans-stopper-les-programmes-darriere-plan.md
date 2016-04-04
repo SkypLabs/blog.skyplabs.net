@@ -10,6 +10,8 @@ Ne vous est-il jamais arrivé de devoir quitter votre session actuelle alors qu'
 
 Le fait est que lorsqu'on demande de fermer sa session (commande exit, ctl+D, ...), le processus faisant tourner le shell envoie un signal [SIGHUP][SIGHUP] à tous ses enfants pour demander leur arrêt. Des tâches comme l'extraction d'une base de données citée dans mon exemple prendront fin à l'instant où la session sera fermée.
 
+<!--more-->
+
 Pour modifier ce comportement, il existe une commande appelée `nohup` qui permet d'indiquer à un programme de ne pas réagir lors de la réception d'un signal [SIGHUP][SIGHUP] et donc de poursuivre son exécution même après la fermeture de la session ayant servi à le lancer. Concrètement, il faut passer en argument à la commande `nohup` la commande désirée à proprement parlé pour empêcher sa fermeture. Les canaux de sortie et d'erreur standards sont redirigés par défaut vers un fichier appelé `nohup.out`. On peut bien entendu préciser explicitement vers quel fichier on veut rediriger ces canaux.
 
 Je précise qu'il est préférable de lancer la commande en tâche de fond pour pouvoir fermer sa session proprement comme dans l'exemple suivant :

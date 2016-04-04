@@ -16,6 +16,8 @@ Seulement voilà, on a parfois besoin d'appliquer une configuration PHP seulemen
     php_flag <directive> <on|off>
     php_admin_flag <directive> <on|off>
 
+<!--more-->
+
 Pour pouvoir les utiliser au sein d'un `.htaccess`, il faut posséder les privilèges `AllowOverride Options` ou `AllowOverride All`.
 
 Les instructions `php_value` et `php_admin_value` permettent de modifier la valeur de la directive précisée en paramètre. Exemple :

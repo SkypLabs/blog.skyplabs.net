@@ -11,6 +11,8 @@ Le salon des solutions Linux et Open Source 2011 s'est déroulé du 10 au 12 Mai
 
 Pour ne pas changer mes habitudes, je m'y suis rendu une fois de plus le jeudi, accompagné du même et fidèle compagnon que la dernière fois pour le salon RTS Embedded Systems. On ne change pas une équipe qui gagne !
 
+<!--more-->
+
 Le premier stand visible depuis l'entrée du salon était celui de **Microsoft**. Comme par hasard ! Pour rappel, Microsoft était un des "Gold Sponsors" de l'événement et ce n'est pas la première fois que la firme de Redmond est présente sur ce salon. On peut d'ailleurs dire qu'ils essayent de plus en plus de se rapprocher des acteurs de l'open source, comme en témoigne [cet article][microsoft_open_source]. Malheuresement pour eux, ils n'arrivent pas encore à convaincre beaucoup de monde. La preuve en image :
 
 ![Stand Microsoft avec une troll face - Salon Linux 2011](/images/Salon-Solutions-Linux-2011-1.jpg)

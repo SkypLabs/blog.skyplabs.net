@@ -18,6 +18,8 @@ La commande `su` permet de changer temporairement son identité pour celle d'un 
 
 Il peut être très intéressant de restreindre l'accès à cette commande dans le but de renforcer la sécurité de sa machine. On va donc autoriser son exécution seulement aux utilisateurs qui en ont vraiment besoin.
 
+<!--more-->
+
 Pour ce faire, je vais utiliser la même méthode que celle utilisée sur FreeBSD, à savoir restreindre l'accès à la commande `su` seulement aux membres du groupe `wheel`. Voici les différentes étapes :
 
 * Création du groupe `wheel` :

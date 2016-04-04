@@ -12,6 +12,8 @@ Je ne sais pas pour vous, mais moi j'ai toujours eu horreur de devoir jongler av
 
 Dans le but de me simplifier la vie, j'ai donc décidé de réaliser un montage électronique pour pouvoir piloter mes appareils à infrarouge depuis un système informatique classique, en particulier depuis mon téléphone portable. Je vais donc détailler dans cet article les différentes étapes de la réalisation ainsi que les différents éléments permettant de reproduire à l'identique le système que j'ai développé.
 
+<!--more-->
+
 Pour commencer, un petit aperçu de la réalisation s'impose. Les principaux appareils que je désirais pouvoir contrôler à distance depuis mon smartphone sont ma télévision et mon home cinema. Le principal obstacle à cela est qu'aucun téléphone récent ne possède d'interface **infrarouge**. Il est donc impossible de faire communiquer le téléphone directement avec mon installation multimédia, d'où la réalisation d'un montage électronique qui servira d'intermédiaire. En effet, ce petit montage va jouer le rôle de "proxy", l'échange entre le téléphone et ce dernier se faisant en **bluetooth**. Ce choix m'est apparu évident pour deux raisons simples. Premièrement, le bluetooth est une technologie omniprésente qui est embarquée dans tous les smartphones qui se respectent. Deuxièmement, un ami m'avait récemment offert un module bluetooth et je ne m'en étais pas encore servi :)
 
 Voici donc la liste des éléments utilisés pour la réalisation complète :

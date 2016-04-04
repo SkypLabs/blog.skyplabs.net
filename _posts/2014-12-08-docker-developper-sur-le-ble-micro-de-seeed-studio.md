@@ -11,6 +11,8 @@ Le [BLE Micro][ble_micro] est une petite carte électronique produite par [Seeed
 
 ![BLE Micro de Seeed Studio](/images/ble_micro.jpg)
 
+<!--more-->
+
 Pour développer un programme à destination de ce circuit, le [wiki officiel du BLE Micro][ble_micro_wiki] nous renvoie sur [une page GitHub][ble_micro_github] contenant un SDK dédié. Ce dernier est basé sur le [mbed SDK][mbed_sdk] de ARM avec son [API pour le BLE][mbed_ble_micro]. La compilation du code nécessite la toolchain [gcc-arm-embedded][gcc_arm_embedded] avec certaines dépendances comme la newlib-nano.
 
 Afin de ne pas perdre de temps à préparer l'environnement de développement adéquat, j'ai mis en ligne un conteneur Docker disponible sur le [Docker Hub][ble_micro_docker]. Après un échange d'e-mails avec la personne s'occupant du BLE Micro chez Seeed Studio, le lien vers mon conteneur a été ajouté sur le wiki officiel :

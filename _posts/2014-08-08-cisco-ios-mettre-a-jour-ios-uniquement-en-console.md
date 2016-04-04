@@ -21,6 +21,8 @@ Dans le cas éventuel où vous devez libérer de la place :
 
 Maintenant passons aux choses sérieuses. Pour envoyer le nouveau firmware en utilisant le câble console, nous allons utiliser le protocole [xmodem][xmodem]. Pour cela, assurez-vous que le programme **sx** est installé sur votre machine.
 
+<!--more-->
+
 Dans un premier temps, nous allons accéder au terminal d'administration de l'équipement à l'aide du programme **screen** :
 
     screen /dev/ttyUSB0 <speed>

@@ -16,6 +16,8 @@ Avant toute chose, nous allons commencer par un petit rappel de vocabulaire auto
 
 La carte de développement [**ATAVRSBIN1**][ATAVRSBIN1] que nous allons tester au cours de cet article est équipée de deux de ces capteurs : elle embarque un **gyromètre** (ITG-3200) et un **accéléromètre** (BMA-150). Le ITG-3200 est pourtant vendu comme étant un gyroscope, mais en regardant sa datasheet, on s'aperçoit qu'il retourne une mesure en °/s. C'est une erreur très commune donc prenez garde la prochaine fois que vous sélectionnerez un produit de la sorte.
 
+<!--more-->
+
 La ATAVRSBIN1 possède également une **boussole électronique** à effet de Hall (AK8975). Cette dernière ne repose donc pas sur le principe d'inertie et n'est par conséquent pas un capteur inertiel contrairement à l'intitulé du produit.
 
 Une autre petite subtilité : les circuits ITG-3200 et BMA-150, en plus de faire office respectivement de gyromètre et d’accéléromètre, embarquent également un **capteur de température**.

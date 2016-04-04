@@ -12,6 +12,8 @@ Lorsque j'envoyais une image sur MediaWiki (installé sur ma FreeBSD), j'avais d
 
 Pourtant, c'était pas faute d'avoir configuré le répertoire temporaire qui va bien (avec les bons droits d'accès) dans le fichier `LocalSettings.php` grâce à la directive `$wgTmpDirectory`. Seulement le problème venait du fait que MediaWiki utilise la fonction suivante pour déterminer l'emplacement du répertoire temporaire à utiliser :
 
+<!--more-->
+
 {% highlight php %}
 <?php
 /**
