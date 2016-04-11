@@ -25,6 +25,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor
+  - scripts
+  - .travis.yml
 
 # Build settings
 markdown: kramdown
