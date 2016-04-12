@@ -16,7 +16,7 @@ Le principal intérêt de cette tablette est donc son utilisation en tant qu'ord
 
 <!--more-->
 
-Les systèmes Android et Debian reposent tous les deux sur un noyau Linux, ce qui va nous permettre de les faire cohabiter. Dans un premier temps, il est nécessaire de récupérer le compte **root** de la machine, sans quoi aucune des manipulations qui vont suivre ne seront possibles. Étant donné que les constructeurs refusent de donner l'accès à ce compte aux utilisateurs et que le bootloader de la Asus Transformer Prime est verrouillé par défaut, le seul moyen restant est d'utiliser un **local exploit root**. Pour cela, je vous laisse trouver les informations et exploits nécessaires sur le web, en particulier sur le forum de [XDA Developers][xda_developers_forum]. Une fois le compte root récupéré, je vous conseille d'utiliser l'application **OTA RootKeeper** (disponible sur l'Android Market) qui permet de faire une "sauvegarde du compte root" pour ne pas le perde après une mise à jour du firmware.
+Les systèmes Android et Debian reposent tous les deux sur un noyau Linux, ce qui va nous permettre de les faire cohabiter. Dans un premier temps, il est nécessaire de récupérer le compte **root** de la machine, sans quoi aucune des manipulations qui vont suivre ne seront possibles. Étant donné que les constructeurs refusent de donner l'accès à ce compte aux utilisateurs et que le bootloader de la Asus Transformer Prime est verrouillé par défaut, le seul moyen restant est d'utiliser un **local exploit root**. Pour cela, je vous laisse trouver les informations et exploits nécessaires sur le web, en particulier sur le forum de [XDA Developers][xda_developers_root]. Une fois le compte root récupéré, je vous conseille d'utiliser l'application **OTA RootKeeper** (disponible sur l'Android Market) qui permet de faire une "sauvegarde du compte root" pour ne pas le perde après une mise à jour du firmware.
 
 Il est maintenant temps de passer aux choses sérieuses. Nous allons déployer l'arborescence d'une distribution Debian dans un dossier du file system d'Android pour ensuite pouvoir y accéder grâce à l'appel système `chroot`. Pour commencer, occupons nous de construire notre futur environnement Debian. Nous allons utiliser l'outil **debootstap** pour remplir cet objectif. Depuis un ordinateur classique :
 
@@ -78,5 +78,5 @@ De cette façon, à chaque lancement d'un nouveau terminal, on arrivera directem
 
 Vous pouvez maintenant profiter pleinement de votre Transformer Prime, que ce soit en tablette sous Android ou en ordinateur sous Debian.
 
-[xda_developers_forum]: http://forum.xda-developers.com "Forum - XDA Developers"
+[xda_developers_root]: http://www.xda-developers.com/root/ "How to Root Any Device - XDA Developers"
 [linux_attitude_article]: http://linux-attitude.fr/post/une-distribution-gnu-sur-android#more-1380 "Une distribution GNU sur Android - Linux Attitude"
