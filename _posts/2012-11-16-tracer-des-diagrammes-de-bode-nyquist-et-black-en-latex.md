@@ -23,4 +23,4 @@ Voici la démarche à suivre pour les installer tous les deux (en utilisant la d
 
 Et voici une [documentation pour bodegraph][doc_bodegraph].
 
-[doc_bodegraph]: http://www.math.washington.edu/tex-archive/graphics/pgf/contrib/bodegraph/bodegraph.pdf "Doc bodegraph"
+[doc_bodegraph]: http://ctan.mines-albi.fr/graphics/pgf/contrib/bodegraph/bodegraph.pdf "Documentation de bodegraph"

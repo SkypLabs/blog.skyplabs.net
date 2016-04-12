@@ -16,4 +16,4 @@ Pour conserver cette modification, le mieux est d'ajouter cette ligne dans le fi
 
 Cependant, ce n'est pas la seule façon de procéder. Pour plus d'informations, [cliquez ici][mysql_doc].
 
-[mysql_doc]: http://dev.mysql.com/doc/refman/5.0/fr/mysql-commands.html "Documentation MySQL : MySQL commands"
+[mysql_doc]: https://dev.mysql.com/doc/refman/5.7/en/mysql-commands.html "Documentation MySQL : MySQL commands"
