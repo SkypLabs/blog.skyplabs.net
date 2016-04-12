@@ -1,5 +1,7 @@
 # Skyper's Blog
 
+[![Build Status](https://travis-ci.org/SkypLabs/blog.skyplabs.net.svg?branch=gh-pages)](https://travis-ci.org/SkypLabs/blog.skyplabs.net)
+
 My personal [blog][blog] using [Jekyll][jekyll].
 
 ## License
