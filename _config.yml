@@ -27,6 +27,8 @@ exclude:
   - CNAME
   - vendor
   - scripts
+  - Dockerfile
+  - docker-compose
   - .travis.yml
 
 # Build settings
