@@ -346,10 +346,17 @@ tbody tr:nth-child(odd) th {
 
 /* Meta data line below post title */
 .post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
+  float: left;
   color: #9a9a9a;
+}
+
+.post-meta {
+  margin-top: -0.5rem;
+  margin-bottom: 3rem;
+}
+
+.post-edit {
+  float: right;
 }
 
 /* Related posts */
