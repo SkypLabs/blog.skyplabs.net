@@ -1,3 +1,5 @@
+/* Based on https://github.com/poole/poole */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,7 +14,7 @@ html, body {
 html {
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: 1.5;
+  line-height: $base-line-height;
 }
 
 @media (min-width: 38em) {
@@ -31,7 +33,7 @@ body {
 /* No `:visited` state is required by default (browsers will use `a`) */
 
 a {
-  color: #268bd2;
+  color: $base-link-color;
   text-decoration: none;
   strong {
     color: inherit;
@@ -80,7 +82,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: $base-strong-color;
 }
 
 /* Lists */
@@ -122,12 +124,12 @@ abbr {
 /* Code */
 
 code, pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: $code-font-family;
 }
 
 code {
   padding: .25em .5em;
-  font-size: 85%;
+  font-size: $code-font-size;
   color: $code-font-color;
   background-color: $code-background-color;
   border-radius: 3px;
@@ -144,7 +146,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: $code-background-color;
   code {
     padding: 0;
     font-size: 100%;

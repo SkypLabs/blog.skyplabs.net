@@ -3,14 +3,24 @@
 ---
 @charset "utf-8";
 
+// Global variables
+
 $base-font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:        16px;
+$base-line-height:      1.5;
+$base-font-color:       #515151;
+$base-background-color: #fff;
+$base-link-color:       #268bd2;
+$base-strong-color:     #303030;
+
 $big-font-size:         20px;
 
-$base-font-color:       #515151;
+$code-font-family:      Menlo, Monaco, "Courier New", monospace;
+$code-font-size:        85%;
 $code-font-color:       #bf616a;
-$base-background-color: #fff;
 $code-background-color: #f9f9f9;
+
+// Imports
 
 @import
   "base",
