@@ -22,6 +22,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - bower.json
   - LICENSE
   - README.md
   - CNAME
