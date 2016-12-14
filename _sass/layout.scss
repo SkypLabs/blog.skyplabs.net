@@ -374,3 +374,25 @@ a.sidebar-nav-item {
     margin-right: 4rem;
   }
 }
+
+/* Search bar */
+
+#search-container {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid #ccc;
+    }
+
+    li:last-child {
+      border: none;
+    }
+  }
+}
+
+#search-input {
+  display: inline-block;
+  width: 100%;
+}
