@@ -119,7 +119,7 @@ void loop()
 [ATAVRSBIN1]: http://fr.farnell.com/atmel/atavrsbin1/carte-inertial-capteur-9dof/dp/1972205
 [i2c]: http://fr.wikipedia.org/wiki/I2C
 [farnell]: http://fr.farnell.com/
-[ATAVRSBIN1_datasheet]: http://www.farnell.com/datasheets/1509379.pdf
+[ATAVRSBIN1_datasheet]: http://www.atmel.com/Images/doc8354.pdf
 [wire]: http://arduino.cc/en/reference/wire
 [ATAVRSBIN1_libs]: https://github.com/jrowberg/i2cdevlib/tree/master/Arduino
 [ITG3200_datasheet]: https://www.sparkfun.com/datasheets/Sensors/Gyro/PS-ITG-3200-00-01.4.pdf
