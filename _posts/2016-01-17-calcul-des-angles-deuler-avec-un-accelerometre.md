@@ -23,7 +23,7 @@ $$\vec{a_{S}} =
 
 <!--more-->
 
-\\(\vec{a_{S}}\\) correspond à la sortie de l'accéléromètre. Elle est représentée par la somme de \\(\vec{a_{B}}\\), l'accélération subie par le corps en mouvement sur lequel est accroché l'accéléromètre, et \\(\vec{g}\\), la gravité terrestre. \\(R_{I}^{B}\\) est la matrice de rotation qui permet de projeter \\(\vec{g}\\) du référentiel inertiel terrestre au référentiel du corps en mouvement.
+\\(\vec{a_{S}}\\) correspond à la sortie de l'accéléromètre. Elle est représentée par la somme de \\(\vec{a_{B}}\\), l'accélération subie par le corps en mouvement sur lequel est accroché l'accéléromètre, et \\(\vec{g}\\), la gravité terrestre. \\(R_{I}^{B}\\) est la matrice de rotation qui permet de projeter \\(\vec{g}\\) du référentiel inertiel terrestre au référentiel du corps en mouvement. Tous les vecteurs sont orientés selon la convention [North-East-Down][NED].
 
 Lorsque \\(\vec{a_{B}} = \vec{0}\\) :
 
@@ -32,7 +32,7 @@ $$\vec{a_{S}} =
 R_{I}^{B} \vec{g} =
 R_{I}^{B} \left( \begin{array}{c} 0 \\ 0 \\ 1 \end{array} \right)$$
 
-Cela correspond à la situation dans laquelle le corps est au repos, c'est à dire qu'il ne subit aucune accélération et qu'il se trouve dans une position que l'on définit comme initiale. Dans le cas d'un drone par exemple, cela reviendrait à le poser à plat sur le sol.
+Cela correspond à la situation dans laquelle le corps est au repos, c'est à dire qu'il ne subit aucune accélération. \\(\vec{g} = (0,0,1)^{T} \\) correspond à une fois la valeur de la gravité terrestre sur l'axe \\(z\\) du repère Terre.
 
 Nous allons maintenant chercher à résoudre cette équation. Regardons tout d'abord l'expression des [matrices de rotation][Rotation Matrix] :
 
@@ -106,6 +106,7 @@ $$\tan(\theta) =
 \frac{-a_{Sx}}{\sqrt{a_{Sy}^{2} + a_{Sz}^{2}}} \Rightarrow \theta =
 \tan^{-1} \left( \frac{-a_{Sx}}{\sqrt{a_{Sy}^{2} + a_{Sz}^{2}}} \right)$$
 
-Nous sommes donc maintenant capable d'obtenir l'orientation de notre objet selon deux degrés de liberté uniquement en regardant la sortie de son accéléromètre embarqué.
+Nous sommes donc maintenant capable d'obtenir l'orientation de notre objet selon deux degrés de liberté uniquement en regardant la sortie de son accéléromètre embarqué. Pour rappel, cela est possible uniquement lorsque le corps sur lequel est attaché l'accéléromètre est au repos. Nous pouvons par exemple utiliser ce procédé lors d'une phase de calibration afin de déterminer l'orientation initiale de l'objet concerné.
 
 [Rotation Matrix]: https://en.wikipedia.org/wiki/Rotation_matrix
+[NED]: https://en.wikipedia.org/wiki/North_east_down
