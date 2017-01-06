@@ -15,7 +15,7 @@ Lorsque l'on parle de coder un message, on sous-entend l'utilisation d'un code d
 
 Contrairement aux codes comme le Morse, les algorithmes de chiffrement assurent une confidentialité des messages, que le système cryptographique soit connu ou non. En effet, dans le cas du chiffrement, seule la clé est confidentielle. C'est ce qu'énonce le [principe de Kerckhoffs][principe_kerckhoffs], également repris par Shannon avec sa maxime :
 
-> "L'adversaire connaît le système"
+> L'adversaire connaît le système
 
 Il est donc évident qu'utiliser un algorithme de chiffrement est bien plus judicieux qu'utiliser un code pour rendre ses données confidentielles.
 
