@@ -20,69 +20,11 @@ Il va également nous falloir de quoi écrire notre code. Pour ma part, mon choi
 
 Nous sommes enfin prêts à écrire notre code. Je vous propose donc un exemple de programme très simple à réaliser qui va tout simplement faire clignoter la LED située sur la carte :
 
-{% highlight c++ %}
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <avr/io.h>
-#include <util/delay.h>
-
-#define LED_DDR     DDRB
-#define LED_PIN     PINB
-#define LED         PB5
-
-int main(void)
-{
-	LED_DDR |= _BV(LED);
-
-	while (1)
-	{
-		LED_PIN |= _BV(LED);
-		_delay_ms(50);
-	}
-
-	return(0);
-}
-{% endhighlight %}
+{% gist SkypLabs/c32ce01c695620e033443d407544f21e blink.c %}
 
 La dernière étape est de réaliser un Makefile qui va nous servir à automatiser la phase de compilation ainsi que l'envoi du programme dans la mémoire de la carte :
 
-{% highlight makefile %}
-MCU         = atmega328p
-TARGET_ARCH = -mmcu=$(MCU)
-TARGET      = main
-CC          = avr-gcc
-CPPFLAGS    = -mmcu=$(MCU)
-CFLAGS      = -Os -g -Wall -I. -DF_CPU=16000000
-LDFLAGS     = -g -mmcu=$(MCU) -lm -Wl,--gc-sections -Os
-PGMER       = -c arduino -b 115200 -P /dev/ttyACM0
-PGMERISP    = -c avrispv2 -P /dev/ttyACM0
-DUDE        = /usr/bin/avrdude -V -p $(MCU)
-
-C_SRCS      = $(wildcard *.c)
-OBJ_FILES   = $(C_SRCS:.c=.o)
-
-all:    $(TARGET).hex
-
-clean:
-	rm -f $(TARGET).elf *.o *.hex
-
-%.o: %.c
-	$(CC) -c $(CPPFLAGS) $(CFLAGS) $< -o $@
-
-$(TARGET).elf: $(OBJ_FILES)
-	$(CC) $(LDFLAGS) -o $@ $(OBJ_FILES)
-
-$(TARGET).hex: $(TARGET).elf
-	avr-objcopy -j .text -j .data -O ihex $(TARGET).elf $(TARGET).hex
-	avr-objcopy -j .eeprom --set-section-flags=.eeprom="alloc,load" --change-section-lma .eeprom=0 -O ihex main.elf eeprom.hex
-
-upload: $(TARGET).hex
-	$(DUDE) $(PGMER) -U flash:w:main.hex
-
-size: main.elf
-	avr-size --format=avr --mcu=$(MCU) main.elf
-{% endhighlight %}
+{% gist SkypLabs/c32ce01c695620e033443d407544f21e Makefile %}
 
 Et maintenant, on test le tout (après avoir connecté votre carte Arduino au port USB du dock de la Transformer Prime) :
 

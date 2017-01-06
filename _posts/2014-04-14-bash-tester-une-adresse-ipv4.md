@@ -8,23 +8,8 @@ tags:
 ---
 La fonction ci-dessous permet de tester une adresse IPv4 pour vérifier qu'elle est bien formée :
 
-{% highlight bash %}
-function is_ipv4
-{
-	echo $1 | grep -Eq '\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}\b'
-
-	return $?
-}
-{% endhighlight %}
+{% gist SkypLabs/8758fa2aa63201b028d0ac680b2a90c4 is_ipv4.sh %}
 
 Et voici un exemple d'utilisation :
 
-{% highlight bash %}
-is_ipv4 $ip
-
-if [ "$?" -ne 0 ]
-then
-	echo "[x] $ip is not an IPv4"
-	exit 1
-fi
-{% endhighlight %}
+{% gist SkypLabs/8758fa2aa63201b028d0ac680b2a90c4 is_ipv4_example.sh %}
