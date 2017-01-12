@@ -382,6 +382,7 @@ a.sidebar-nav-item {
   ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 
     li {
       border-bottom: 1px solid #ccc;
@@ -395,5 +396,6 @@ a.sidebar-nav-item {
 
 #search-input {
   display: inline-block;
+  height: 38px;
   width: 100%;
 }
