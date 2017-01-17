@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="search-container">
-  <input type="search" id="search-input" placeholder="Search for a post...">
+    <input type="search" id="search-input" placeholder="{{ site.data.strings.search-bar }}">
   <ul id="results-container"></ul>
 </div>
 <div class="posts">
@@ -18,7 +18,7 @@ layout: default
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <span class="post-edit">
       <a href="{{ site.data.gh-repo.url }}/edit/{{ site.data.gh-repo.branch }}/{{ post.path }}">
-        Edit this post on GitHub
+        {{ site.data.strings.edit-on-github }}
       </a>
     </span>
   </div>
@@ -26,7 +26,7 @@ layout: default
     {{ post.excerpt }}
 
     {% if post.content contains site.excerpt_separator %}
-      <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ site.data.strings.read-more }}</a>
     {% endif %}
     <span class="categories">{% for category in post.categories %}{{ category }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
     <span class="tags">{% for tag in post.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
@@ -37,15 +37,15 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <span class="pagination-item older"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Previous</a></span>
+    <span class="pagination-item older"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; {{ site.data.strings.previous-page }}</a></span>
   {% else %}
-    <span class="pagination-item older">&laquo; Previous</span>
+    <span class="pagination-item older">&laquo; {{ site.data.strings.previous-page }}</span>
   {% endif %}
 
   {% if paginator.next_page %}
-    <span class="pagination-item newer"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></span>
+    <span class="pagination-item newer"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ site.data.strings.next-page }} &raquo;</a></span>
   {% else %}
-    <span class="pagination-item newer">Next &raquo;</span>
+    <span class="pagination-item newer">{{ site.data.strings.next-page }} &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
@@ -58,7 +58,7 @@ layout: default
         resultsContainer: document.getElementById('results-container'),
         json: '/search.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
+        noResultsText: '{{ site.data.strings.no-search-results }}',
         limit: 10,
         fuzzy: false
       })
