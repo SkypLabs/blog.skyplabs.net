@@ -1,11 +1,13 @@
 ---
 layout: page
-title: "Me contacter"
+title: "Contact"
 permalink: /contact/
 ---
-Voici mon adresse e-mail : [{{ site.data.author.email }}](mailto:{{ site.data.author.email }})
+## Email
 
-Et ci-dessous, ma clé [PGP][PGP] :
+Here is my email address : [{{ site.data.author.email }}](mailto:{{ site.data.author.email }})
+
+If you have something confidential to share, please use [PGP][PGP]/[GPG][GPG] encryption to secure our communication :
 
 	-----BEGIN PGP PUBLIC KEY BLOCK-----
 	Version: GnuPG v1
@@ -50,4 +52,10 @@ Et ci-dessous, ma clé [PGP][PGP] :
 	=c4vR
 	-----END PGP PUBLIC KEY BLOCK-----
 
-[PGP]: https://fr.wikipedia.org/wiki/Pretty_Good_Privacy
+## Public conversations
+
+You can also contact me publicly via my [Twitter account][my-twitter].
+
+[PGP]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy
+[GPG]: https://gnupg.org/
+[my-twitter]: https://twitter.com/{{ site.data.author.twitter | prepend: site.baseurl }}

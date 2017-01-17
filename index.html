@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="search-container">
-  <input type="search" id="search-input" placeholder="Rechercher un article...">
+  <input type="search" id="search-input" placeholder="Search for a post...">
   <ul id="results-container"></ul>
 </div>
 <div class="posts">
@@ -18,7 +18,7 @@ layout: default
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <span class="post-edit">
       <a href="{{ site.data.gh-repo.url }}/edit/{{ site.data.gh-repo.branch }}/{{ post.path }}">
-        Éditer cet article sur GitHub
+        Edit this post on GitHub
       </a>
     </span>
   </div>
@@ -26,7 +26,7 @@ layout: default
     {{ post.excerpt }}
 
     {% if post.content contains site.excerpt_separator %}
-      <a href="{{ post.url | prepend: site.baseurl }}">Lire plus</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
     {% endif %}
     <span class="categories">{% for category in post.categories %}{{ category }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
     <span class="tags">{% for tag in post.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
@@ -37,15 +37,15 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <span class="pagination-item older"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Précédent</a></span>
+    <span class="pagination-item older"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Previous</a></span>
   {% else %}
-    <span class="pagination-item older">&laquo; Précédent</span>
+    <span class="pagination-item older">&laquo; Previous</span>
   {% endif %}
 
   {% if paginator.next_page %}
-    <span class="pagination-item newer"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Suivant &raquo;</a></span>
+    <span class="pagination-item newer"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></span>
   {% else %}
-    <span class="pagination-item newer">Suivant &raquo;</span>
+    <span class="pagination-item newer">Next &raquo;</span>
   {% endif %}
 </div>
 {% endif %}

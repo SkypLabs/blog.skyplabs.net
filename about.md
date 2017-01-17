@@ -1,8 +1,11 @@
 ---
 layout: page
-title: "À propos"
+title: "About me"
 permalink: /about/
 ---
-Autodidacte depuis mon enfance, je suis passionné de technologie et de science, avec un penchant pour l'informatique et les logiciels libres, et obsédé par l'automatisation.
+Self-educated since my childhood, I am a technology and science lover with a deep passion for IT and open-source software, and obsessed by automation.
 
-Ce blog me sert à partager mes idées, mes travaux et diverses connaissances et techniques.
+Involved in many projects, professional or not, I like to express my creativity in various ways and exchange knowledge and experience with people.
+
+
+This blog allows me to share my ideas, work and various knowledge.
