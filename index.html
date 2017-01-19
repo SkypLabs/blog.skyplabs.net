@@ -59,7 +59,7 @@ layout: default
         json: '/search.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
         noResultsText: '{{ site.data.strings.no-search-results }}',
-        limit: 10,
+        limit: {{ site.search_results }},
         fuzzy: false
       })
     </script>

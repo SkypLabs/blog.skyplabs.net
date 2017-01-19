@@ -52,3 +52,6 @@ timezone: Europe/Dublin
 # Pagination
 paginate: 5
 paginate_path: "/page:num"
+
+# Search bar
+search_results: 10
