@@ -1,5 +1,5 @@
-FROM ruby:2.1-slim
-MAINTAINER skyper@skyplabs.net
+FROM ruby:2.3.3-slim
+MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
 
 EXPOSE 4000
 
