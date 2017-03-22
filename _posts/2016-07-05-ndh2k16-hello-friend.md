@@ -6,7 +6,7 @@ categories:
     - Stéganographie
 tags:
     - ndh2k16
-    - wargame
+    - Wargame
 ---
 Une des épreuves du wargame de la nuit du hack 2016 était de retrouver un code de validation à partir de cette image :
 
@@ -81,7 +81,7 @@ L'outil *unzip* est capable de décompresser une archive ZIP même quand cette d
 	Archive:  hellofriend.jpg
 	warning [hellofriend.jpg]:  116141 extra bytes at beginning or within zipfile
 	  (attempting to process anyway)
-	  inflating: WhoAmI.png              
+	  inflating: WhoAmI.png
 	   creating: Hello_friend/
 	   creating: Hello_friend/0/
 	[hellofriend.jpg] Hello_friend/0/64.png password:
