@@ -11,13 +11,14 @@ I think it is obvious to say that the security of your online payments is critic
 
 <!--more-->
 
-One way to steal your credit card information is simply to steal your credit card itself. Indeed, all the information needed to make an online payment are present on it : the credit card number, the expiration date and the cryptogram. That's why it would be more secure to keep one of these pieces of information secret, like the pin code required to make a payment in a store. The cryptogram is a good candidate for that. It's a short pin code that you can easily remember by heart and/or store in a safe place (your [KeePass][keepass] file for example).
+One way to steal your credit card information is simply to steal your credit card itself. Indeed, all the information needed to make an online payment are present on it : the credit card number, the card holder name, the expiration date and the CSC ([Card Security Code][CSC]). That's why it would be more secure to keep one of these pieces of information secret, like the pin code required to make a payment in a store. The CSC is a good candidate for that. It's a short pin code that you can easily remember by heart and/or store in a safe place (your [KeePass][keepass] file for example).
 
-In order to keep your cryptogram secret, the best way is to remove it from the credit card, by scratching it out with scissors, for example. I'll let you appreciate the result on my own credit card :
+In order to keep your CSC secret, the best way is to remove it from the credit card, by scratching it out with scissors, for example. I'll let you appreciate the result on my own credit card :
 
-![Example of a cryptogram which has been scratched out][credit card cryptogram]
+![Example of a CSC which has been scratched out][credit card CSC]
 
-This way, even if someone steals my credit card, I can ask my bank to block it, knowing that it can't be used online in the meantime.
+This way, even if someone steals my credit card, I can ask my bank to block it, knowing that it can't be used online on most websites in the meantime.
 
+ [CSC]: https://en.wikipedia.org/wiki/Card_security_code
  [keepass]: http://keepass.info/
- [credit card cryptogram]: /images/credit_card_cryptogram.png
+ [credit card CSC]: /images/credit_card_csc.png
