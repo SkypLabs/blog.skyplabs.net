@@ -65,4 +65,4 @@ Une fois supprimées, vous pouvez enregistrer et quitter l'éditeur de texte. Un
     sudo rpm -ivh leap-*.x86_64.rpm
 
 [LM_site_officiel]: https://www.leapmotion.com/
-[LM_setup]: https://warehouse.leapmotion.com/apps/4143/download
+[LM_setup]: https://warehouse.leapmotion.com/apps/4186/download
