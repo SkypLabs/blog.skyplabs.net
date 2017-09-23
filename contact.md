@@ -3,7 +3,7 @@ layout: page
 title: "Contact"
 permalink: /contact/
 ---
-## Email
+### Email
 
 Here is my email address : [{{ site.data.author.email }}](mailto:{{ site.data.author.email }})
 
@@ -11,7 +11,7 @@ If you have something confidential to share, please use [PGP][PGP]/[GPG][GPG] en
 
 My public keys can be downloaded from my [Keybase profile][my-pgp-keys]. In addition, you can encrypt a text message with my latest public key directly with [this online tool][keybase-encrypt-tool].
 
-## Public conversations
+### Public conversations
 
 You can also contact me publicly via my [Twitter account][my-twitter].
 
