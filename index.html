@@ -2,9 +2,10 @@
 layout: default
 ---
 <div id="search-container">
-    <input type="search" id="search-input" placeholder="{{ site.data.strings.search-bar }}">
+  <input type="search" id="search-input" placeholder="{{ site.data.strings.search-bar }}">
   <ul id="results-container"></ul>
 </div>
+
 <div class="posts">
 {% for post in paginator.posts %}
   <div class="post">
@@ -50,16 +51,16 @@ layout: default
 </div>
 {% endif %}
 
-    <script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-      SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: '{{ site.data.strings.no-search-results }}',
-        limit: {{ site.search_results }},
-        fuzzy: false
-      })
-    </script>
+<script type="text/javascript">
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: '{{ site.data.strings.no-search-results }}',
+    limit: {{ site.search_results }},
+    fuzzy: false
+  })
+</script>
