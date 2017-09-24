@@ -4,7 +4,7 @@
 
 <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="Blog,Computer Science,Electronics,Hacking,IT,Open Source">
+<meta name="keywords" content="{{ site.keywords }}">
 <meta name="author" content="{{ site.data.author.first-name }} {{ site.data.author.last-name }}">
 
 <link rel="shortcut icon" href="/images/favicon.ico">

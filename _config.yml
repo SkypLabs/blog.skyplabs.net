@@ -7,8 +7,9 @@
 
 # Site settings
 title: Skyper's Blog
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until "keywords:"
   Personal blog about IT, Electronics, Science... I write in French and in English.
+keywords: Blog,Computer Science,Electronics,Hacking,IT,Open Source
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.skyplabs.net" # the base hostname & protocol for your site
 
