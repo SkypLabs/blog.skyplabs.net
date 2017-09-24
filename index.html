@@ -8,7 +8,7 @@ layout: default
 
 <div class="posts">
 {% for post in paginator.posts %}
-  <div class="post" typeof="BlogPosting">
+  <div class="post" property="blogPost" typeof="BlogPosting">
     <h2 class="post-title" property="headline">
       <a href="{{ post.url | prepend: site.baseurl }}">
         {{ post.title }}
