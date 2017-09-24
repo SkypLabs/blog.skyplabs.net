@@ -8,29 +8,38 @@ layout: default
 
 <div class="posts">
 {% for post in paginator.posts %}
-  <div class="post">
-    <h2 class="post-title">
+  <div class="post" typeof="BlogPosting">
+    <h2 class="post-title" property="headline">
       <a href="{{ post.url | prepend: site.baseurl }}">
         {{ post.title }}
       </a>
     </h2>
 
-  <div class="post-meta">
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <span class="post-edit">
-      <a href="{{ site.data.gh-repo.url }}/edit/{{ site.data.gh-repo.branch }}/{{ post.path }}">
-        {{ site.data.strings.edit-on-github }}
-      </a>
-    </span>
-  </div>
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ post.date | date: "%F %R" }}" property="datePublished">{{ post.date | date_to_string }}</time>
+      <div class="post-author" property="author" typeof="Person" hidden>
+        <span property="name">{{ site.data.author.first-name }} {{ site.data.author.last-name }}</span>
+        <span property="givenName">{{ site.data.author.first-name }}</span>
+        <span property="familyName">{{ site.data.author.last-name }}</span>
+        <span property="alternateName">{{ site.data.author.nickname }}</span>
+        <span property="email">{{ site.data.author.email }}</span>
+      </div>
+      <span class="post-edit">
+        <a href="{{ site.data.gh-repo.url }}/edit/{{ site.data.gh-repo.branch }}/{{ post.path }}">
+          {{ site.data.strings.edit-on-github }}
+        </a>
+      </span>
+    </div>
 
-    {{ post.excerpt }}
+    <div class="post-content" property="description">
+      {{ post.excerpt }}
+    </div>
 
     {% if post.content contains site.excerpt_separator %}
       <a href="{{ post.url | prepend: site.baseurl }}">{{ site.data.strings.read-more }}</a>
     {% endif %}
-    <span class="categories">{% for category in post.categories %}{{ category }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
-    <span class="tags">{% for tag in post.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
+    <span class="categories" property="keywords">{% for category in post.categories %}{{ category }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
+    <span class="tags" property="keywords">{% for tag in post.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
   </div>
 {% endfor %}
 </div>

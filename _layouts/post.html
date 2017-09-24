@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
-<article class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
+<article class="post" typeof="BlogPosting">
+  <h2 class="post-title" property="headline">{{ page.title }}</h2>
 
   <div class="post-meta">
-    <span class="post-date">{{ page.date | date_to_string }}</span>
+    <time class="post-date" datetime="{{ page.date | date: "%F %R" }}" property="datePublished">{{ page.date | date_to_string }}</time>
+    <div class="post-author" property="author" typeof="Person" hidden>
+      <span property="name">{{ site.data.author.first-name }} {{ site.data.author.last-name }}</span>
+      <span property="givenName">{{ site.data.author.first-name }}</span>
+      <span property="familyName">{{ site.data.author.last-name }}</span>
+      <span property="alternateName">{{ site.data.author.nickname }}</span>
+      <span property="email">{{ site.data.author.email }}</span>
+    </div>
     <span class="post-edit">
       <a href="{{ site.data.gh-repo.url }}/edit/{{ site.data.gh-repo.branch }}/{{ page.path }}">
         {{ site.data.strings.edit-on-github }}
@@ -13,10 +20,12 @@ layout: default
     </span>
   </div>
 
-  {{ content }}
+  <div class="post-content" property="articleBody">
+    {{ content }}
+  </div>
 
-  <span class="categories">{% for category in page.categories %}{{ category }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
-  <span class="tags">{% for tag in page.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
+  <span class="categories" property="keywords">{% for category in page.categories %}{{ category }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
+  <span class="tags" property="keywords">{% for tag in page.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</span>
 </article>
 
 <div class="related">
