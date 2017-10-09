@@ -26,6 +26,32 @@ If `bunble` is not installed on your system, you can execute it through the Dock
     docker-compose build
     docker run --rm -v $(pwd):/usr/src/app:z --entrypoint=bundle blogskyplabsnet_skyplabs-blog update
 
+The gems' version in the `Gemfile.lock` file should match those of [GitHub Pages][github-pages-versions].
+
+### Verify the validity of the generated HTML source code
+
+To verify the validity of the generated HTML source code:
+
+    ./scripts/cibuild
+
+If `bundle`, `jekyll` or `htmlproofer` are not installed on your system, you can execute the script through the Docker container:
+
+    # To build the Docker image if not already done.
+    docker-compose build
+    docker run --rm -v $(pwd):/usr/src/app:z --entrypoint=bash blogskyplabsnet_skyplabs-blog ./scripts/cibuild
+
+## Publishing a new post
+
+Below are the different steps to do before publishing a new post:
+
+1. Update Ruby's version to the one used by [GitHub Pages][github-pages-versions]
+2. Update the dependences
+3. Verify that Jekyll can generate the HTML source code
+4. Verify the validity of the generated HTML source code
+5. Set up a development environment and check if everything looks good
+
+Steps `3` and `4` can be done by using the `./scripts/cibuild` script.
+
 ## License
 
 All the articles and images are [CC BY-NC 4.0][CC] licensed. The rest is [MIT][MIT] licensed.
@@ -33,6 +59,7 @@ All the articles and images are [CC BY-NC 4.0][CC] licensed. The rest is [MIT][M
  [blog]: http://blog.skyplabs.net
  [docker]: https://www.docker.com/
  [docker-compose]: https://docs.docker.com/compose/
+ [github-pages-versions]: https://pages.github.com/versions/
  [jekyll]: http://jekyllrb.com/
  [CC]: http://creativecommons.org/licenses/by-nc/4.0/
  [MIT]: http://opensource.org/licenses/MIT
