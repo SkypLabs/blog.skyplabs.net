@@ -281,7 +281,7 @@ a.sidebar-nav-item {
 
 /* Sidebar social links */
 
-.icon-github, .icon-docker-hub, .icon-twitter, .icon-linkedin, .icon-email, .icon-rss {
+.icon-github, .icon-docker-hub, .icon-twitter, .icon-linkedin, .icon-keybase, .icon-email, .icon-rss {
   width: 23px;
   height: 23px;
   display: inline-block;
@@ -314,6 +314,14 @@ a.sidebar-nav-item {
 
 .icon-linkedin {
   background-image: url(img/linkedin.png);
+  transition: all 0.2s ease;
+  &:hover {
+    background-position: 0px -23px;
+  }
+}
+
+.icon-keybase {
+  background-image: url(img/keybase.png);
   transition: all 0.2s ease;
   &:hover {
     background-position: 0px -23px;
