@@ -7,6 +7,7 @@ categories:
 tags:
     - ndh2k16
     - Wargame
+    - Write-up
 ---
 Une des épreuves du wargame de la nuit du hack 2016 était de retrouver un code de validation à partir de cette image :
 
