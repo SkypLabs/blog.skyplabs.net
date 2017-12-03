@@ -1,4 +1,4 @@
-FROM ruby:2.3.3-slim
+FROM ruby:2.4-slim
 MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
 
 EXPOSE 4000
