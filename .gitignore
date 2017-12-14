@@ -54,5 +54,8 @@ _site
 .jekyll*
 .sass-cache
 
+## Node modules
+node_modules/
+
 ## Vim
 *.swp
