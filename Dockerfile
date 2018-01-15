@@ -11,10 +11,12 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y --no-install-recommends nodejs yarn
 
-COPY Gemfile /tmp/
-COPY Gemfile.lock /tmp/
-RUN bundle install --gemfile=/tmp/Gemfile
-
 WORKDIR /usr/src/app
-ENTRYPOINT ["jekyll"]
-CMD ["serve", "--host", "0.0.0.0", "--watch", "--drafts", "--future"]
+
+COPY Gemfile /usr/src/app
+COPY Gemfile.lock /usr/src/app
+
+RUN bundle install \
+    && rm -f Gemfile Gemfile.lock
+
+CMD ["jekyll", "serve", "--host", "0.0.0.0", "--watch", "--drafts", "--future"]
