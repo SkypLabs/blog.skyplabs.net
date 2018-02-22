@@ -1,5 +1,7 @@
 FROM ruby:2.4.2-slim
-MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
+
+LABEL net.skyplabs.maintainer-name="Paul-Emmanuel Raoul"
+LABEL net.skyplabs.maintainer-email="skyper@skyplabs.net"
 
 EXPOSE 4000
 
