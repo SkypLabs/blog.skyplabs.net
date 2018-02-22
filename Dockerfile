@@ -5,6 +5,8 @@ LABEL net.skyplabs.maintainer-email="skyper@skyplabs.net"
 
 EXPOSE 4000
 
+ENV LC_ALL=C.UTF-8
+
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends gcc make patch curl apt-transport-https \
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
