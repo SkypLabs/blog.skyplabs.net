@@ -110,7 +110,7 @@ A solution would be to force the sniffing thread to stop. As explained in the [o
 
 > A thread can be flagged as a “daemon thread”. The significance of this flag is that the entire Python program exits when only daemon threads are left. The initial value is inherited from the creating thread. The flag can be set through the daemon property or the daemon constructor argument.
 
-However, even if this solution would work, the thread won't release the resources it would hold:
+However, even if this solution would work, the thread won't release the resources it might hold:
 
 > Daemon threads are abruptly stopped at shutdown. Their resources (such as open files, database transactions, etc.) may not be released properly. If you want your threads to stop gracefully, make them non-daemonic and use a suitable signalling mechanism such as an Event.
 
