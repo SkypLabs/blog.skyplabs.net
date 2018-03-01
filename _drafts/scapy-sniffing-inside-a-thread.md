@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Scapy] Sniffing inside a thread"
+title: "[Python] Sniffing inside a thread with Scapy"
 categories:
     - Development
 tags:
@@ -9,9 +9,9 @@ tags:
     - Signal
     - Thread
 ---
-Scapy is an incredible tool when it comes to play with network. As it is written on its [official website][scapy-website], Scapy can replace a majority of network tools such as nmap, hping and tcpdump.
+Scapy is an incredible tool when it comes to playing with the network. As it is written on its [official website][scapy-website], Scapy can replace a majority of network tools such as nmap, hping and tcpdump.
 
-One of the features offered by Scapy is to sniff the network packets passing through a computer's NICs. Below is a small example:
+One of the features offered by Scapy is to sniff the network packets passing through a computer's NIC. Below is a small example:
 
 {% gist SkypLabs/06bd7f414f51d700e04be705cb32659d sniff_main_thread.py %}
 
@@ -35,13 +35,13 @@ This little sniffer displays the source and the destination of all packets havin
     [!] New Packet: 10.137.2.30 -> 216.58.198.68
     ^C[*] Stop sniffing
 
-The sniffer will continue to sniff network packets until it receives a keyboard interruption (`CTRL+C`).
+It will continue to sniff network packets until it receives a keyboard interruption (`CTRL+C`).
 
 Now, let's look at a new example:
 
 {% gist SkypLabs/06bd7f414f51d700e04be705cb32659d sniff_thread_issue.py %}
 
-This piece of code does exactly the same thing as the previous one except that this time the `sniff` function is executed inside a dedicated thread. Everything works well with this new version except when it comes to stop the sniffer:
+This piece of code does exactly the same thing as the previous one except that this time the `sniff` function is executed inside a dedicated thread. Everything works well with this new version except when it comes to stopping the sniffer:
 
     $ sudo python3 sniff_thread_issue.py
     [*] Start sniffing...
@@ -85,26 +85,26 @@ This piece of code does exactly the same thing as the previous one except that t
         elif lock.acquire(block, timeout):
     KeyboardInterrupt
 
-When `CTRL+C` is pressed, a `SIGTERM` signal is sent to the process executing the Python script, trigging its exit routine. However, as said in the [official documentation about signals][python3-signal], only the main thread receives signals:
+When `CTRL+C` is pressed, a `SIGTERM` signal is sent to the process executing the Python script, triggering its exit routine. However, as said in the [official documentation about signals][python3-signal], only the main thread receives signals:
 
 > Python signal handlers are always executed in the main Python thread, even if the signal was received in another thread.
 
 As a result, when `CTRL+C` is pressed, only the main thread raises a `KeyboardInterrupt` exception. The sniffing thread will continue its infinite sniffing loop, blocking at the same time the call of `sniffer.join()`.
 
-So, how can the sniffing thread be stopped if it's not by signals? Let's have a look at this next example:
+So, how can the sniffing thread be stopped if not by signals? Let's have a look at this next example:
 
 {% gist SkypLabs/06bd7f414f51d700e04be705cb32659d sniff_thread_issue_2.py %}
 
 As you may have noticed, we are now using the `stop_filter` parameter in the `sniff` function call. This parameter expects to receive a function which will be called after each new packet to evaluate if the sniffer should continue its job or not. An `Event` object named `stop_sniffer` is used for that purpose. It is set to `true` when the `join` method is called to stop the thread.
 
-Is it the end of the story? Not really...
+Is this the end of the story? Not really...
 
     $ sudo python3 sniff_thread_issue_2.py
     [*] Start sniffing...
     ^C[*] Stop sniffing
     [!] New Packet: 10.137.2.30 -> 10.137.2.1
 
-One side effect remains. Because the `should_stop_sniffer` method is called only once after each new packet, if it returns `false`, the sniffer will continue its job, going back to its infinite sniffing loop. It is why the sniffer stopped one packet ahead of the keyboard interruption.
+One side effect remains. Because the `should_stop_sniffer` method is called only once after each new packet, if it returns `false`, the sniffer will continue its job, going back to its infinite sniffing loop. This is why the sniffer stopped one packet ahead of the keyboard interruption.
 
 A solution would be to force the sniffing thread to stop. As explained in the [official documentation about threading][python3-threading], it is possible to flag a thread as a daemon thread for that purpose:
 
