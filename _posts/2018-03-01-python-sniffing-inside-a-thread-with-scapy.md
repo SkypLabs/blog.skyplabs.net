@@ -37,6 +37,8 @@ This little sniffer displays the source and the destination of all packets havin
 
 It will continue to sniff network packets until it receives a keyboard interruption (`CTRL+C`).
 
+<!--more-->
+
 Now, let's look at a new example:
 
 {% gist SkypLabs/06bd7f414f51d700e04be705cb32659d sniff_thread_issue.py %}
