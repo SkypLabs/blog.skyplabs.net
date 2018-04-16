@@ -7,7 +7,7 @@ fuzzysearch@^1.0.3:
   resolved "https://registry.yarnpkg.com/fuzzysearch/-/fuzzysearch-1.0.3.tgz#dffc80f6d6b04223f2226aa79dd194231096d008"
 
 simple-jekyll-search@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.5.0.tgz#8adad21b776428bbc1e2dee00d604cd26e03c4f7"
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.6.3.tgz#8af31018c3c51bcda2cccbdb80445b0ed9225e49"
   dependencies:
     fuzzysearch "^1.0.3"
