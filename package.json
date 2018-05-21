@@ -5,10 +5,11 @@
   "repository": "git@github.com:SkypLabs/blog.skyplabs.net.git",
   "author": "Paul-Emmanuel Raoul <skyper@skyplabs.net>",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "simple-jekyll-search": "^1.5.0"
   },
   "scripts": {
-    "copy-js": "find node_modules/ -type f -name '*.min.js' -exec cp {} js/ \\;"
+    "install": "find node_modules/ -type f -name '*.min.js' -exec cp {} js/ \\;"
   }
 }
