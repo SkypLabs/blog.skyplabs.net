@@ -7,7 +7,7 @@ tags:
     - LaTeX
     - MediaWiki
 ---
-Cela faisait plusieurs jours que j'essayais de faire fonctionner l'extension `Math` de MediaWiki pour pouvoir afficher des équations mathématiques en LaTeX. Mais lors de mes tests, j'obtenais toujours une erreur HTTP 500 (*Internal Server Error*) et le message suivant dans mes logs :
+Cela faisait plusieurs jours que j'essayais de faire fonctionner l'extension **Math** de MediaWiki pour pouvoir afficher des équations mathématiques en LaTeX. Mais lors de mes tests, j'obtenais toujours une erreur HTTP 500 (*Internal Server Error*) et le message suivant dans mes logs :
 
     Call to undefined method TempFSFile::autocollect()
 

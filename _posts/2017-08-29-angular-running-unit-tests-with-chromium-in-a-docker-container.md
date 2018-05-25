@@ -21,17 +21,17 @@ The main issue is that regular web browsers need a graphical environment to be e
 
 So, what are we waiting for? Let's create a testing environment in a Docker container! For that purpose, the testing environment will rely on the [official Node.js Docker image][docker-node] as base image and Chromium as web browser. I will suppose that you have an Angular project bootstrapped with [Angular CLI][angular-cli].
 
-Chromium/Google Chrome is shipped with the headless mode since version 59. The official Node.js Docker image is based on Debian Jessie by default and to this date, the latest version of Chromium in Debian Jessie's repositories is 57 since it is 59 for Debian Stretch. It is possible to use an official Node.js Docker image based on Debian Stretch using the appropriate tag. In our case, `8-stretch` :
+Chromium/Google Chrome is shipped with the headless mode since version 59. The official Node.js Docker image is based on Debian Jessie by default and to this date, the latest version of Chromium in Debian Jessie's repositories is 57 since it is 59 for Debian Stretch. It is possible to use an official Node.js Docker image based on Debian Stretch using the appropriate tag. In our case, `8-stretch`:
 
 {% gist SkypLabs/aa27e9f37471280c12d75e265a067d9e Dockerfile %}
 
-Now, it is needed to configure Karma to use Chromium with the headless mode. The [karma-chrome-launcher][karma-chrome-launcher] supports natively `ChromeHeadless` as web browser. To define it as default web browser in `karma.conf.js` :
+Now, it is needed to configure Karma to use Chromium with the headless mode. The [karma-chrome-launcher][karma-chrome-launcher] supports natively `ChromeHeadless` as web browser. To define it as default web browser in `karma.conf.js`:
 
     ...
     browsers: ['ChromeHeadless'],
     ...
 
-It is now possible to build the Docker image and to use it to run the unit tests. Navigate to the folder containing the source code of your Angular project and the above `Dockerfile`, then :
+It is now possible to build the Docker image and to use it to run the unit tests. Navigate to the folder containing the source code of your Angular project and the above `Dockerfile`, then:
 
     docker build -t angular-dev .
     docker run --rm -v $(pwd):/usr/src/app:z angular-dev npm test
@@ -57,11 +57,11 @@ The complete `karma.conf.js` should look like this:
 
 {% gist SkypLabs/aa27e9f37471280c12d75e265a067d9e karma.conf.js %}
 
-Finally, add an npm script to run `ng test` using `ChromeHeadlessCI` and with the `--single-run=true` option :
+Finally, add an npm script to run `ng test` using `ChromeHeadlessCI` and with the `--single-run=true` option:
 
 {% gist SkypLabs/aa27e9f37471280c12d75e265a067d9e package.json %}
 
-With this done, it is now possible to run the continuous integration tests inside a Docker container :
+With this done, it is now possible to run the continuous integration tests inside a Docker container:
 
     docker run --rm -v $(pwd):/usr/src/app:z angular-dev npm run test:ci
 

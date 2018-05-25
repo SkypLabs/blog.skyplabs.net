@@ -6,7 +6,7 @@ categories:
 tags:
     - Bash
 ---
-La regex ci-dessous utilisée avec le programme `sed` permet de remplacer l'ancienne valeur attribuée à "KEY" par la nouvelle valeur "VALUE" dans le fichier "file" :
+La regex ci-dessous utilisée avec le programme `sed` permet de remplacer l'ancienne valeur attribuée à `KEY` par la nouvelle valeur `VALUE` dans le fichier `file` :
 
     sed -i "s/\(KEY *= *\).*/\1VALUE/" <file>
 

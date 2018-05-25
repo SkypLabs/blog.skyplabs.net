@@ -15,7 +15,7 @@ Une des épreuves du wargame de la nuit du hack 2016 était de retrouver un code
 
 <!--more-->
 
-En utilisant l'outil *strings* sur l'image, nous obtenons les lignes suivantes :
+En utilisant l'outil `strings` sur l'image, nous obtenons les lignes suivantes :
 
     $ strings hellofriend.jpg
     ...
@@ -43,7 +43,7 @@ En utilisant l'outil *strings* sur l'image, nous obtenons les lignes suivantes :
     HaVft
     Hello_friend/9/3xploits.jpg
 
-Nous en déduisons qu'une archive ZIP est cachée dans le même fichier. L'outil *binwalk* peut nous en convaincre :
+Nous en déduisons qu'une archive ZIP est cachée dans le même fichier. L'outil `binwalk` peut nous en convaincre :
 
     $ binwalk hellofriend.jpg
 
@@ -76,7 +76,7 @@ Nous en déduisons qu'une archive ZIP est cachée dans le même fichier. L'outil
     260274        0x3F8B2         Zip encrypted archive data, at least v2.0 to extract, compressed size: 286495,  uncompressed size: 298687, name: "Hello_friend/9/3xploits.jpg"
     549041        0x860B1         End of Zip archive
 
-L'outil *unzip* est capable de décompresser une archive ZIP même quand cette dernière est enfouie au sein d'un autre fichier. La preuve :
+L'outil `unzip` est capable de décompresser une archive ZIP même quand cette dernière est enfouie au sein d'un autre fichier. La preuve :
 
     $ unzip hellofriend.jpg
 	Archive:  hellofriend.jpg
@@ -91,7 +91,7 @@ Pour trouver ce premier mot de passe, il faut commencer par comprendre d'où vie
 
 > « Hello Friend » est aussi le premier message par lequel Elliot est contacté par Fsociety.
 
-Et ainsi, nous découvrons ce premier mot de passe : *fsociety*.
+Et ainsi, nous découvrons ce premier mot de passe : `fsociety`.
 
 Après décompression, nous obtenons l'arborescence suivante :
 
@@ -134,13 +134,13 @@ Nous devons donc trouver à nouveau un mot de passe. Les noms des 8 premières i
 
 Malheureusement, ce n'est pas le mot de passe que nous recherchons. Après investigation, nous découvrons que *darkc0de* fait référence à un [dictionnaire de mots de passe][darkc0de]. Nous comprenons que le mot de passe doit se trouver dans ce dictionnaire.
 
-*fcrackzip* permet d'effectuer des attaques par dictionnaire sur des fichiers ZIP. Cependant, contrairement à *unzip*, il n'est pas capable de trouver le fichier ZIP contenu dans l'image par lui-même :
+`fcrackzip` permet d'effectuer des attaques par dictionnaire sur des fichiers ZIP. Cependant, contrairement à `unzip`, il n'est pas capable de trouver le fichier ZIP contenu dans l'image par lui-même :
 
     $ fcrackzip -uDv -p ~/Downloads/darkc0de.lst 3xploits.jpg
     found id dbffd8ff, '3xploits.jpg' is not a zipfile ver 2.xx, skipping
     no usable files found
 
-Grâce à *unzip*, nous savons que 186158 octets sont présents avant le début du fichier ZIP :
+Grâce à `unzip`, nous savons que 186158 octets sont présents avant le début du fichier ZIP :
 
     $ unzip -l 3xploits.jpg
     Archive:  3xploits.jpg
@@ -152,7 +152,7 @@ Grâce à *unzip*, nous savons que 186158 octets sont présents avant le début 
     ---------                     -------
        302979                     1 file
 
-Pour supprimer ces octets superflus, nous pouvons utiliser l'outil *dd* :
+Pour supprimer ces octets superflus, nous pouvons utiliser l'outil `dd` :
 
     $ file 3xploits.jpg
     3xploits.jpg: JPEG image data, baseline, precision 8, 640x640, frames 3
@@ -169,7 +169,7 @@ Maintenant, il est temps de lancer notre attaque par dictionnaire :
     found file 'd3bug.png', (size cp/uc 112361/302979, flags 9, chk be20)
     PASSWORD FOUND!!!!: pw == How do you like me now?
 
-Le mot de passe était donc *How do you like me now?*.
+Le mot de passe était donc `How do you like me now?`.
 
 Et voici l'image contenue dans l'archive ZIP avec le code de validation inscrit dessus :
 
