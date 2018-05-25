@@ -58,17 +58,7 @@ Votre distribution Debian est maintenant complètement installée sur votre Tran
 
 Et pour pouvoir revenir facilement dans l'environnement confiné de la Debian, j'utilise le script suivant (initialement écrit par mon ami **Peck** - [Une distribution GNU sur Android - Linux-attitude][linux_attitude_article]) :
 
-    ROOT=/data/local/tmp/mydebian
-    BB=/system/xbin
-    if ! ls $ROOT/proc/1 > /dev/null
-    then
-        $BB/mount --bind /dev $ROOT/dev
-        $BB/mount --bind /proc $ROOT/proc
-        $BB/mount --bind /sys $ROOT/sys
-        $BB/mount --bind /dev/pts $ROOT/dev/pts
-    fi
-    export PATH=/bin:/sbin:/usr/bin:/usr/sbin
-    $BB/chroot $ROOT /bin/su -c "/bin/bash"
+{% gist SkypLabs/af5e18de8bbb846438f45315552007c8 go2deb.sh %}
 
 Il ne reste plus qu'à automatiser notre passage de l'environnement Android vers notre nouvel environnement Debian. J'utilise pour ma part l'application Android **Terminal emulator** (disponible sur l'Android Market) comme console locale avec l'option **initial command** configurée de cette manière (le script `go2deb.sh` est celui affiché plus haut) :
 
