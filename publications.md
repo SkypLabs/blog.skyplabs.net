@@ -9,7 +9,7 @@ permalink: /publications/
 
 ## Blog Posts
 
-* ["How to use Git in a secure way", Avatao Blog, 04 Sep. 2018][avatao-git-security]
+* ["How to use Git in a secure way", Avatao Blog, 04 Sep. 2018][avatao-git-security] (also on [Medium][avatao-git-security-medium])
 
 ## Magazines
 
@@ -25,6 +25,7 @@ permalink: /publications/
 * [CVE-2017-1000448][CVE-2017-1000448]
 
  [avatao-git-security]: https://blog.avatao.com/How-to-use-Git-in-a-secure-way/
+ [avatao-git-security-medium]: https://medium.com/@avatao/how-to-use-git-in-a-secure-way-89571e738899
  [bsfl-slideshow]: https://skyplabs.github.io/bsfl-slideshow/
  [CVE-2017-1000448]: https://nvd.nist.gov/vuln/detail/CVE-2017-1000448
  [git-slideshow]: https://skyplabs.github.io/git-slideshow/
