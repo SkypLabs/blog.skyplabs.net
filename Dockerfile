@@ -1,4 +1,4 @@
-FROM ruby:2.4.2-slim
+FROM ruby:2.5.3-slim
 
 LABEL net.skyplabs.maintainer-name="Paul-Emmanuel Raoul"
 LABEL net.skyplabs.maintainer-email="skyper@skyplabs.net"
