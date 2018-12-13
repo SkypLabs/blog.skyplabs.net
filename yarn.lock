@@ -882,9 +882,9 @@ safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-simple-jekyll-search@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.7.0.tgz#002ab9b71a781cab5d5102cb2b488b9cf8a79330"
+simple-jekyll-search@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.7.2.tgz#17468ddb4a8459a1a3d73b0f690823516b9f4000"
   dependencies:
     fuzzysearch "^1.0.3"
   optionalDependencies:
