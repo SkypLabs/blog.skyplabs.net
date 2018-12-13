@@ -29,5 +29,5 @@ permalink: /publications/
  [bsfl-slideshow]: https://skyplabs.github.io/bsfl-slideshow/
  [CVE-2017-1000448]: https://nvd.nist.gov/vuln/detail/CVE-2017-1000448
  [git-slideshow]: https://skyplabs.github.io/git-slideshow/
- [hakin9-vol13-no05]: https://drive.google.com/open?id=1Jcv1gFUQ_ue1kqmUlqTy6zVfodB2HYNM
+ [hakin9-vol13-no05]: https://skyplabs.keybase.pub/Papers/Magazines/Hakin9%20Magazine%2C%20VOL.13%2C%20NO.%2005%2C%20%22Open%20Source%20Hacking%20Tools%22.pdf
  [semantics-2017-demo-paper]: http://ceur-ws.org/Vol-2044/paper18/
