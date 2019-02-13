@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/SkypLabs/blog.skyplabs.net.svg?branch=gh-pages)](https://travis-ci.org/SkypLabs/blog.skyplabs.net) [![Known Vulnerabilities](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net/badge.svg)](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net)
 
-My personal [blog][blog] using [Jekyll][jekyll].
+My personal [blog][blog] made with [Jekyll][jekyll].
 
 ## How to
 
@@ -69,7 +69,7 @@ Steps `4` and `5` can be done by using the `./scripts/cibuild` script.
 
 All the articles and images are [CC BY-NC 4.0][CC] licensed. The rest is [MIT][MIT] licensed.
 
- [blog]: http://blog.skyplabs.net
+ [blog]: https://blog.skyplabs.net
  [docker]: https://www.docker.com/
  [docker-compose]: https://docs.docker.com/compose/
  [github-pages-versions]: https://pages.github.com/versions/
