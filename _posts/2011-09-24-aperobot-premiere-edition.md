@@ -48,5 +48,5 @@ Comme d'habitude, en conclusion de cet article, une série de photos prise le jo
 
 ![Apérobot septembre 2011 - 13](/images/aperobot-premiere-edition-13.jpg)
 
-[site_caliban]: http://forum.caliban-web.com/ "Association Caliban"
+[site_caliban]: https://caliban-asso.fr "Association Caliban"
 [facebook_world_of_robot]: http://www.facebook.com/pages/World-Of-Robot/164886823512 "Page Facebook de World Of Robot"

@@ -22,12 +22,12 @@ Afin de ne pas perdre de temps à préparer l'environnement de développement ad
 N'hésitez pas à me faire part de votre avis concernant l'utilisation de ce produit ou de mon conteneur Docker.
 
 [ble]: https://en.wikipedia.org/wiki/Bluetooth_low_energy
-[ble_micro]: http://www.seeedstudio.com/depot/Seeed-Micro-BLE-Module-w-CortexM0-Based-nRF51822-SoC-p-1975.html
+[ble_micro]: https://www.seeedstudio.com/Seeed-Micro-BLE-Module-w-Cortex-M0-Based-nRF51822-SoC-p-1975.html
 [ble_micro_docker]: https://hub.docker.com/r/skyplabs/ble-micro/
 [ble_micro_github]: https://github.com/Seeed-Studio/mbed_ble/tree/softdevice_v6
 [ble_micro_wiki]: http://wiki.seeedstudio.com/BLE_Micro
 [gcc_arm_embedded]: https://launchpad.net/gcc-arm-embedded
 [mbed_ble_micro]: http://developer.mbed.org/teams/Bluetooth-Low-Energy/
 [mbed_sdk]: http://developer.mbed.org/handbook/mbed-SDK
-[nRF51822]: http://www.nordicsemi.com/eng/Products/Bluetooth-R-low-energy/nRF51822
+[nRF51822]: https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822/GetStarted
 [seeed_studio]: http://www.seeedstudio.com/depot/
