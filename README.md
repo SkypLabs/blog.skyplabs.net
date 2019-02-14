@@ -1,6 +1,6 @@
 # Skyper's Blog
 
-[![Build Status](https://travis-ci.org/SkypLabs/blog.skyplabs.net.svg?branch=gh-pages)](https://travis-ci.org/SkypLabs/blog.skyplabs.net) [![Known Vulnerabilities](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net/badge.svg)](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net)
+[![Master Branch Build Status](https://img.shields.io/travis/SkypLabs/blog.skyplabs.net/master.svg?label=master&logo=travis&style=flat)](https://travis-ci.org/SkypLabs/blog.skyplabs.net) [![Develop Branch Build Status](https://img.shields.io/travis/SkypLabs/blog.skyplabs.net/develop.svg?label=develop&logo=travis&style=flat)](https://travis-ci.org/SkypLabs/blog.skyplabs.net) [![Known Vulnerabilities](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net/badge.svg)](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net)
 
 My personal [blog][blog] made with [Jekyll][jekyll].
 
