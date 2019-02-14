@@ -2,4 +2,7 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-favicon --disable-external
+bundle exec htmlproofer ./_site \
+    --check-favicon \
+    --check-opengraph \
+    --http-status-ignore "999,0"
