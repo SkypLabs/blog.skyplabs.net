@@ -7,16 +7,27 @@ permalink: /contact/
 
 Here is my email address : [{{ site.data.author.email }}](mailto:{{ site.data.author.email }})
 
-If you have something confidential to share, please use [PGP][PGP]/[GPG][GPG] encryption to secure our communication.
+If you have something confidential to share, please use [PGP][pgp]/[GPG][gpg] encryption to secure our communication.
 
-My public keys can be downloaded from my [Keybase profile][my-pgp-keys]. In addition, you can encrypt a text message with my latest public key directly with [this online tool][keybase-encrypt-tool].
+My public key can be downloaded from my Keybase profile:
+
+[![My PGP key fingerprint][my-pgp-key-badge]][my-pgp-key]
+
+To facilitate the encryption process, you can use [this online tool][keybase-encrypt-tool]. You can also use it to verify my signatures.
+
+### Keybase
+
+If you have a [Keybase][keybase] account, you can start chatting securely with me by going on [my profile][my-keybase-profile].
 
 ### Public conversations
 
 You can also contact me publicly via my [Twitter account][my-twitter].
 
-[PGP]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy
-[GPG]: https://gnupg.org/
-[my-twitter]: https://twitter.com/{{ site.data.author.twitter | prepend: site.baseurl }}
-[my-pgp-keys]: https://keybase.io/{{ site.data.author.keybase }}/pgp_keys.asc
+[gpg]: https://gnupg.org/
+[keybase]: https://keybase.io/
 [keybase-encrypt-tool]: https://keybase.io/encrypt#{{ site.data.author.keybase }}
+[my-keybase-profile]: https://keybase.io/{{ site.data.author.keybase }}
+[my-pgp-key]: https://keybase.io/{{ site.data.author.keybase }}/pgp_keys.asc
+[my-pgp-key-badge]: https://img.shields.io/keybase/pgp/skyplabs.svg
+[my-twitter]: https://twitter.com/{{ site.data.author.twitter | prepend: site.baseurl }}
+[pgp]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy
