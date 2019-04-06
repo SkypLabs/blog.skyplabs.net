@@ -48,7 +48,7 @@ Voici le code développé pour la carte Arduino (à compiler avec le SDK officie
 
 Pour relier les différentes parties du montage final entre elles, j'ai réalisé un shield Arduino grâce au logiciel de CAO **EAGLE PCB Software**. Le gros avantage de cette solution est qu'il devient très facile de monter/démonter les différents composants de la réalisation étant donné que j'utilise des supports pour toutes les connexions. Cela procure une certaine propreté du montage. En voici une photo :
 
-![TV_RC Project - Montage final](/images/tv_rc_montage_final.jpg)
+![TV_RC Project - Montage final](/assets/images/tv_rc_montage_final.jpg)
 
 Vous trouverez l'archive ZIP contenant le PCB du sheild Arduino au format EPS à [cette adresse][pcb_zip_file].
 

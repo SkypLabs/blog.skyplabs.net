@@ -40,7 +40,7 @@ See the result for yourself:
 As you can see, the communication topology is not the only thing to think about when designing the software architecture of your Angular application. Take the time to read about the different [Subject classes][subjects] from the [ReactiveX library][rxjs] before implementing your own homemade solution.
 
  [eventemitter]: https://angular.io/api/core/EventEmitter
- [eventemitter-diag]: /images/EventEmitter.svg "Diagram of the data propagation using an EventEmitter"
+ [eventemitter-diag]: /assets/images/EventEmitter.svg "Diagram of the data propagation using an EventEmitter"
  [rxjs]: http://reactivex.io/
- [replaysubject-diag]: /images/ReplaySubject.svg "Diagram of the data propagation using a ReplaySubject"
+ [replaysubject-diag]: /assets/images/ReplaySubject.svg "Diagram of the data propagation using a ReplaySubject"
  [subjects]: http://reactivex.io/documentation/subject.html

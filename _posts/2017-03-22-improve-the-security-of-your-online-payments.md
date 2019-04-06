@@ -19,7 +19,7 @@ In order to keep your CSC secret, the best way is to remove it from the credit c
 
 This way, even if someone steals my credit card, I can ask my bank to block it, knowing that it can't be used online on most websites in the meantime. In fact, keep in mind that this solution is not perfect since the CSC is not always required to make a payment. It is the case of online stores proposing a one-click buying feature such as Amazon ([storing the CSC is prohibited by card issuers][CSC storage]).
 
- [credit card CSC]: /images/credit_card_csc.png
+ [credit card CSC]: /assets/images/credit_card_csc.png
  [CSC]: https://en.wikipedia.org/wiki/Card_security_code
  [CSC storage]: https://en.wikipedia.org/wiki/Card_security_code#Security_benefits
  [keepass]: http://keepass.info/

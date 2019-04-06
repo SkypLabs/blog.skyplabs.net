@@ -20,14 +20,14 @@ Le reste de la journée, nous l'avons passé dans une salle de conférence, à �
 
 Pour conclure ce petit compte rendu, voici une petite série de photos prises au salon le jour même :
 
-![RTS Embedded Systems 2011 - 1](/images/Salon-RTS-Embedded-Systems-2011-1.jpg)
+![RTS Embedded Systems 2011 - 1](/assets/images/Salon-RTS-Embedded-Systems-2011-1.jpg)
 
-![RTS Embedded Systems 2011 - 2](/images/Salon-RTS-Embedded-Systems-2011-2.jpg)
+![RTS Embedded Systems 2011 - 2](/assets/images/Salon-RTS-Embedded-Systems-2011-2.jpg)
 
-![RTS Embedded Systems 2011 - 3](/images/Salon-RTS-Embedded-Systems-2011-3.jpg)
+![RTS Embedded Systems 2011 - 3](/assets/images/Salon-RTS-Embedded-Systems-2011-3.jpg)
 
-![RTS Embedded Systems 2011 - 4](/images/Salon-RTS-Embedded-Systems-2011-4.jpg)
+![RTS Embedded Systems 2011 - 4](/assets/images/Salon-RTS-Embedded-Systems-2011-4.jpg)
 
-![RTS Embedded Systems 2011 - 5](/images/Salon-RTS-Embedded-Systems-2011-5.jpg)
+![RTS Embedded Systems 2011 - 5](/assets/images/Salon-RTS-Embedded-Systems-2011-5.jpg)
 
-![RTS Embedded Systems 2011 - 6](/images/Salon-RTS-Embedded-Systems-2011-6.jpg)
+![RTS Embedded Systems 2011 - 6](/assets/images/Salon-RTS-Embedded-Systems-2011-6.jpg)

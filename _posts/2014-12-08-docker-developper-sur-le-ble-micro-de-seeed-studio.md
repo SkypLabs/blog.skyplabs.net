@@ -9,7 +9,7 @@ tags:
 ---
 Le [BLE Micro][ble_micro] est une petite carte électronique produite par [Seeed Studio][seeed_studio] embarquant le SoC [nRF51822][nRF51822] de Nordic Semiconductor. Ce dernier est un module de communication [Bluetooth Low Energy][ble] (BLE) basé un Cortex M0.
 
-![BLE Micro de Seeed Studio](/images/ble_micro.jpg)
+![BLE Micro de Seeed Studio](/assets/images/ble_micro.jpg)
 
 <!--more-->
 

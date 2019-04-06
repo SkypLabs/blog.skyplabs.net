@@ -30,7 +30,7 @@ Enfin, la carte est disponible chez [Farnell][farnell].
 
 Pour ce test, j'ai utilisé une carte microcontrôleur Arduino Uno (rev3) afin de lire les valeurs renvoyées par les différents capteurs au moyen d'une liaison I²C. Le câblage est le suivant :
 
-![Schéma du montage de test de la carte ATAVRSBIN1](/images/ATAVRSBIN1_wiring.png)
+![Schéma du montage de test de la carte ATAVRSBIN1](/assets/images/ATAVRSBIN1_wiring.png)
 
 ## Communication I²C avec les capteurs
 
@@ -48,13 +48,13 @@ Plusieurs bibliothèques pour Arduino sont [disponibles][ATAVRSBIN1_libs] afin d
 
 Les registres internes contenant les valeurs retournées par les capteurs sont données dans la [datasheet][ITG3200_datasheet] sous forme du tableau suivant :
 
-![Tableau des registres du ITG-3200](/images/ITG-3200_registers.png)
+![Tableau des registres du ITG-3200](/assets/images/ITG-3200_registers.png)
 
 Chaque capteur retourne une valeur sur 16 bits codée en code complément à 2. Étant donné que la lecture se fait octet par octet sur un bus I²C, il sera nécessaire d'utiliser des décalages par 8 pour reconstituer nos valeurs sur 16 bits.
 
 Nous allons récupérer l'ensemble de ces valeurs d'un seul coup en lisant 8 octets à partir de l'adresse du premier registre, à savoir 0x1B. La séquence de "burst read" utilisée pour lire plusieurs octets en une seule interrogation I²C est la suivante :
 
-![Schéma d'une séquence de "burst read" pour le ITG-3200](/images/ITG-3200_burst_read.png)
+![Schéma d'une séquence de "burst read" pour le ITG-3200](/assets/images/ITG-3200_burst_read.png)
 
 Une fois les valeurs récupérées, il sera nécessaire d'effectuer quelques opérations mathématiques afin d'obtenir des unités lisibles, à savoir des °C pour le capteur de température et des degrés par seconde pour les trois axes du gyromètre.
 

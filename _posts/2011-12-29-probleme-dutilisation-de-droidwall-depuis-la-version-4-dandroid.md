@@ -27,7 +27,7 @@ Droidwall est une application Android permettant d'autoriser ou non l'accès au 
 
 Mais depuis la version 4 d'Android (nommée **Ice Cream Sandwich**), Google a intégré à son système la possibilité de visualiser la consommation data réalisée par l'ensemble des applications qui y sont installées. Cela se traduit par l'ajout de nouvelles règles Netfilter dans les chaînes `INPUT` et `OUTPUT`. Le soucis est que ces nouvelles règles viennent perturber le bon fonctionnement de Droidwall. Voyez par vous même :
 
-![Screenshot netfilter Android - before](/images/probleme-droidwall-1.png)
+![Screenshot netfilter Android - before](/assets/images/probleme-droidwall-1.png)
 
 La règle correspondante à Droiwall se situe après celle qui autorise l'ensemble du trafic à sortir. Pour corriger ce problème, j'ai écris un petit script de règles Netfilter que je fais exécuter par Droidwall (via une de ses options) pour modifier la position de la règle citée plus haut. Voici le script en question :
 
@@ -44,7 +44,7 @@ Après avoir copié ce petit script sur votre carte SD, il vous faut utiliser l'
 
 Et voici le résultat en image :
 
-![Screenshot netfilter Android - after](/images/probleme-droidwall-2.png)
+![Screenshot netfilter Android - after](/assets/images/probleme-droidwall-2.png)
 
 Cette méthode permet de résoudre le problème mais je vais prendre le temps de contacter le développeur de l'application Droidwall pour le lui signaler et ainsi éviter toutes ces manipulations.
 
