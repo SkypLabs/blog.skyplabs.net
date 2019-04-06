@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+# MathJax
+cp node_modules/mathjax/MathJax.js js
+cp -r node_modules/mathjax/config js
+cp -r node_modules/mathjax/extensions js
+cp -r node_modules/mathjax/jax js
+
+# Simple Jekyll Search
+cp node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js js

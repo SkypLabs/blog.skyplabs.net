@@ -7,9 +7,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "mathjax": "^2.7.5",
     "simple-jekyll-search": "^1.7.2"
   },
   "scripts": {
-    "install": "find node_modules/ -type f -name '*.min.js' -exec cp {} js/ \\;"
+    "install": "scripts/install-js"
   }
 }
