@@ -22,15 +22,17 @@ plugins:
 
 # Handling Reading
 exclude:
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - package.json
+  - package-lock.json
+  - yarn.lock
   - LICENSE
   - README.md
   - CNAME
   - vendor
   - scripts
-  - node_modules
   - Dockerfile
   - docker-compose
   - .travis.yml
