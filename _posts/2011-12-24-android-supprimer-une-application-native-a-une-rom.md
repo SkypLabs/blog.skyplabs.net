@@ -37,4 +37,4 @@ En plus de permettre de faire le ménage, le fait de supprimer certaines applica
 
 Sur ce, joyeux noël !
 
-[android_sdk]: http://developer.android.com/sdk/index.html "Android SDK"
+[android_sdk]: https://developer.android.com/sdk/index.html "Android SDK"

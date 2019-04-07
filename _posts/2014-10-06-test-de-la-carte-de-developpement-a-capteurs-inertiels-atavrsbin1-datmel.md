@@ -62,14 +62,14 @@ Enfin, voici le code utilisé pour cet exemple :
 
 {% gist SkypLabs/763b20801f95d84267486450e8dcf515 ATAVRSBIN1_i2c.ino %}
 
-[gyroscope]: http://fr.wikipedia.org/wiki/Gyroscope
-[gyromètre]: http://fr.wikipedia.org/wiki/Gyrom%C3%A8tre
-[accéléromètre]: http://fr.wikipedia.org/wiki/Acc%C3%A9l%C3%A9rom%C3%A8tre
-[centrale_inertielle]: http://fr.wikipedia.org/wiki/Centrale_%C3%A0_inertie
-[ATAVRSBIN1]: http://fr.farnell.com/atmel/atavrsbin1/carte-inertial-capteur-9dof/dp/1972205
-[i2c]: http://fr.wikipedia.org/wiki/I2C
-[farnell]: http://fr.farnell.com/
-[ATAVRSBIN1_datasheet]: http://www.atmel.com/Images/doc8354.pdf
-[wire]: http://arduino.cc/en/reference/wire
+[gyroscope]: https://fr.wikipedia.org/wiki/Gyroscope
+[gyromètre]: https://fr.wikipedia.org/wiki/Gyrom%C3%A8tre
+[accéléromètre]: https://fr.wikipedia.org/wiki/Acc%C3%A9l%C3%A9rom%C3%A8tre
+[centrale_inertielle]: https://fr.wikipedia.org/wiki/Centrale_%C3%A0_inertie
+[ATAVRSBIN1]: https://fr.farnell.com/atmel/atavrsbin1/carte-inertial-capteur-9dof/dp/1972205
+[i2c]: https://fr.wikipedia.org/wiki/I2C
+[farnell]: https://fr.farnell.com/
+[ATAVRSBIN1_datasheet]: https://ww1.microchip.com/downloads/en/AppNotes/doc8354.pdf
+[wire]: https://arduino.cc/en/reference/wire
 [ATAVRSBIN1_libs]: https://github.com/jrowberg/i2cdevlib/tree/master/Arduino
 [ITG3200_datasheet]: https://www.sparkfun.com/datasheets/Sensors/Gyro/PS-ITG-3200-00-01.4.pdf

@@ -73,6 +73,6 @@ All the articles and images are [CC BY-NC 4.0][CC] licensed. The rest is [MIT][M
  [docker]: https://www.docker.com/
  [docker-compose]: https://docs.docker.com/compose/
  [github-pages-versions]: https://pages.github.com/versions/
- [jekyll]: http://jekyllrb.com/
- [CC]: http://creativecommons.org/licenses/by-nc/4.0/
- [MIT]: http://opensource.org/licenses/MIT
+ [jekyll]: https://jekyllrb.com/
+ [CC]: https://creativecommons.org/licenses/by-nc/4.0/
+ [MIT]: https://opensource.org/licenses/MIT

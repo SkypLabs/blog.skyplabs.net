@@ -10,7 +10,7 @@ tags:
 ---
 Edit : Depuis Jelly Bean (version 4.1.2 dans mon cas), la variable `$IPTABLES` fournit par Droidwall n'est plus valide. Une petite mise à jour du script s'impose :
 
-	## Netfilter Script by Skyper - http://blog.skyplabs.net ##
+	## Netfilter Script by Skyper - https://blog.skyplabs.net ##
 
 	# Permet de corriger un problème d'exploitation de Droidwall depuis ICS.
 
@@ -31,7 +31,7 @@ Mais depuis la version 4 d'Android (nommée **Ice Cream Sandwich**), Google a in
 
 La règle correspondante à Droiwall se situe après celle qui autorise l'ensemble du trafic à sortir. Pour corriger ce problème, j'ai écris un petit script de règles Netfilter que je fais exécuter par Droidwall (via une de ses options) pour modifier la position de la règle citée plus haut. Voici le script en question :
 
-	## Netfilter Script by Skyper - http://blog.skyplabs.net ##
+	## Netfilter Script by Skyper - https://blog.skyplabs.net ##
 
 	# Permet de corriger un problème d'exploitation de Droidwall depuis ICS.
 
@@ -48,4 +48,4 @@ Et voici le résultat en image :
 
 Cette méthode permet de résoudre le problème mais je vais prendre le temps de contacter le développeur de l'application Droidwall pour le lui signaler et ainsi éviter toutes ces manipulations.
 
-[droidwall_custom_script]: http://code.google.com/p/droidwall/wiki/CustomScripts "Set Custom Script"
+[droidwall_custom_script]: https://code.google.com/p/droidwall/wiki/CustomScripts "Set Custom Script"

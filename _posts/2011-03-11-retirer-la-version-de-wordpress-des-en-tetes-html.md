@@ -22,4 +22,4 @@ Pour plus d'informations sur la fonction `remove_action`, [cliquez ici][remove_a
 
 Pensez également à supprimer le fichier `readme.html` présent à la racine de votre site. Ce dernier contient également le numéro de version de WordPress.
 
-[remove_action]: http://codex.wordpress.org/Function_Reference/remove_action "codex.wordpress.org : Remove Action"
+[remove_action]: https://codex.wordpress.org/Function_Reference/remove_action "codex.wordpress.org : Remove Action"

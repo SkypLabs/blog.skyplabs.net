@@ -27,7 +27,7 @@ N'hésitez pas à me faire part de votre avis concernant l'utilisation de ce pro
 [ble_micro_github]: https://github.com/Seeed-Studio/mbed_ble/tree/softdevice_v6
 [ble_micro_wiki]: http://wiki.seeedstudio.com/BLE_Micro
 [gcc_arm_embedded]: https://launchpad.net/gcc-arm-embedded
-[mbed_ble_micro]: http://developer.mbed.org/teams/Bluetooth-Low-Energy/
-[mbed_sdk]: http://developer.mbed.org/handbook/mbed-SDK
+[mbed_ble_micro]: https://os.mbed.com/teams/Bluetooth-Low-Energy/
+[mbed_sdk]: https://os.mbed.com/handbook/mbed-SDK
 [nRF51822]: https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822/GetStarted
-[seeed_studio]: http://www.seeedstudio.com/depot/
+[seeed_studio]: https://www.seeedstudio.com/

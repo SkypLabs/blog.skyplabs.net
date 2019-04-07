@@ -64,7 +64,7 @@ La réalisation de ce projet m'a permis de m'investir un peu plus dans le domain
 
 Affaire à suivre ...
 
-[protocole_nec]: http://www.sbprojects.com/knowledge/ir/nec.php "NEC protocol"
+[protocole_nec]: https://www.sbprojects.com/knowledge/ir/nec.php "NEC protocol"
 [lirc]: http://www.lirc.org/ "LIRC"
 [pcb_zip_file]: /downloads/TV_RC_ARDUINO_SHIELD_PCB_V1.zip "TV_RC_ARDUINO_SHIELD_PCB_V1.zip"
-[tv_remote_control]: http://code.google.com/p/tv-remote-control/ "TV Remote Control Project"
+[tv_remote_control]: https://code.google.com/p/tv-remote-control/ "TV Remote Control Project"

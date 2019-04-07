@@ -22,4 +22,4 @@ This way, even if someone steals my credit card, I can ask my bank to block it, 
  [credit card CSC]: /assets/images/credit_card_csc.png
  [CSC]: https://en.wikipedia.org/wiki/Card_security_code
  [CSC storage]: https://en.wikipedia.org/wiki/Card_security_code#Security_benefits
- [keepass]: http://keepass.info/
+ [keepass]: https://keepass.info/

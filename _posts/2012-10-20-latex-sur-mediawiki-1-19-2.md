@@ -20,4 +20,4 @@ On peut donc en conclure que la dernière version de l'extension Math n'est pas 
 
 Merci à **Cgeroux** pour sa contribution [(lien vers ses explications)][latex_issue].
 
-[latex_issue]: http://www.mediawiki.org/wiki/Extension_talk:Math
+[latex_issue]: https://www.mediawiki.org/wiki/Extension_talk:Math

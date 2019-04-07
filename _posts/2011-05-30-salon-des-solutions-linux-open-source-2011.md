@@ -25,7 +25,7 @@ En effet, les architectures centralisées peuvent se retrouver avec des accès c
 
 Voici une petite vidéo de test de SiT en pleine action :
 
-<iframe width="640" height="510" src="http://www.youtube.com/embed/Lxl9sFYlx9w?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="510" src="https://www.youtube.com/embed/Lxl9sFYlx9w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Le système fonctionne sur une Debian allégée avec du VLC / MPD / EFL / WebKit comme technologies/logiciels sous-jacents. Le moins que l'on puisse dire est que c'est d'une grande fluidité et que l'interface est vraiment bien réalisée, Bravo !
 
@@ -43,4 +43,4 @@ Je termine ce résumé en disant qu'on a bien profité lors de ce salon, que ce 
 
 À l'année prochaine !
 
-[microsoft_open_source]: http://www.01net.com/editorial/532777/microsoft-nous-ne-combattons-plus-l-open-source/ "Microsoft : Nous ne combattons plus l'open source"
+[microsoft_open_source]: https://www.01net.com/editorial/532777/microsoft-nous-ne-combattons-plus-l-open-source/ "Microsoft : Nous ne combattons plus l'open source"

@@ -16,4 +16,4 @@ Pour passer outre cette restriction, il suffit de rajouter cet alias dans votre 
 
 En effet, la commande `env` permet de lancer un processus en positionnant des valeurs d’environnement.
 
-Pour plus d'informations sur les options de compilation de `sudo` : <http://www.gratisoft.us/sudo/install.html>
+Pour plus d'informations sur les options de compilation de `sudo` : <https://www.sudo.ws/install.html>

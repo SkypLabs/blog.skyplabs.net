@@ -32,4 +32,4 @@ La différence entre les instructions avec et sans le mot clé "admin" réside d
 
 Grâce à ce système, vous allez pouvoir personnaliser la configuration PHP de vos virtual hosts.
 
-[ini_set]: http://www.php.net/manual/fr/function.ini-set.php "Function ini set - PHP Manual"
+[ini_set]: https://www.php.net/manual/fr/function.ini-set.php "Function ini set - PHP Manual"
