@@ -66,5 +66,5 @@ Affaire à suivre ...
 
 [protocole_nec]: https://www.sbprojects.com/knowledge/ir/nec.php "NEC protocol"
 [lirc]: http://www.lirc.org/ "LIRC"
-[pcb_zip_file]: /downloads/TV_RC_ARDUINO_SHIELD_PCB_V1.zip "TV_RC_ARDUINO_SHIELD_PCB_V1.zip"
+[pcb_zip_file]: /assets/downloads/TV_RC_ARDUINO_SHIELD_PCB_V1.zip "TV_RC_ARDUINO_SHIELD_PCB_V1.zip"
 [tv_remote_control]: https://code.google.com/p/tv-remote-control/ "TV Remote Control Project"
