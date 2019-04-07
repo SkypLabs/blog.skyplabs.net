@@ -20,7 +20,10 @@ plugins:
   - jekyll-feed
   - jekyll-gist
 
-# Handling Reading
+# Build settings
+include:
+ - _pages
+
 exclude:
   - node_modules
   - Gemfile
@@ -37,7 +40,6 @@ exclude:
   - docker-compose
   - .travis.yml
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: "<!--more-->"
