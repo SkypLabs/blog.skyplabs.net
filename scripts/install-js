@@ -4,10 +4,7 @@ set -e # halt script on error
 mkdir -p assets/js
 
 # MathJax
-cp node_modules/mathjax/MathJax.js assets/js/
-cp -r node_modules/mathjax/config assets/js/
-cp -r node_modules/mathjax/extensions assets/js/
-cp -r node_modules/mathjax/jax assets/js/
+cp -r node_modules/mathjax/es5 assets/js/mathjax
 
 # Simple Jekyll Search
 cp node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js assets/js/
