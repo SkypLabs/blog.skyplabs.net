@@ -13,7 +13,7 @@ If you are a [Brave][brave] user, you can use Brave Rewards to tip me by clickin
 
 ## Cryptocurrencies
 
-If you like cryptocurrencies I as do, you will find all my cryptocurrency addresses on my [Keybase profile][my-keybase] and/or in [this text file][my-wallets] (digitally signed).
+If you like cryptocurrencies as I do, you will find all my cryptocurrency addresses on my [Keybase profile][my-keybase] and/or in [this text file][my-wallets] (digitally signed).
 
 ## PayPal
 
