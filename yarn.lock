@@ -1078,10 +1078,10 @@ safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-simple-jekyll-search@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.7.2.tgz#17468ddb4a8459a1a3d73b0f690823516b9f4000"
-  integrity sha512-bexDOIiOXr/HkuYdJjkBUy/efaTZbvQ3xSS5ucWDEv5VIbzvVxcIvoBXKt2kacoOw+6JwXfqk9+kejV0FHzT7w==
+simple-jekyll-search@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.7.3.tgz#5813e7b4dd3775c27d903c06218f95708b5a2f42"
+  integrity sha512-NXGi7hiOrvJFeV3/chbQNv/uy168TYB0NGuawLc8N0tdxP1TGHjKKouUwL4nXolAk2d4ORjU11Cjmf7vDdxxOA==
   dependencies:
     fuzzysearch "^1.0.3"
   optionalDependencies:
