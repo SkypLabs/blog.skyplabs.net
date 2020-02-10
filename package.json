@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "mathjax": "^3.0.0",
+    "mathjax": "^3.0.1",
     "simple-jekyll-search": "^1.7.3"
   },
   "scripts": {
