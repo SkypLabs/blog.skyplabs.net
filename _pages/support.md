@@ -23,9 +23,9 @@ If you like cryptocurrencies as I do, you will find all my cryptocurrency addres
 
 If you have a PayPal account, you can use [this link][my-paypal] to tip me.
 
- [brave]: https://brave.com
- [buy-me-a-coffee]: https://www.buymeacoffee.com/skyplabs
- [ko-fi]: https://ko-fi.com/skyplabs
- [my-keybase]: https://keybase.io/{{ site.data.author.keybase }}
- [my-wallets]: https://keybase.pub/skyplabs/wallets.txt
- [my-paypal]: https://paypal.me/{{ site.data.author.paypal }}
+ [brave]: https://brave.com "Brave Official Website"
+ [buy-me-a-coffee]: https://www.buymeacoffee.com/skyplabs "My profile on Buy Me A Coffee"
+ [ko-fi]: https://ko-fi.com/skyplabs "My profile on Ko-fi"
+ [my-keybase]: https://keybase.io/{{ site.data.author.keybase }} "My profile on Keybase"
+ [my-wallets]: https://keybase.pub/skyplabs/wallets.txt "My cryptocurrencies addresses"
+ [my-paypal]: https://paypal.me/{{ site.data.author.paypal }} "My PayPal account"
