@@ -1,24 +1,17 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Skyper's Blog
 description: > # this means to ignore newlines until "keywords:"
-  Personal blog about IT, Electronics, Science... I write in French and in English.
-keywords: Blog,Computer Science,Electronics,Hacking,IT,Open Source
+  Personal blog about IT, Electronics, InfoSec, Hacking, Bug Hunting...
+keywords: "Blog, Computer Science, IT, Electronics, Hacking, InfoSec, CTF, Bug Bounty, Open Source"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.skyplabs.net" # the base hostname & protocol for your site
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-feed
   - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Build settings
 include:
