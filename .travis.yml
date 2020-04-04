@@ -7,10 +7,13 @@ rvm:
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    # Speeds up installation of html-proofer.
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
+# Use Bundler 2.0.
+# See https://docs.travis-ci.com/user/languages/ruby/#bundler-20.
 before_install:
-  - gem update --system
+  - yes | gem update --system --force
   - gem install bundler
 
 script: ./scripts/cibuild
