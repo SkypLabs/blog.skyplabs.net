@@ -815,10 +815,10 @@ log-update@^1.0.2:
     ansi-escapes "^1.0.0"
     cli-cursor "^1.0.2"
 
-mathjax@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mathjax/-/mathjax-3.0.1.tgz#cb8f7a1342557e2b03fef0c13e43785dfeb00b9b"
-  integrity sha512-hrwOeKm3b1X4zpvLRSX89y3MZLRJTq0bSGIbo5M6BANOeGlL2z8Y8mZaKRFJ/WY4qcIrHp3f+Q9RWIaldOCUVg==
+mathjax@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/mathjax/-/mathjax-3.0.4.tgz#5814e161997a7bcc2a2df1e7c32770b8e728bcf1"
+  integrity sha512-fLG3HD9aKNuG04DqLYqXu8tXtvtvUUFQ1jvHF9XrSzDMq2ichDtV4pobenz7KRMnpbj8eAGOsJBtVQLasTq72w==
 
 mime-db@1.43.0:
   version "1.43.0"
