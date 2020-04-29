@@ -10,16 +10,16 @@ Les différents composants du système d'exploitation Android sont installés su
 
 Cependant, il arrive de trouver dans certaines ROMs des applications utilisateurs installées par défaut dans la partition système. C'était justement le cas de la ROM SFR installée sur le Nexus One de ma copine. L'application Twitter y était installée nativement sans possibilité de la désinstaller.
 
-Pour remédier à ce désagrément, il est nécessaire d'avoir accès au compte **root** pour pouvoir monter temporairement la partition système en rw. De plus, l'installation du [SDK][android_sdk] va nous permettre de récupérer le shell de notre androphone directement depuis un ordinateur (pour pouvoir utiliser un vrai clavier physique).
+Pour remédier à ce désagrément, il est nécessaire d'avoir accès au compte **root** pour pouvoir monter temporairement la partition système en rw. De plus, l'installation de [`adb`][android adb] va nous permettre de récupérer le shell de notre androphone directement depuis un ordinateur (pour pouvoir utiliser un vrai clavier physique).
 
 <!--more-->
 
 Les étapes de réalisation sont les suivantes :
 
 1. Activer le mode **USB debugging** de votre androphone.
-2. Une fois connecté à votre ordinateur et après avoir installé le SDK, utiliser la commande `adb shell` pour récupérer le shell de votre androphone.
+2. Une fois connecté à votre ordinateur et après avoir installé `adb`, utiliser la commande `adb shell` pour récupérer le shell de votre androphone.
 3. Changer d'utilisateur pour root grace à la commande `su`.
-4. Monter la partition système en rw en faisant :
+4. Monter la partition système en `rw` en faisant :
 
         mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
 
@@ -37,4 +37,4 @@ En plus de permettre de faire le ménage, le fait de supprimer certaines applica
 
 Sur ce, joyeux noël !
 
-[android_sdk]: https://developer.android.com/sdk/index.html "Android SDK"
+[android adb]: https://developer.android.com/studio/command-line/adb "Android Debug Bridge (adb)"
