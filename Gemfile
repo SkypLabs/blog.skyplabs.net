@@ -10,6 +10,10 @@ group :github_pages do
   gem 'github-pages', '~> 204', group: :jekyll_plugins
 end
 
+group :dev, optional: true do
+  gem 'rake'
+end
+
 group :test, optional: true do
   gem 'html-proofer', '~> 3.15'
 end
