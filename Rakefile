@@ -1,11 +1,31 @@
 # frozen_string_literal: true
 
 # ------------------------------ #
+# Dependencies
+# ------------------------------ #
+
+desc 'Install all dependencies'
+task :install do
+  Rake::Task['install_gems'].execute
+  Rake::Task['install_js'].execute
+end
+
+desc 'Install Ruby dependencies using Bundler'
+task :install_gems do
+  sh 'bundle install'
+end
+
+desc 'Install JavaScript dependencies using Yarn'
+task :install_js do
+  sh 'yarn install'
+end
+
+# ------------------------------ #
 # Build
 # ------------------------------ #
 
 desc 'Build the Jekyll website'
-task :build do
+task :build => :install do
   sh 'bundle exec jekyll build'
 end
 
