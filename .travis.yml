@@ -13,9 +13,8 @@ env:
 before_install:
   - yes | gem update --system --force
   - gem install bundler
-  - bundle config set with 'test'
 
-script: ./scripts/cibuild
+script: bundle exec rake build test:run
 
 notifications:
   email:
