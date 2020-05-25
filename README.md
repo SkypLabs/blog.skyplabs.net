@@ -63,7 +63,7 @@ Below are the different steps to do before publishing a new post:
 5. Verify the validity of the generated HTML source code
 6. Set up a development environment and check if everything looks good
 
-Steps `4` and `5` can be done by using the `./scripts/cibuild` script.
+Steps `4` and `5` can be done by using `rake`.
 
 ## License
 

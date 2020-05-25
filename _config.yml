@@ -21,6 +21,7 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+  - Rakefile
   - package.json
   - package-lock.json
   - yarn.lock
