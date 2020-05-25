@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+task default: ['build', 'test:run']
+
 # ------------------------------ #
 # Dependencies
 # ------------------------------ #
@@ -51,7 +53,7 @@ namespace :bundle do
 
   desc 'Unset the \'without\' option in Bundler'
   task :unset_without do
-    sh 'bundle config unset \'without\''
+    sh 'bundle config unset without'
   end
 end
 
