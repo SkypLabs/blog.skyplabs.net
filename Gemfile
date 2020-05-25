@@ -6,16 +6,16 @@ source 'https://rubygems.org'
 # https://github.com/advisories/GHSA-7553-jr98-vx47
 gem 'nokogiri', '>= 1.10.8'
 
-group :github_pages do
+group :production do
   # Latest version available:
   # https://pages.github.com/versions/
   gem 'github-pages', '~> 204', group: :jekyll_plugins
 end
 
-group :dev, optional: true do
-  gem 'rake'
+group :development do
+  gem 'rake', group: :test
 end
 
-group :test, optional: true do
+group :test do
   gem 'html-proofer', '~> 3.15'
 end
