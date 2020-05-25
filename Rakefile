@@ -4,14 +4,14 @@
 # Dependencies
 # ------------------------------ #
 
-desc 'Install all the default dependencies'
-task :install => ['bundle:unset_deployment_mode'] do
+desc 'Install all the dependencies'
+task install: ['bundle:unset_deployment_mode', 'bundle:unset_without'] do
   Rake::Task['bundle:install'].execute
   Rake::Task['yarn:install'].execute
 end
 
 desc 'Install only the production dependencies'
-task :install_prod => ['bundle:set_deployment_mode'] do
+task install_prod: ['bundle:set_deployment_mode', 'bundle:without_non_prod'] do
   Rake::Task['bundle:install'].execute
   Rake::Task['yarn:install_prod'].execute
 end
@@ -42,6 +42,17 @@ namespace :bundle do
   task :unset_deployment_mode do
     sh 'bundle config unset deployment'
   end
+
+  desc 'Set the \'without\' option in Bundler for non-production ' \
+       'dependencies'
+  task :without_non_prod do
+    sh 'bundle config set without \'deployment test\''
+  end
+
+  desc 'Unset the \'without\' option in Bundler'
+  task :unset_without do
+    sh 'bundle config unset \'without\''
+  end
 end
 
 namespace :yarn do
@@ -66,12 +77,12 @@ end
 # ------------------------------ #
 
 desc 'Build the website'
-task :build => ['install'] do
+task build: ['install'] do
   Rake::Task['jekyll:build'].execute
 end
 
 desc 'Build the production-ready website'
-task :deploy => ['install_prod'] do
+task deploy: ['install_prod'] do
   Rake::Task['jekyll:build'].execute
 end
 
