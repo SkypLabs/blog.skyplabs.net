@@ -20,7 +20,7 @@ To update `Gemfile.lock`:
 
     bundle lock --update
 
-If `bunble` is not installed on your system, you can execute it through the Docker container:
+If `bundle` is not installed on your system, you can execute it through the Docker container:
 
     # To build the Docker image if not already done.
     docker-compose build
@@ -44,13 +44,13 @@ If `yarn` is not installed on your system, you can execute it through the Docker
 
 To verify the validity of the generated HTML source code:
 
-    ./scripts/cibuild
+    bundle exec rake
 
 If `bundle`, `jekyll` or `htmlproofer` are not installed on your system, you can execute the script through the Docker container:
 
     # To build the Docker image if not already done.
     docker-compose build
-    docker run --rm -v $(pwd):/usr/src/app:z blogskyplabsnet_skyplabs-blog ./scripts/cibuild
+    docker run --rm -v $(pwd):/usr/src/app:z blogskyplabsnet_skyplabs-blog bundle exec rake
 
 ## Publishing a new post
 
@@ -63,7 +63,7 @@ Below are the different steps to do before publishing a new post:
 5. Verify the validity of the generated HTML source code
 6. Set up a development environment and check if everything looks good
 
-Steps `4` and `5` can be done by using `rake`.
+Steps `4` and `5` can be done by using `bundle exec rake`.
 
 ## License
 
