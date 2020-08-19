@@ -16,6 +16,7 @@ plugins:
 # Build settings
 include:
  - _pages
+ - .well-known
 
 exclude:
   - node_modules
