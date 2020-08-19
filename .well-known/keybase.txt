@@ -6,7 +6,7 @@ I hereby claim:
 
   * I am an admin of https://blog.skyplabs.net
   * I am skyplabs (https://keybase.io/skyplabs) on keybase.
-  * I have a public key ASC2VIbIn51qYWirbZ9CHHgwtnNbMdVsLUypOt7sSr4hWgo
+  * I have a public key ASBNXro1-eNI3eqtwQMsP3pCaIXrsqGyhjS5RB7TShhUygo
 
 To do so, I am signing this object:
 
@@ -15,18 +15,18 @@ To do so, I am signing this object:
     "key": {
       "eldest_kid": "01209609e8b81ad5f4ccaa8145cf0990d059f0af2023c2450a6865de64ed77e807370a",
       "host": "keybase.io",
-      "kid": "0120b65486c89f9d6a6168ab6d9f421c7830b6735b31d56c2d4ca93adeec4abe215a0a",
+      "kid": "01204d5eba35f9e348ddeaadc1032c3f7a426885ebb2a1b28634b9441ed34a1854ca0a",
       "uid": "04a50f232706251eeb6b98f4d8506819",
       "username": "skyplabs"
     },
     "merkle_root": {
-      "ctime": 1547900211,
-      "hash": "56a6c5cd73bc123633adb962394afe850079584411dafc9913f6d6180d839f8d6f6c336cfce03753aab5b49ea52a3795826dc73809e6fba8a9779643a8975c57",
-      "hash_meta": "19acbe35d1a1d5e5d61312fae979ed83f957ea1ef8a08cfa6f53a67ea30c5c1f",
-      "seqno": 4493221
+      "ctime": 1597878154,
+      "hash": "5a1064c3a8622b92e2863b01793cafdfa81355927a198ed419fc28094ddda48c3bbeaf13221b9d808ec675acada296912dce47742b5b6d68e8e63a90df47a44a",
+      "hash_meta": "33200e900c8a1102c674a82eda3474e51136b817bdea041c61b6ef08c9083939",
+      "seqno": 17328971
     },
     "service": {
-      "entropy": "yK4ObEKgc1/f8yOq9vzfprXk",
+      "entropy": "bXtco06elP00Cdt7RUPtvXE7",
       "hostname": "blog.skyplabs.net",
       "protocol": "https:"
     },
@@ -35,18 +35,18 @@ To do so, I am signing this object:
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "2.13.1"
+    "version": "5.5.1"
   },
-  "ctime": 1547900238,
+  "ctime": 1597878190,
   "expire_in": 504576000,
-  "prev": "fb3b6138b1d9612219f1eb7daf0e095914ad0bd7a4f976b307a1a24a4e0b0ea8",
-  "seqno": 43,
+  "prev": "41ea3558c8f2ad112865ec7e6e0673782e3f499f785481c736aba8e4ea229493",
+  "seqno": 87,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtlSGyJ+damFoq22fQhx4MLZzWzHVbC1MqTre7Eq+IVoKp3BheWxvYWTESpcCK8Qg+zthOLHZYSIZ8et9rw4JWRStC9ek+XazB6GiSk4LDqjEIJMdfyxBwITUBnVfmXf9OeUg5GfScEnjbZVGBCZBPO73AgHCo3NpZ8RATDkin+RnrQhjK6pF/qB+0q6FcVYsIlBpJ/CRdNtwCza1DVLKExg1XuqnZr7Yw3eas30aqQuxS5XLY61IVavAAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICvjJA9XG5MG0SzoOPHkTKZP5rumYlqKtuTpq/QdchJno3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTV66NfnjSN3qrcEDLD96QmiF67KhsoY0uUQe00oYVMoKp3BheWxvYWTESpcCV8QgQeo1WMjyrREoZex+bgZzeC4/SZ94VIHHNquo5OoilJPEIOCS+9U88aidR881zCj/uWsNmwYqsBzFhwxv2cP9NyRHAgHCo3NpZ8RAb4TUmdpzWeHg1jnBJWU5poWtluSheyKaQ4Hx3aD2uh3T6R4Jn7pohM6B7zYNqV6xcM6GgjP6fN3RUG/3dSjNA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAlp0H3jQFuVynzQDr9D8FALtf6fZI8lTHzDksWZJKYJo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
