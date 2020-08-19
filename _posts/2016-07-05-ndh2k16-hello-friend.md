@@ -175,6 +175,6 @@ Et voici l'image contenue dans l'archive ZIP avec le code de validation inscrit 
 
 ![Image contenant le code de validation][d3bug]
 
-[hello friend]: /downloads/hellofriend.jpg
+[hello friend]: https://skyplabs.keybase.pub/Blog/Downloads/hellofriend.jpg
 [darkc0de]: https://github.com/empijei/useful-commands/blob/master/exploiting/wifi/darkc0de.lst
-[d3bug]: /images/ndh2k16_hello_friend_d3bug.png
+[d3bug]: /assets/images/ndh2k16_hello_friend_d3bug.png

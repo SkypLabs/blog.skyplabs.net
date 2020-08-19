@@ -15,7 +15,7 @@ Pour ne pas changer mes habitudes, je m'y suis rendu une fois de plus le jeudi, 
 
 Le premier stand visible depuis l'entrée du salon était celui de **Microsoft**. Comme par hasard ! Pour rappel, Microsoft était un des "Gold Sponsors" de l'événement et ce n'est pas la première fois que la firme de Redmond est présente sur ce salon. On peut d'ailleurs dire qu'ils essayent de plus en plus de se rapprocher des acteurs de l'open source, comme en témoigne [cet article][microsoft_open_source]. Malheuresement pour eux, ils n'arrivent pas encore à convaincre beaucoup de monde. La preuve en image :
 
-![Stand Microsoft avec une troll face - Salon Linux 2011](/images/Salon-Solutions-Linux-2011-1.jpg)
+![Stand Microsoft avec une troll face - Salon Linux 2011](/assets/images/Salon-Solutions-Linux-2011-1.jpg)
 
 On peut également souligner le fait que leur stand était quasiment vide contrairement à l'année dernière. Il n'y avait qu'une seule personne du staff quand on est passés devant, aucun visiteur et surtout rien à voir ! L'année dernière pourtant, il y avait bien Microsoft Surface en libre accès par exemple, mais cette fois-ci rien. Plus d'argent depuis le rachat de Skype ?
 
@@ -25,7 +25,7 @@ En effet, les architectures centralisées peuvent se retrouver avec des accès c
 
 Voici une petite vidéo de test de SiT en pleine action :
 
-<iframe width="640" height="510" src="http://www.youtube.com/embed/Lxl9sFYlx9w?rel=0" frameborder="0" allowfullscreen></iframe> 
+<iframe width="640" height="510" src="https://www.youtube.com/embed/Lxl9sFYlx9w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Le système fonctionne sur une Debian allégée avec du VLC / MPD / EFL / WebKit comme technologies/logiciels sous-jacents. Le moins que l'on puisse dire est que c'est d'une grande fluidité et que l'interface est vraiment bien réalisée, Bravo !
 
@@ -37,10 +37,10 @@ J'en profite pour vous parler d'une nouvelle distribution que je ne connaissais 
 
 Voici une photo du stand de Mageia :
 
-![Stand Mageia au salon Linux 2011](/images/Salon-Solutions-Linux-2011-2.jpg)
+![Stand Mageia au salon Linux 2011](/assets/images/Salon-Solutions-Linux-2011-2.jpg)
 
 Je termine ce résumé en disant qu'on a bien profité lors de ce salon, que ce soit par la découverte de nouveaux projets dans le monde des logiciels libres mais aussi grâce aux différentes rencontres et contacts avec les communautés présentes.
 
 À l'année prochaine !
 
-[microsoft_open_source]: http://www.01net.com/editorial/532777/microsoft-nous-ne-combattons-plus-l-open-source/ "Microsoft : Nous ne combattons plus l'open source"
+[microsoft_open_source]: https://www.01net.com/editorial/532777/microsoft-nous-ne-combattons-plus-l-open-source/ "Microsoft : Nous ne combattons plus l'open source"

@@ -48,7 +48,7 @@ Voici le code développé pour la carte Arduino (à compiler avec le SDK officie
 
 Pour relier les différentes parties du montage final entre elles, j'ai réalisé un shield Arduino grâce au logiciel de CAO **EAGLE PCB Software**. Le gros avantage de cette solution est qu'il devient très facile de monter/démonter les différents composants de la réalisation étant donné que j'utilise des supports pour toutes les connexions. Cela procure une certaine propreté du montage. En voici une photo :
 
-![TV_RC Project - Montage final](/images/tv_rc_montage_final.jpg)
+![TV_RC Project - Montage final](/assets/images/tv_rc_montage_final.jpg)
 
 Vous trouverez l'archive ZIP contenant le PCB du sheild Arduino au format EPS à [cette adresse][pcb_zip_file].
 
@@ -64,7 +64,7 @@ La réalisation de ce projet m'a permis de m'investir un peu plus dans le domain
 
 Affaire à suivre ...
 
-[protocole_nec]: http://www.sbprojects.com/knowledge/ir/nec.php "NEC protocol"
+[protocole_nec]: https://www.sbprojects.com/knowledge/ir/nec.php "NEC protocol"
 [lirc]: http://www.lirc.org/ "LIRC"
-[pcb_zip_file]: /downloads/TV_RC_ARDUINO_SHIELD_PCB_V1.zip "TV_RC_ARDUINO_SHIELD_PCB_V1.zip"
-[tv_remote_control]: http://code.google.com/p/tv-remote-control/ "TV Remote Control Project"
+[pcb_zip_file]: https://keybase.pub/skyplabs/Blog/Downloads/TV_RC_ARDUINO_SHIELD_PCB_V1.zip "TV_RC_ARDUINO_SHIELD_PCB_V1.zip"
+[tv_remote_control]: https://keybase.pub/skyplabs/Blog/Downloads/tv_rc_android_v0.1.apk "TV Remote Control Project"

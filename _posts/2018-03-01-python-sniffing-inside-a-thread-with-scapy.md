@@ -136,4 +136,4 @@ Et voilà! The sniffing thread now waits for 2 seconds after having received a k
 
  [python3-signal]: https://docs.python.org/3/library/signal.html
  [python3-threading]: https://docs.python.org/3/library/threading.html
- [scapy-website]: http://secdev.org/projects/scapy/
+ [scapy-website]: https://scapy.net/

@@ -49,4 +49,4 @@ Une fois le transfert terminé (ce qui va prendre un certain temps ...), il ne n
 
 Votre équipement va maintenant redémarrer sur le nouveau firmware.
 
-[xmodem]: http://fr.wikipedia.org/wiki/Xmodem "Wikipédia : xmodem"
+[xmodem]: https://fr.wikipedia.org/wiki/Xmodem "Wikipédia : xmodem"

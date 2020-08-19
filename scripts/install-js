@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+mkdir -p assets/js
+
+# MathJax
+cp -r node_modules/mathjax/es5 assets/js/mathjax
+
+# Simple Jekyll Search
+cp node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js assets/js/

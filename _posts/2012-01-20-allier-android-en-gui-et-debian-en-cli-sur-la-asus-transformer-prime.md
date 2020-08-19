@@ -68,5 +68,5 @@ De cette façon, à chaque lancement d'un nouveau terminal, on arrivera directem
 
 Vous pouvez maintenant profiter pleinement de votre Transformer Prime, que ce soit en tablette sous Android ou en ordinateur sous Debian.
 
-[xda_developers_root]: http://www.xda-developers.com/root/ "How to Root Any Device - XDA Developers"
+[xda_developers_root]: https://www.xda-developers.com/root/ "How to Root Any Device - XDA Developers"
 [linux_attitude_article]: http://linux-attitude.fr/post/une-distribution-gnu-sur-android#more-1380 "Une distribution GNU sur Android - Linux Attitude"

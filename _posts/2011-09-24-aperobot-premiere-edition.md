@@ -10,7 +10,7 @@ Apérobot, quel pertinent jeu de mots, pas vrai ? Ce dernier décrit en effet un
 
 L'idée d'un tel événement a été lancée lors du dernier salon du modélisme en juin 2011 alors que **l'association de robotique de Caliban** et la société **Teknobot** (plus connue sous le nom de **World of Robot**) partageaient un stand. Et voici le résultat d'une telle rencontre :
 
-![Apérobot - Salon du modélisme](/images/aperobot-premiere-edition-1.jpg)
+![Apérobot - Salon du modélisme](/assets/images/aperobot-premiere-edition-1.jpg)
 
 <!--more-->
 
@@ -24,29 +24,29 @@ C'est donc sans hésiter que je recommande à tous les intéressés de participe
 
 Comme d'habitude, en conclusion de cet article, une série de photos prise le jour de l'événement :
 
-![Apérobot septembre 2011 - 2](/images/aperobot-premiere-edition-2.jpg)
+![Apérobot septembre 2011 - 2](/assets/images/aperobot-premiere-edition-2.jpg)
 
-![Apérobot septembre 2011 - 3](/images/aperobot-premiere-edition-3.jpg)
+![Apérobot septembre 2011 - 3](/assets/images/aperobot-premiere-edition-3.jpg)
 
-![Apérobot septembre 2011 - 4](/images/aperobot-premiere-edition-4.jpg)
+![Apérobot septembre 2011 - 4](/assets/images/aperobot-premiere-edition-4.jpg)
 
-![Apérobot septembre 2011 - 5](/images/aperobot-premiere-edition-5.jpg)
+![Apérobot septembre 2011 - 5](/assets/images/aperobot-premiere-edition-5.jpg)
 
-![Apérobot septembre 2011 - 6](/images/aperobot-premiere-edition-6.jpg)
+![Apérobot septembre 2011 - 6](/assets/images/aperobot-premiere-edition-6.jpg)
 
-![Apérobot septembre 2011 - 7](/images/aperobot-premiere-edition-7.jpg)
+![Apérobot septembre 2011 - 7](/assets/images/aperobot-premiere-edition-7.jpg)
 
-![Apérobot septembre 2011 - 8](/images/aperobot-premiere-edition-8.jpg)
+![Apérobot septembre 2011 - 8](/assets/images/aperobot-premiere-edition-8.jpg)
 
-![Apérobot septembre 2011 - 9](/images/aperobot-premiere-edition-9.jpg)
+![Apérobot septembre 2011 - 9](/assets/images/aperobot-premiere-edition-9.jpg)
 
-![Apérobot septembre 2011 - 10](/images/aperobot-premiere-edition-10.jpg)
+![Apérobot septembre 2011 - 10](/assets/images/aperobot-premiere-edition-10.jpg)
 
-![Apérobot septembre 2011 - 11](/images/aperobot-premiere-edition-11.jpg)
+![Apérobot septembre 2011 - 11](/assets/images/aperobot-premiere-edition-11.jpg)
 
-![Apérobot septembre 2011 - 12](/images/aperobot-premiere-edition-12.jpg)
+![Apérobot septembre 2011 - 12](/assets/images/aperobot-premiere-edition-12.jpg)
 
-![Apérobot septembre 2011 - 13](/images/aperobot-premiere-edition-13.jpg)
+![Apérobot septembre 2011 - 13](/assets/images/aperobot-premiere-edition-13.jpg)
 
-[site_caliban]: http://forum.caliban-web.com/ "Association Caliban"
-[facebook_world_of_robot]: http://www.facebook.com/pages/World-Of-Robot/164886823512 "Page Facebook de World Of Robot"
+[site_caliban]: https://caliban-asso.fr "Association Caliban"
+[facebook_world_of_robot]: https://www.facebook.com/pages/World-Of-Robot/164886823512 "Page Facebook de World Of Robot"

@@ -7,9 +7,16 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "simple-jekyll-search": "^1.7.2"
+    "mathjax": "^3.0.5",
+    "simple-jekyll-search": "^1.7.11"
+  },
+  "resolutions": {
+    "**/**/cryptiles": ">=4.1.2",
+    "**/**/hoek": "> 4.2.0 < 5.0.0 || >= 5.0.3",
+    "**/**/lodash": ">=4.17.12",
+    "**/**/minimist": ">=0.2.1 <1.0.0 || >=1.2.3"
   },
   "scripts": {
-    "install": "find node_modules/ -type f -name '*.min.js' -exec cp {} js/ \\;"
+    "install": "scripts/install-js"
   }
 }

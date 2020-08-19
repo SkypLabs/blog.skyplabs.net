@@ -30,7 +30,7 @@ Enfin, la carte est disponible chez [Farnell][farnell].
 
 Pour ce test, j'ai utilisé une carte microcontrôleur Arduino Uno (rev3) afin de lire les valeurs renvoyées par les différents capteurs au moyen d'une liaison I²C. Le câblage est le suivant :
 
-![Schéma du montage de test de la carte ATAVRSBIN1](/images/ATAVRSBIN1_wiring.png)
+![Schéma du montage de test de la carte ATAVRSBIN1](/assets/images/ATAVRSBIN1_wiring.png)
 
 ## Communication I²C avec les capteurs
 
@@ -48,13 +48,13 @@ Plusieurs bibliothèques pour Arduino sont [disponibles][ATAVRSBIN1_libs] afin d
 
 Les registres internes contenant les valeurs retournées par les capteurs sont données dans la [datasheet][ITG3200_datasheet] sous forme du tableau suivant :
 
-![Tableau des registres du ITG-3200](/images/ITG-3200_registers.png)
+![Tableau des registres du ITG-3200](/assets/images/ITG-3200_registers.png)
 
 Chaque capteur retourne une valeur sur 16 bits codée en code complément à 2. Étant donné que la lecture se fait octet par octet sur un bus I²C, il sera nécessaire d'utiliser des décalages par 8 pour reconstituer nos valeurs sur 16 bits.
 
 Nous allons récupérer l'ensemble de ces valeurs d'un seul coup en lisant 8 octets à partir de l'adresse du premier registre, à savoir 0x1B. La séquence de "burst read" utilisée pour lire plusieurs octets en une seule interrogation I²C est la suivante :
 
-![Schéma d'une séquence de "burst read" pour le ITG-3200](/images/ITG-3200_burst_read.png)
+![Schéma d'une séquence de "burst read" pour le ITG-3200](/assets/images/ITG-3200_burst_read.png)
 
 Une fois les valeurs récupérées, il sera nécessaire d'effectuer quelques opérations mathématiques afin d'obtenir des unités lisibles, à savoir des °C pour le capteur de température et des degrés par seconde pour les trois axes du gyromètre.
 
@@ -62,14 +62,14 @@ Enfin, voici le code utilisé pour cet exemple :
 
 {% gist SkypLabs/763b20801f95d84267486450e8dcf515 ATAVRSBIN1_i2c.ino %}
 
-[gyroscope]: http://fr.wikipedia.org/wiki/Gyroscope
-[gyromètre]: http://fr.wikipedia.org/wiki/Gyrom%C3%A8tre
-[accéléromètre]: http://fr.wikipedia.org/wiki/Acc%C3%A9l%C3%A9rom%C3%A8tre
-[centrale_inertielle]: http://fr.wikipedia.org/wiki/Centrale_%C3%A0_inertie
-[ATAVRSBIN1]: http://fr.farnell.com/atmel/atavrsbin1/carte-inertial-capteur-9dof/dp/1972205
-[i2c]: http://fr.wikipedia.org/wiki/I2C
-[farnell]: http://fr.farnell.com/
-[ATAVRSBIN1_datasheet]: http://www.atmel.com/Images/doc8354.pdf
-[wire]: http://arduino.cc/en/reference/wire
+[gyroscope]: https://fr.wikipedia.org/wiki/Gyroscope
+[gyromètre]: https://fr.wikipedia.org/wiki/Gyrom%C3%A8tre
+[accéléromètre]: https://fr.wikipedia.org/wiki/Acc%C3%A9l%C3%A9rom%C3%A8tre
+[centrale_inertielle]: https://fr.wikipedia.org/wiki/Centrale_%C3%A0_inertie
+[ATAVRSBIN1]: https://fr.farnell.com/atmel/atavrsbin1/carte-inertial-capteur-9dof/dp/1972205
+[i2c]: https://fr.wikipedia.org/wiki/I2C
+[farnell]: https://fr.farnell.com/
+[ATAVRSBIN1_datasheet]: https://ww1.microchip.com/downloads/en/AppNotes/doc8354.pdf
+[wire]: https://arduino.cc/en/reference/wire
 [ATAVRSBIN1_libs]: https://github.com/jrowberg/i2cdevlib/tree/master/Arduino
 [ITG3200_datasheet]: https://www.sparkfun.com/datasheets/Sensors/Gyro/PS-ITG-3200-00-01.4.pdf
