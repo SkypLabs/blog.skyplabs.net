@@ -1,6 +1,6 @@
 {
   "name": "blog.skyplabs.net",
-  "version": "0.7.0",
+  "version": "0.8.1",
   "description": "My personal blog about computer science, electronics and other related topics.",
   "repository": "git@github.com:SkypLabs/blog.skyplabs.net.git",
   "author": "Paul-Emmanuel Raoul <skyper@skyplabs.net>",
