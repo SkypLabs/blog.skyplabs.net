@@ -22,9 +22,11 @@ WORKDIR /usr/src/app
 COPY Gemfile /usr/src/app
 COPY Gemfile.lock /usr/src/app
 
-RUN bundle install \
-    && rm -f Gemfile Gemfile.lock
+RUN yes | gem update --system --force       &&\
+    gem install bundler                     &&\
+    bundle install                          &&\
+    rm -f Gemfile Gemfile.lock
 
 EXPOSE 4000
 
-CMD ["jekyll", "serve", "--host", "0.0.0.0", "--watch", "--drafts", "--future"]
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--watch", "--drafts", "--future"]
