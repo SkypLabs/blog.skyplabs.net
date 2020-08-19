@@ -20,7 +20,7 @@ To update `Gemfile.lock`:
 
     bundle lock --update
 
-If `bunble` is not installed on your system, you can execute it through the Docker container:
+If `bundle` is not installed on your system, you can execute it through the Docker container:
 
     # To build the Docker image if not already done.
     docker-compose build
