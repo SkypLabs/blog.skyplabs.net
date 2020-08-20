@@ -1,0 +1,3 @@
+Contact: https://blog.skyplabs.net/contact
+Encryption: https://keybase.io/skyplabs/pgp_keys.asc
+Preferred-Languages: en, fr
