@@ -7,19 +7,19 @@ I've been working on many open-source software and other publicly-shared resourc
 
 Having said that, if you like my work and want to support me, tips are very welcome 🙂
 
-## Brave Rewards
+### Brave Rewards
 
 If you are a [Brave][brave] user, you can use Brave Rewards to tip me by clicking on the BAT logo in your URL bar.
 
-## Buy Me A Coffee
+### Buy Me A Coffee
 
 I love working from coffee shops so, if you buy me a coffee on [Buy Me A Coffee][buy-me-a-coffee] or [Ko-fi][ko-fi], you can be sure that I will literally use your tips for this very purpose ☕
 
-## Cryptocurrencies
+### Cryptocurrencies
 
 If you like cryptocurrencies as I do, you will find all my cryptocurrency addresses on my [Keybase profile][my-keybase] and/or in [this text file][my-wallets] (digitally signed).
 
-## PayPal
+### PayPal
 
 If you have a PayPal account, you can use [this link][my-paypal] to tip me.
 
