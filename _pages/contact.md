@@ -3,11 +3,11 @@ layout: page
 title: "Contact"
 permalink: /contact/
 ---
-### Email
+### Email 📧
 
 Here is my email address: [{{ site.data.author.email }}](mailto:{{ site.data.author.email }})
 
-#### With PGP
+#### With PGP 🔐
 
 If you have something confidential to share, please use [PGP][pgp]/[GPG][gpg] encryption to secure our communication.
 
@@ -17,7 +17,7 @@ My public key can be downloaded from my Keybase profile:
 
 To facilitate the encryption process, you can use [this online tool][keybase-encrypt-tool]. You can also use it to verify my signatures.
 
-#### Without PGP
+#### Without PGP 🔓
 
 If you want to email me securely but you don't know or don't want to use PGP, please follow these steps:
 
@@ -26,11 +26,11 @@ If you want to email me securely but you don't know or don't want to use PGP, pl
 3. Copy the encrypted password and send it to me at [{{ site.data.author.email }}](mailto:{{ site.data.author.email }}).
 4. I will answer you with a password-encrypted email via the [Tutanota webmail][tutanota].
 
-### Keybase
+### Keybase 🔑
 
 If you have a [Keybase][keybase] account, you can start chatting securely with me by going on [my profile][my-keybase-profile].
 
-### Public conversations
+### Public conversations 🐦
 
 You can also contact me publicly via my [Twitter account][my-twitter].
 
