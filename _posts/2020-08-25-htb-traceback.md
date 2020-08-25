@@ -11,6 +11,10 @@ tags:
 ---
 Traceback is an easy Linux-based machine released on the 15th of March 2020 and reachable on the IP address `10.10.10.181`.
 
+![HTB Traceback information card](/assets/images/htb-traceback-info-card.jpg)
+
+<!--more-->
+
 ## User flag
 
 Nmap indicates us that the Traceback machine is running OpenSSH and Apache:
