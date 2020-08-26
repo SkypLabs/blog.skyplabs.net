@@ -123,7 +123,11 @@ namespace :test do
       assume_extension: true,
       check_favicon: true,
       check_opengraph: true,
-      only_4xx: true
+      external_only: true,
+      internal_domains: [
+        'blog.skyplabs.net',
+      ],
+      only_4xx: true,
     }
 
     HTMLProofer.check_directory('./_site', options).run
