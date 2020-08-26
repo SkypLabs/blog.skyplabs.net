@@ -101,7 +101,7 @@ namespace :jekyll do
 
   desc 'Serve the Jekyll website locally'
   task :serve do
-    sh 'bundle exec jekyll serve --future --drafts --incremental'
+    sh 'bundle exec jekyll serve --future --drafts --incremental --watch'
   end
 end
 
