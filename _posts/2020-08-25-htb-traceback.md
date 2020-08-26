@@ -9,7 +9,7 @@ tags:
     - CTF
     - Hack The Box
 ---
-Traceback is an easy Linux-based machine released on the 15th of March 2020 and reachable on the IP address `10.10.10.181`.
+Traceback is an easy Linux-based machine released on the 14th of March 2020 and reachable on the IP address `10.10.10.181` (despite what's written on the info card).
 
 ![HTB Traceback information card](/assets/images/htb-traceback-info-card.jpg)
 
