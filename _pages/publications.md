@@ -24,7 +24,7 @@ permalink: /publications/
 
 * [CVE-2017-1000448 - Path traversal in Structured Data Linter versions 2.4.1 and older][CVE-2017-1000448]
 
- [avatao-git-security]: https://blog.avatao.com/How-to-use-Git-in-a-secure-way/
+ [avatao-git-security]: https://avatao.com/git-security-best-practices/
  [avatao-git-security-medium]: https://medium.com/@avatao/how-to-use-git-in-a-secure-way-89571e738899
  [bsfl-slideshow]: https://skyplabs.github.io/bsfl-slideshow/
  [CVE-2017-1000448]: https://nvd.nist.gov/vuln/detail/CVE-2017-1000448
