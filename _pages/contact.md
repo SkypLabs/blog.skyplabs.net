@@ -40,6 +40,6 @@ You can also contact me publicly via my [Twitter account][my-twitter].
 [my-keybase-profile]: https://keybase.io/{{ site.data.author.keybase }}
 [my-pgp-key]: https://keybase.io/{{ site.data.author.keybase }}/pgp_keys.asc
 [my-pgp-key-badge]: https://img.shields.io/keybase/pgp/skyplabs.svg
-[my-twitter]: https://twitter.com/{{ site.data.author.twitter | prepend: site.baseurl }}
+[my-twitter]: https://twitter.com/{{ site.data.author.twitter }}
 [pgp]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy
 [tutanota]: https://www.tutanota.com/

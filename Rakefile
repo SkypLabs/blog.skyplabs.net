@@ -101,7 +101,7 @@ namespace :jekyll do
 
   desc 'Serve the Jekyll website locally'
   task :serve do
-    sh 'bundle exec jekyll serve --future --drafts --incremental'
+    sh 'bundle exec jekyll serve --future --drafts --incremental --watch'
   end
 end
 
@@ -123,7 +123,11 @@ namespace :test do
       assume_extension: true,
       check_favicon: true,
       check_opengraph: true,
-      only_4xx: true
+      external_only: true,
+      internal_domains: [
+        'blog.skyplabs.net',
+      ],
+      only_4xx: true,
     }
 
     HTMLProofer.check_directory('./_site', options).run
