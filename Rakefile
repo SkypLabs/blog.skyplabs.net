@@ -124,6 +124,10 @@ namespace :test do
       check_favicon: true,
       check_opengraph: true,
       external_only: true,
+      http_status_ignore: [
+        # See https://github.com/SkypLabs/blog.skyplabs.net/issues/66.
+        441,
+      ],
       internal_domains: [
         'blog.skyplabs.net',
       ],
