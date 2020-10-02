@@ -9,8 +9,8 @@ tags:
     - CTF
     - Hack The Box
 ---
-Admirer is an easy Linux-based machine released on the 2nd of May 2020 and
-reachable on the IP address `10.10.10.187`.
+Admirer is an easy [Hack The Box][htb] Linux-based machine released on the 2nd
+of May 2020 and reachable on the IP address `10.10.10.187`.
 
 ![HTB Admirer information card](/assets/images/htb-admirer-info-card.jpg)
 
@@ -63,7 +63,7 @@ At this point, I initially tried to fuzz the `/admin-dir` folder with some
 well-known security wordlists, but without any success. Then, I tried with a few
 combinations of filenames around the concepts of "contacts" and "credentials",
 and the result didn't take long to come. I found the two files the above comment
-referred to: `/admin-dir/contacts.txt` and `/admin-dir/credentials.txt`.
+was referring to: `/admin-dir/contacts.txt` and `/admin-dir/credentials.txt`.
 
 The first one contains a list of email addresses with the first name and role of
 the persons as comments:
@@ -478,8 +478,12 @@ make_archive(dst, 'gztar', src)
 In Python, the folders where the interpreter looks for the modules you try to
 import are listed in the [`PYTHONPATH`][python-path] environment variable, just
 like `PATH` in a shell. Given that the `SETENV` option is set in the `sudoers`
-policy module for the execution of `/opt/scripts/admin_tasks.sh` by `waldo`, I
-created another module named `shutil` containing my own implementation of `make_archive`:
+policy module for the execution of `/opt/scripts/admin_tasks.sh` by `waldo`, the
+value of `PYTHONPATH` can be overwritten, allowing to inject custom versions of
+the imported modules.
+
+It is exactly the strategy I followed. I created another module named `shutil` containing
+my own implementation of `make_archive`:
 
 ```python
 def make_archive(x, y, z):
@@ -504,6 +508,7 @@ The root flag was `cf943b5f4a33dc4b9a438550d232915f`.
  [bettercap]: https://www.bettercap.org/ "Bettercap Official Website"
  [bettercap-caplets]: https://www.bettercap.org/usage/#caplets "Bettercap - Caplets"
  [bettercap-mysql-module]: https://www.bettercap.org/modules/ethernet/servers/mysql.server/ "Bettercap MySQL module"
+ [htb]: https://hackthebox.eu/ "Hack The Box - Main Website"
  [kali-hydra]: https://tools.kali.org/password-attacks/hydra "Kali Tools - Hydra Package Description"
  [nmap-ftp-anon]: https://nmap.org/nsedoc/scripts/ftp-anon.html "Nmap script ftp-anon"
  [python-path]: https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH "Python 3 Documentation - PYTHONPATH"
