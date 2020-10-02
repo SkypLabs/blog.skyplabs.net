@@ -132,6 +132,9 @@ namespace :test do
         'blog.skyplabs.net',
       ],
       only_4xx: true,
+      url_ignore: [
+        /https?:\/\/github\.com\/.+\/edit\/.*/,
+      ],
     }
 
     HTMLProofer.check_directory('./_site', options).run
