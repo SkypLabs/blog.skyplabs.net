@@ -124,10 +124,17 @@ namespace :test do
       check_favicon: true,
       check_opengraph: true,
       external_only: true,
+      http_status_ignore: [
+        # See https://github.com/SkypLabs/blog.skyplabs.net/issues/66.
+        441,
+      ],
       internal_domains: [
         'blog.skyplabs.net',
       ],
       only_4xx: true,
+      url_ignore: [
+        /https?:\/\/github\.com\/.+\/edit\/.*/,
+      ],
     }
 
     HTMLProofer.check_directory('./_site', options).run

@@ -1,6 +1,6 @@
 # Skyper's Blog
 
-[![Master Branch Build Status](https://img.shields.io/travis/SkypLabs/blog.skyplabs.net/master.svg?label=master&logo=travis&style=flat)](https://travis-ci.org/SkypLabs/blog.skyplabs.net) [![Develop Branch Build Status](https://img.shields.io/travis/SkypLabs/blog.skyplabs.net/develop.svg?label=develop&logo=travis&style=flat)](https://travis-ci.org/SkypLabs/blog.skyplabs.net) [![Known Vulnerabilities](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net/badge.svg)](https://snyk.io/test/github/SkypLabs/blog.skyplabs.net)
+[![Master Branch Build Status](https://img.shields.io/travis/com/SkypLabs/blog.skyplabs.net/master.svg?label=master&logo=travis&style=flat)](https://travis-ci.com/SkypLabs/blog.skyplabs.net) [![Develop Branch Build Status](https://img.shields.io/travis/com/SkypLabs/blog.skyplabs.net/develop.svg?label=develop&logo=travis&style=flat)](https://travis-ci.com/SkypLabs/blog.skyplabs.net)
 
 My personal [blog][blog] made with [Jekyll][jekyll].
 
@@ -62,6 +62,7 @@ Below are the different steps to do before publishing a new post:
 4. Verify that Jekyll can generate the HTML source code
 5. Verify the validity of the generated HTML source code
 6. Set up a development environment and check if everything looks good
+7. Update the version number in `package.json`
 
 Steps `4` and `5` can be done by using `bundle exec rake`.
 
