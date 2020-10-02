@@ -12,6 +12,10 @@ tags:
 Admirer is an easy [Hack The Box][htb] Linux-based machine released on the 2nd
 of May 2020 and reachable on the IP address `10.10.10.187`.
 
+For whose who don't know it yet, Hack The Box is an online platform where vulnerable
+machines are deployed in a private network accessible via VPN, and where users
+need to hack their way into the systems to collect flags as proofs of their success.
+
 ![HTB Admirer information card](/assets/images/htb-admirer-info-card.jpg)
 
 <!--more-->
@@ -503,6 +507,11 @@ $
 ```
 
 The root flag was `cf943b5f4a33dc4b9a438550d232915f`.
+
+## Wrapping up
+
+It was an easy machine, as expected. It still allowed me to discover the Adminer
+project and it was also an occasion for me to use the rogue MySQL server of Bettercap.
 
  [adminer-exploit-blog-post]: https://medium.com/bugbountywriteup/adminer-script-results-to-pwning-server-private-bug-bounty-program-fe6d8a43fe6f "Adminer Script Results to Pwning Server?, Private Bug Bounty Program"
  [bettercap]: https://www.bettercap.org/ "Bettercap Official Website"
