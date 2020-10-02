@@ -13,13 +13,11 @@ layout: default
       <span property="alternateName">{{ site.data.author.nickname }}</span>
       <span property="email">{{ site.data.author.email }}</span>
     </div>
-    {% if jekyll.environment == "production" %}
     <span class="post-edit">
       <a href="{{ site.data.gh-repo.url }}/edit/{{ site.data.gh-repo.branch }}/{{ page.path }}">
         {{ site.data.strings.edit-on-github }}
       </a>
     </span>
-    {% endif %}
   </div>
 
   <div class="post-content" property="articleBody">
