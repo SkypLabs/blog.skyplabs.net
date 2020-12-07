@@ -11,7 +11,7 @@ tags:
 ---
 Enjoying [HackerOne's CTF][h1-ctf]?
 
-If you want to make sure not to inadvertently miss any single flag while skimming through web pages, you can ask [ZAP][zap] to catch them for you with this regex: `^\^FLAG\^[\w\d]{64}\$FLAG\$$`
+If you want to make sure not to inadvertently miss any single flag while skimming through web pages, you can ask [ZAP][zap] to catch them for you with this regex: `\^FLAG\^[\w\d]{64}\$FLAG\$`
 
 
 ![ZAP settings to capture Hacker 101 flags automatically][hacker101-zap-flag-regex-settings]
