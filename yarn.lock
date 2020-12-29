@@ -36,9 +36,9 @@ lodash@>=4.17.12:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-simple-jekyll-search@^1.7.13:
-  version "1.7.13"
-  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.7.13.tgz#a43cb0e6af8c7cc2fb9a77485b048565858a7efb"
-  integrity sha512-+r+bEzAhWZI15GtsGXqTVp4NYYmXvbLn4DGennRjOzVrugOTB9/s0NF8+/oLaDb8IEkOftzDVs7QtCmNfgZ8Ag==
+simple-jekyll-search@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/simple-jekyll-search/-/simple-jekyll-search-1.9.1.tgz#2f50f8ce276daa6786474e8c571c43506b261763"
+  integrity sha512-WL350X9codx5LoYXhGluYz/iE3DRJexHbYMvYXkdYyzjuwQ0Iuz43mpO5rpINgp2TriIiF3Xg7kpgIP9ewGUrw==
   dependencies:
     fuzzysearch "^1.0.3"

@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "simple-jekyll-search": "^1.7.13"
+    "simple-jekyll-search": "^1.9.1"
   },
   "resolutions": {
     "**/**/cryptiles": ">=4.1.2",
