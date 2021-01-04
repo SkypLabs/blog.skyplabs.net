@@ -2,6 +2,9 @@
 
 [![Master Branch Build Status](https://img.shields.io/travis/com/SkypLabs/blog.skyplabs.net/master.svg?label=master&logo=travis&style=flat)](https://travis-ci.com/SkypLabs/blog.skyplabs.net) [![Develop Branch Build Status](https://img.shields.io/travis/com/SkypLabs/blog.skyplabs.net/develop.svg?label=develop&logo=travis&style=flat)](https://travis-ci.com/SkypLabs/blog.skyplabs.net)
 
+**No more maintained - New blog repository available at
+https://github.com/SkypLabs/personal-blog**
+
 My personal [blog][blog] made with [Jekyll][jekyll].
 
 ## How to
