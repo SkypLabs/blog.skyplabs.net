@@ -9,7 +9,7 @@ gem 'nokogiri', '>= 1.10.8'
 group :production do
   # Latest version available:
   # https://pages.github.com/versions/
-  gem 'github-pages', '~> 209', group: :jekyll_plugins
+  gem 'github-pages', '~> 210', group: :jekyll_plugins
 end
 
 group :development do
